@@ -788,9 +788,9 @@ class CalculationScene extends QuestionScene {
   }
 }
 
-// EssayScene – simplified paper 1 essay mode. The player writes an
-// outline answer. At the end of the session, responses are assessed
-// based on presence of key concepts. A rubric is displayed.
+// EssayScene – "3 Bullets and a Chain" game. Players map out answers
+// to IB‑style essay questions by producing three analytical points and
+// a reasoning chain for each one.
 class EssayScene extends QuestionScene {
   constructor() {
     super('essay');
@@ -798,7 +798,6 @@ class EssayScene extends QuestionScene {
   createQuestionUI(question) {
     // Update progress bar
     this.updateProgressBar();
-    // Reset text objects array for this question
     this.textObjects = [];
     const yStart = 110;
     // Display command term and topic
@@ -807,8 +806,6 @@ class EssayScene extends QuestionScene {
       color: '#000000'
     });
     this.textObjects.push(header);
-    // Display context (if provided) below the header.  Showing context helps
-    // the user understand the economic situation they are writing about.
     const contextY = header.y + header.height + 10;
     const contextStr = question.context ? 'Context: ' + question.context : '';
     const contextText = this.add.text(50, contextY, contextStr, {
@@ -817,7 +814,6 @@ class EssayScene extends QuestionScene {
       wordWrap: { width: GAME_WIDTH - 100 }
     });
     this.textObjects.push(contextText);
-    // Display the question prompt underneath the context
     const promptY = contextText.y + contextText.height + 10;
     const promptText = this.add.text(50, promptY, 'Question: ' + question.prompt, {
       fontSize: '18px',
@@ -825,15 +821,69 @@ class EssayScene extends QuestionScene {
       wordWrap: { width: GAME_WIDTH - 100 }
     });
     this.textObjects.push(promptText);
-    // Input area with feedback and next button.  Immediate feedback is given
-    // when the user clicks Next.
+    // Container for interactive elements
     const container = document.createElement('div');
     container.style.width = '100%';
     container.style.marginTop = '10px';
-    const textarea = document.createElement('textarea');
-    textarea.className = 'ui-textarea';
-    textarea.placeholder = 'Outline your answer here...';
-    container.appendChild(textarea);
+
+    // Step 1 – Draw the question card
+    const step1 = document.createElement('p');
+    step1.textContent = 'Step 1 – Draw the Question Card (1 minute): read once and identify the command term and focus.';
+    container.appendChild(step1);
+
+    // Step 2 – Three bullet headlines
+    const step2 = document.createElement('p');
+    step2.textContent = 'Step 2 – The "3 Bullets" Rule (2 minutes)';
+    container.appendChild(step2);
+    const bullets = [];
+    for (let i = 0; i < 3; i++) {
+      const b = document.createElement('input');
+      b.className = 'ui-input';
+      b.placeholder = `Bullet ${i + 1} headline...`;
+      container.appendChild(b);
+      bullets.push(b);
+    }
+
+    // Step 3 – Build the chain
+    const step3 = document.createElement('p');
+    step3.textContent = 'Step 3 – Build the Chain (6 minutes)';
+    container.appendChild(step3);
+    const chains = [];
+    bullets.forEach((_, i) => {
+      const wrap = document.createElement('div');
+      const title = document.createElement('p');
+      title.textContent = `Bullet ${i + 1}`;
+      wrap.appendChild(title);
+      const labels = ['Theory', 'Analysis', 'Example', 'Evaluation'];
+      const chain = {};
+      labels.forEach(l => {
+        const input = document.createElement('input');
+        input.className = 'ui-input';
+        input.placeholder = `${l}...`;
+        wrap.appendChild(input);
+        chain[l.toLowerCase()] = input;
+      });
+      container.appendChild(wrap);
+      chains.push(chain);
+    });
+
+    // Step 4 – Skeleton
+    const step4 = document.createElement('p');
+    step4.textContent = 'Step 4 – One‑Minute Skeleton (1 minute)';
+    container.appendChild(step4);
+    const skeleton = document.createElement('textarea');
+    skeleton.className = 'ui-textarea';
+    skeleton.placeholder = 'Outline intro, bullets and judgment...';
+    container.appendChild(skeleton);
+
+    // Step 5 – Reverse Marker prompts
+    const step5 = document.createElement('div');
+    step5.innerHTML = '<p>Step 5 – Bonus Round: Reverse Marker (3 minutes)</p><ul>' +
+      '<li>Does every paragraph link back to the question?</li>' +
+      '<li>Are my examples short and integrated, not storytelling?</li>' +
+      '<li>Is my evaluation relevant, or just filler?</li></ul>';
+    container.appendChild(step5);
+
     const feedback = document.createElement('p');
     feedback.style.display = 'none';
     feedback.style.fontWeight = 'bold';
@@ -843,41 +893,40 @@ class EssayScene extends QuestionScene {
     nextBtn.textContent = this.currentIndex === this.questions.length - 1 ? 'Finish Session' : 'Next Question';
     container.appendChild(nextBtn);
     nextBtn.addEventListener('click', () => {
-      const answer = textarea.value.trim();
-      const result = this.evaluateAnswer(question, answer);
+      const response = {
+        bullets: bullets.map(b => b.value.trim()),
+        chains: chains.map(c => ({
+          theory: c.theory.value.trim(),
+          analysis: c.analysis.value.trim(),
+          example: c.example.value.trim(),
+          evaluation: c.evaluation.value.trim()
+        })),
+        skeleton: skeleton.value.trim()
+      };
+      const result = this.evaluateAnswer(response);
       feedback.style.display = 'block';
       if (result.correct) {
-        feedback.textContent = 'Correct!';
+        feedback.textContent = 'Great! You completed the chain.';
         feedback.style.color = '#008000';
+        setTimeout(() => {
+          this.handleSubmit(response);
+        }, 800);
       } else {
-        const missing = question.keywords.filter(kw => !(result.keywordsFound || []).includes(kw));
-        feedback.textContent = 'Incorrect. Missing keywords: ' + missing.join(', ');
+        feedback.textContent = 'Please complete all fields before continuing.';
         feedback.style.color = '#d32f2f';
       }
-      setTimeout(() => {
-        this.handleSubmit(answer);
-      }, 800);
     });
-    this.domContainer = this.add.dom(GAME_WIDTH / 2, GAME_HEIGHT - 170, container);
+    this.domContainer = this.add.dom(GAME_WIDTH / 2, GAME_HEIGHT - 250, container);
   }
-  evaluateAnswer(question, userAnswer) {
-    // Evaluate essay answer: check how many keywords from question.keywords
-    // appear in the response. Award correctness if at least half found.
-    const text = userAnswer.toLowerCase();
-    let matched = [];
-    let count = 0;
-    question.keywords.forEach(kw => {
-      const k = kw.toLowerCase();
-      if (text.includes(k)) {
-        count++;
-        matched.push(kw);
-      }
-    });
-    const correct = count >= Math.ceil(question.keywords.length / 2);
-    return { correct: correct, keywordsFound: matched };
+  evaluateAnswer(response) {
+    // Ensure all bullet headlines, chain links, and skeleton are filled in
+    const bulletsFilled = response.bullets.every(b => b !== '');
+    const chainsFilled = response.chains.every(c => c.theory && c.analysis && c.example && c.evaluation);
+    const skeletonFilled = response.skeleton !== '';
+    return { correct: bulletsFilled && chainsFilled && skeletonFilled };
   }
   getTitle() {
-    return 'Paper 1 – Essay Mode';
+    return '3 Bullets and a Chain – Essay Mode';
   }
 }
 
