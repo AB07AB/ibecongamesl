@@ -562,6 +562,8 @@ class CalculationScene extends QuestionScene {
     const container = document.createElement('div');
     container.style.width = '100%';
     container.style.marginTop = '10px';
+    container.style.maxHeight = '360px';
+    container.style.overflowY = 'auto';
     const input = document.createElement('input');
     input.type = 'number';
     input.className = 'ui-input';
@@ -578,6 +580,8 @@ class CalculationScene extends QuestionScene {
     solutionDiv.style.marginTop = '10px';
     solutionDiv.style.padding = '10px';
     solutionDiv.style.border = '1px solid #ccc';
+    solutionDiv.style.maxHeight = '180px';
+    solutionDiv.style.overflowY = 'auto';
     container.appendChild(solutionDiv);
     // Next button
     const nextBtn = document.createElement('button');
