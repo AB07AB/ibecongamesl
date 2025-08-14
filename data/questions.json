@@ -1,0 +1,127 @@
+{
+  "diagram": [
+    {
+      "id": "D1",
+      "level": 1,
+      "topic": "Microeconomics – Demand and Supply",
+      "context": "Country X experienced a poor harvest that reduced the supply of corn. Consumers in Country X use corn as a staple food.",
+      "prompt": "Draw a market diagram showing the effect of the supply shock on the equilibrium price and quantity of corn. After drawing your diagram on paper, write an explanation in the text box interpreting the changes in the market for corn.",
+      "expectedDiagram": "A supply curve shifting left on a demand–supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows a higher price and lower quantity.",
+      "keywords": ["supply", "shift left", "higher price", "lower quantity", "market equilibrium"],
+      "solutionExplanation": "The poor harvest shifts the supply curve left. At the initial price, quantity supplied falls, creating excess demand. A new equilibrium is established at a higher price and lower quantity. Consumers face higher prices and potential shortages while producers supply less."
+    },
+    {
+      "id": "D2",
+      "level": 2,
+      "topic": "Macroeconomics – Aggregate Demand and Aggregate Supply",
+      "context": "Country X’s government introduced expansionary fiscal policy by increasing infrastructure spending during a recession. Assume the economy starts below potential output.",
+      "prompt": "Draw an AD/AS diagram showing the impact of expansionary fiscal policy. After drawing your diagram on paper, write an explanation in the text box interpreting the changes in output and the price level.",
+      "expectedDiagram": "An AD curve shifting right toward the long‑run aggregate supply curve on a model with price level on the vertical axis and real output on the horizontal axis. The new equilibrium shows higher output and a higher price level.",
+      "keywords": ["aggregate demand", "shift right", "increase output", "higher price level", "recession"],
+      "solutionExplanation": "Expansionary fiscal policy increases aggregate demand, shifting the AD curve to the right. Starting from a recessionary gap, this brings the economy closer to potential output. Real GDP rises and the price level may increase slightly depending on the slope of the AS curve."
+    }
+  ],
+  "calculation": [
+    {
+      "id": "C1",
+      "level": 1,
+      "topic": "Microeconomics – Total Revenue",
+      "prompt": "Country X produces 500 units of rice per day and sells each unit for $2.50. Calculate the firm’s total revenue.",
+      "data": {"quantity": 500, "price": 2.5},
+      "answer": 1250,
+      "steps": [
+        "Total Revenue = Price × Quantity",
+        "Total Revenue = 2.5 × 500 = 1,250"
+      ]
+    },
+    {
+      "id": "C2",
+      "level": 2,
+      "topic": "Macroeconomics – Economic Growth Rate",
+      "prompt": "Country X’s real GDP increased from $400 billion in year 1 to $420 billion in year 2. Calculate the real GDP growth rate as a percentage.",
+      "data": {"gdp1": 400, "gdp2": 420},
+      "answer": 5,
+      "steps": [
+        "Growth Rate = ((GDP₂ − GDP₁) / GDP₁) × 100",
+        "Growth Rate = ((420 − 400) / 400) × 100 = (20/400) × 100 = 5%"
+      ]
+    }
+  ],
+  "essay": [
+    {
+      "id": "E1",
+      "level": 1,
+      "commandTerm": "Explain",
+      "topic": "International – Trade Protection",
+      "prompt": "Explain, using a tariff diagram, the effects of imposing an import tariff on foreign steel in Country X.",
+      "keywords": ["tariff", "price", "domestic production", "imports", "government revenue", "deadweight loss"],
+      "solutionOutline": [
+        "Define tariff as a tax on imports.",
+        "Draw a supply and demand diagram for steel showing world price.",
+        "Illustrate the tariff raising the domestic price, reducing imports and increasing domestic production.",
+        "Explain the creation of government revenue and the deadweight loss due to the tariff."
+      ]
+    },
+    {
+      "id": "E2",
+      "level": 2,
+      "commandTerm": "Evaluate",
+      "topic": "Macroeconomics – Fiscal Policy",
+      "prompt": "Evaluate the effectiveness of using fiscal policy to reduce unemployment in Country X. You should consider both demand‑side and supply‑side effects.",
+      "keywords": ["fiscal policy", "government spending", "taxes", "unemployment", "multiplier", "inflation", "crowding out"],
+      "solutionOutline": [
+        "Define fiscal policy and its objectives.",
+        "Discuss how expansionary fiscal policy can increase aggregate demand, creating jobs.",
+        "Consider potential supply‑side improvements from infrastructure spending.",
+        "Evaluate limitations such as time lags, potential inflation, and crowding out of private investment.",
+        "Conclude by weighing benefits against drawbacks and discussing alternative policies."
+      ]
+    }
+  ],
+  "case": [
+    {
+      "id": "CS1",
+      "level": 1,
+      "topic": "Microeconomics – Minimum Wage",
+      "context": "Country X is considering raising its minimum wage. The labour market for low‑skill workers currently has an equilibrium wage of $7 per hour and a minimum wage of $6.",
+      "backgroundText": "The government proposes raising the minimum wage to $8 per hour. The labour demand schedule at wages between $6 and $10 is shown in the table below. The labour supply schedule is given as well.",
+      "table": [
+        {"wage": 6, "quantityDemanded": 200, "quantitySupplied": 220},
+        {"wage": 7, "quantityDemanded": 190, "quantitySupplied": 215},
+        {"wage": 8, "quantityDemanded": 180, "quantitySupplied": 210},
+        {"wage": 9, "quantityDemanded": 170, "quantitySupplied": 205},
+        {"wage": 10, "quantityDemanded": 160, "quantitySupplied": 200}
+      ],
+      "subQuestions": [
+        {
+          "prompt": "Use the data to determine the excess supply of labour that will result from the proposed minimum wage.",
+          "answer": "Excess supply of labour at $8 is the difference between quantity supplied (210) and quantity demanded (180): 30 workers."
+        },
+        {
+          "prompt": "Discuss two possible unintended consequences of raising the minimum wage in Country X.",
+          "answer": "Possible unintended consequences include increased unemployment among low‑skill workers and higher costs for firms leading to price increases or layoffs."
+        }
+      ],
+      "markingCriteria": {
+        "accuracy": "Uses the data correctly to determine labour market outcomes.",
+        "application": "Applies labour market theory to the case of minimum wage.",
+        "analysis": "Analyses potential consequences of the policy.",
+        "evaluation": "Evaluates strengths and weaknesses of the policy."
+      }
+    }
+  ],
+  "flash": [
+    {
+      "id": "F1",
+      "topic": "Microeconomics",
+      "question": "Define price elasticity of demand (PED).",
+      "answer": "PED is the measure of the responsiveness of quantity demanded of a good to a change in its price."
+    },
+    {
+      "id": "F2",
+      "topic": "Macroeconomics",
+      "question": "State one component of aggregate demand in Country X.",
+      "answer": "Components of aggregate demand include consumption (C), investment (I), government spending (G) and net exports (X − M)."
+    }
+  ]
+}

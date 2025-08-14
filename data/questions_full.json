@@ -1,0 +1,4108 @@
+{
+  "diagram": [
+    {
+      "id": "D1",
+      "level": 1,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "Country X experienced a poor harvest that reduced the supply of corn. Consumers in Country X use corn as a staple food.",
+      "prompt": "Draw a market diagram showing the effect of the supply shock on the equilibrium price and quantity of corn. After drawing your diagram on paper, write an explanation in the text box interpreting the changes in the market for corn.",
+      "expectedDiagram": "A supply curve shifting left on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows a higher price and lower quantity.",
+      "keywords": [
+        "supply",
+        "shift left",
+        "higher price",
+        "lower quantity",
+        "market equilibrium"
+      ],
+      "solutionExplanation": "The poor harvest shifts the supply curve left. At the initial price, quantity supplied falls, creating excess demand. A new equilibrium is established at a higher price and lower quantity. Consumers face higher prices and potential shortages while producers supply less."
+    },
+    {
+      "id": "D2",
+      "level": 2,
+      "topic": "Macroeconomics \u2013 Aggregate Demand and Aggregate Supply",
+      "context": "Country X\u2019s government introduced expansionary fiscal policy by increasing infrastructure spending during a recession. Assume the economy starts below potential output.",
+      "prompt": "Draw an AD/AS diagram showing the impact of expansionary fiscal policy. After drawing your diagram on paper, write an explanation in the text box interpreting the changes in output and the price level.",
+      "expectedDiagram": "An AD curve shifting right toward the long\u2011run aggregate supply curve on a model with price level on the vertical axis and real output on the horizontal axis. The new equilibrium shows higher output and a higher price level.",
+      "keywords": [
+        "aggregate demand",
+        "shift right",
+        "increase output",
+        "higher price level",
+        "recession"
+      ],
+      "solutionExplanation": "Expansionary fiscal policy increases aggregate demand, shifting the AD curve to the right. Starting from a recessionary gap, this brings the economy closer to potential output. Real GDP rises and the price level may increase slightly depending on the slope of the AS curve."
+    },
+    {
+      "id": "D3",
+      "level": 1,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "Country X experienced a poor harvest that reduced the supply of milk.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of milk. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A supply curve shifting left on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows higher price and lower quantity.",
+      "keywords": [
+        "supply",
+        "supply",
+        "higher",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "Country X experienced a poor harvest that reduced the supply of milk. This causes the supply curve shifting left, leading to higher price and lower quantity."
+    },
+    {
+      "id": "D4",
+      "level": 1,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "Technological improvements lowered production costs of milk in Country X.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of milk. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A supply curve shifting right on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows lower price and higher quantity.",
+      "keywords": [
+        "supply",
+        "supply",
+        "lower",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "Technological improvements lowered production costs of milk in Country X. This causes the supply curve shifting right, leading to lower price and higher quantity."
+    },
+    {
+      "id": "D5",
+      "level": 1,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "A tax was imposed on soybeans in Country X, reducing supply.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of soybeans. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A supply curve shifting left on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows higher price and lower quantity.",
+      "keywords": [
+        "supply",
+        "supply",
+        "higher",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "A tax was imposed on soybeans in Country X, reducing supply. This causes the supply curve shifting left, leading to higher price and lower quantity."
+    },
+    {
+      "id": "D6",
+      "level": 1,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "Technological improvements lowered production costs of apples in Country X.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of apples. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A supply curve shifting right on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows lower price and higher quantity.",
+      "keywords": [
+        "supply",
+        "supply",
+        "lower",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "Technological improvements lowered production costs of apples in Country X. This causes the supply curve shifting right, leading to lower price and higher quantity."
+    },
+    {
+      "id": "D7",
+      "level": 1,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "An increase in population in Country X boosted demand for wheat.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of wheat. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A demand curve shifting right on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows higher price and higher quantity.",
+      "keywords": [
+        "demand",
+        "demand",
+        "higher",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "An increase in population in Country X boosted demand for wheat. This causes the demand curve shifting right, leading to higher price and higher quantity."
+    },
+    {
+      "id": "D8",
+      "level": 1,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "A tax was imposed on housing in Country X, reducing supply.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of housing. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A supply curve shifting left on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows higher price and lower quantity.",
+      "keywords": [
+        "supply",
+        "supply",
+        "higher",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "A tax was imposed on housing in Country X, reducing supply. This causes the supply curve shifting left, leading to higher price and lower quantity."
+    },
+    {
+      "id": "D9",
+      "level": 1,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "A tax was imposed on housing in Country X, reducing supply.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of housing. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A supply curve shifting left on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows higher price and lower quantity.",
+      "keywords": [
+        "supply",
+        "supply",
+        "higher",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "A tax was imposed on housing in Country X, reducing supply. This causes the supply curve shifting left, leading to higher price and lower quantity."
+    },
+    {
+      "id": "D10",
+      "level": 1,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "Country X introduced a subsidy for rice producers, increasing supply.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of rice. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A supply curve shifting right on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows lower price and higher quantity.",
+      "keywords": [
+        "supply",
+        "supply",
+        "lower",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "Country X introduced a subsidy for rice producers, increasing supply. This causes the supply curve shifting right, leading to lower price and higher quantity."
+    },
+    {
+      "id": "D11",
+      "level": 1,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "The government of Country X set a price ceiling for soybeans due to affordability concerns.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of soybeans. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A price ceiling below equilibrium on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows shortage and non\u2011price rationing.",
+      "keywords": [
+        "demand",
+        "price",
+        "shortage",
+        "non\u2011price",
+        "equilibrium"
+      ],
+      "solutionExplanation": "The government of Country X set a price ceiling for soybeans due to affordability concerns. This causes the price ceiling below equilibrium, leading to shortage and non\u2011price rationing."
+    },
+    {
+      "id": "D12",
+      "level": 1,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "The government of Country X set a price ceiling for cotton due to affordability concerns.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of cotton. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A price ceiling below equilibrium on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows shortage and non\u2011price rationing.",
+      "keywords": [
+        "demand",
+        "price",
+        "shortage",
+        "non\u2011price",
+        "equilibrium"
+      ],
+      "solutionExplanation": "The government of Country X set a price ceiling for cotton due to affordability concerns. This causes the price ceiling below equilibrium, leading to shortage and non\u2011price rationing."
+    },
+    {
+      "id": "D13",
+      "level": 1,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "Consumer tastes in Country X shifted in favour of wheat, raising demand.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of wheat. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A demand curve shifting right on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows higher price and higher quantity.",
+      "keywords": [
+        "demand",
+        "demand",
+        "higher",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "Consumer tastes in Country X shifted in favour of wheat, raising demand. This causes the demand curve shifting right, leading to higher price and higher quantity."
+    },
+    {
+      "id": "D14",
+      "level": 1,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "Country X experienced a poor harvest that reduced the supply of wine.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of wine. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A supply curve shifting left on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows higher price and lower quantity.",
+      "keywords": [
+        "supply",
+        "supply",
+        "higher",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "Country X experienced a poor harvest that reduced the supply of wine. This causes the supply curve shifting left, leading to higher price and lower quantity."
+    },
+    {
+      "id": "D15",
+      "level": 1,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "The government of Country X set a price ceiling for gasoline due to affordability concerns.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of gasoline. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A price ceiling below equilibrium on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows shortage and non\u2011price rationing.",
+      "keywords": [
+        "demand",
+        "price",
+        "shortage",
+        "non\u2011price",
+        "equilibrium"
+      ],
+      "solutionExplanation": "The government of Country X set a price ceiling for gasoline due to affordability concerns. This causes the price ceiling below equilibrium, leading to shortage and non\u2011price rationing."
+    },
+    {
+      "id": "D16",
+      "level": 1,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "Technological improvements lowered production costs of cocoa in Country X.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of cocoa. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A supply curve shifting right on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows lower price and higher quantity.",
+      "keywords": [
+        "supply",
+        "supply",
+        "lower",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "Technological improvements lowered production costs of cocoa in Country X. This causes the supply curve shifting right, leading to lower price and higher quantity."
+    },
+    {
+      "id": "D17",
+      "level": 1,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "The government of Country X set a price ceiling for poultry due to affordability concerns.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of poultry. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A price ceiling below equilibrium on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows shortage and non\u2011price rationing.",
+      "keywords": [
+        "demand",
+        "price",
+        "shortage",
+        "non\u2011price",
+        "equilibrium"
+      ],
+      "solutionExplanation": "The government of Country X set a price ceiling for poultry due to affordability concerns. This causes the price ceiling below equilibrium, leading to shortage and non\u2011price rationing."
+    },
+    {
+      "id": "D18",
+      "level": 1,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "Technological improvements lowered production costs of tea in Country X.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of tea. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A supply curve shifting right on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows lower price and higher quantity.",
+      "keywords": [
+        "supply",
+        "supply",
+        "lower",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "Technological improvements lowered production costs of tea in Country X. This causes the supply curve shifting right, leading to lower price and higher quantity."
+    },
+    {
+      "id": "D19",
+      "level": 1,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "A tax was imposed on apples in Country X, reducing supply.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of apples. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A supply curve shifting left on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows higher price and lower quantity.",
+      "keywords": [
+        "supply",
+        "supply",
+        "higher",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "A tax was imposed on apples in Country X, reducing supply. This causes the supply curve shifting left, leading to higher price and lower quantity."
+    },
+    {
+      "id": "D20",
+      "level": 1,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "The government of Country X set a price ceiling for wheat due to affordability concerns.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of wheat. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A price ceiling below equilibrium on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows shortage and non\u2011price rationing.",
+      "keywords": [
+        "demand",
+        "price",
+        "shortage",
+        "non\u2011price",
+        "equilibrium"
+      ],
+      "solutionExplanation": "The government of Country X set a price ceiling for wheat due to affordability concerns. This causes the price ceiling below equilibrium, leading to shortage and non\u2011price rationing."
+    },
+    {
+      "id": "D21",
+      "level": 1,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "Country X introduced a subsidy for wine producers, increasing supply.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of wine. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A supply curve shifting right on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows lower price and higher quantity.",
+      "keywords": [
+        "supply",
+        "supply",
+        "lower",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "Country X introduced a subsidy for wine producers, increasing supply. This causes the supply curve shifting right, leading to lower price and higher quantity."
+    },
+    {
+      "id": "D22",
+      "level": 1,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "Country X experienced a poor harvest that reduced the supply of coffee.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of coffee. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A supply curve shifting left on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows higher price and lower quantity.",
+      "keywords": [
+        "supply",
+        "supply",
+        "higher",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "Country X experienced a poor harvest that reduced the supply of coffee. This causes the supply curve shifting left, leading to higher price and lower quantity."
+    },
+    {
+      "id": "D23",
+      "level": 1,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "Country X introduced a subsidy for tea producers, increasing supply.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of tea. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A supply curve shifting right on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows lower price and higher quantity.",
+      "keywords": [
+        "supply",
+        "supply",
+        "lower",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "Country X introduced a subsidy for tea producers, increasing supply. This causes the supply curve shifting right, leading to lower price and higher quantity."
+    },
+    {
+      "id": "D24",
+      "level": 1,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "Technological improvements lowered production costs of water in Country X.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of water. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A supply curve shifting right on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows lower price and higher quantity.",
+      "keywords": [
+        "supply",
+        "supply",
+        "lower",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "Technological improvements lowered production costs of water in Country X. This causes the supply curve shifting right, leading to lower price and higher quantity."
+    },
+    {
+      "id": "D25",
+      "level": 1,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "The government of Country X set a price ceiling for oil due to affordability concerns.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of oil. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A price ceiling below equilibrium on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows shortage and non\u2011price rationing.",
+      "keywords": [
+        "demand",
+        "price",
+        "shortage",
+        "non\u2011price",
+        "equilibrium"
+      ],
+      "solutionExplanation": "The government of Country X set a price ceiling for oil due to affordability concerns. This causes the price ceiling below equilibrium, leading to shortage and non\u2011price rationing."
+    },
+    {
+      "id": "D26",
+      "level": 1,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "The government of Country X set a price ceiling for wine due to affordability concerns.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of wine. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A price ceiling below equilibrium on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows shortage and non\u2011price rationing.",
+      "keywords": [
+        "demand",
+        "price",
+        "shortage",
+        "non\u2011price",
+        "equilibrium"
+      ],
+      "solutionExplanation": "The government of Country X set a price ceiling for wine due to affordability concerns. This causes the price ceiling below equilibrium, leading to shortage and non\u2011price rationing."
+    },
+    {
+      "id": "D27",
+      "level": 1,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "An increase in population in Country X boosted demand for corn.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of corn. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A demand curve shifting right on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows higher price and higher quantity.",
+      "keywords": [
+        "demand",
+        "demand",
+        "higher",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "An increase in population in Country X boosted demand for corn. This causes the demand curve shifting right, leading to higher price and higher quantity."
+    },
+    {
+      "id": "D28",
+      "level": 2,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "Country X experienced a poor harvest that reduced the supply of beef.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of beef. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A supply curve shifting left on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows higher price and lower quantity.",
+      "keywords": [
+        "supply",
+        "supply",
+        "higher",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "Country X experienced a poor harvest that reduced the supply of beef. This causes the supply curve shifting left, leading to higher price and lower quantity."
+    },
+    {
+      "id": "D29",
+      "level": 2,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "An increase in population in Country X boosted demand for oil.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of oil. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A demand curve shifting right on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows higher price and higher quantity.",
+      "keywords": [
+        "demand",
+        "demand",
+        "higher",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "An increase in population in Country X boosted demand for oil. This causes the demand curve shifting right, leading to higher price and higher quantity."
+    },
+    {
+      "id": "D30",
+      "level": 2,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "The government of Country X set a price ceiling for bananas due to affordability concerns.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of bananas. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A price ceiling below equilibrium on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows shortage and non\u2011price rationing.",
+      "keywords": [
+        "demand",
+        "price",
+        "shortage",
+        "non\u2011price",
+        "equilibrium"
+      ],
+      "solutionExplanation": "The government of Country X set a price ceiling for bananas due to affordability concerns. This causes the price ceiling below equilibrium, leading to shortage and non\u2011price rationing."
+    },
+    {
+      "id": "D31",
+      "level": 2,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "An increase in population in Country X boosted demand for oranges.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of oranges. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A demand curve shifting right on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows higher price and higher quantity.",
+      "keywords": [
+        "demand",
+        "demand",
+        "higher",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "An increase in population in Country X boosted demand for oranges. This causes the demand curve shifting right, leading to higher price and higher quantity."
+    },
+    {
+      "id": "D32",
+      "level": 2,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "Technological improvements lowered production costs of tea in Country X.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of tea. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A supply curve shifting right on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows lower price and higher quantity.",
+      "keywords": [
+        "supply",
+        "supply",
+        "lower",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "Technological improvements lowered production costs of tea in Country X. This causes the supply curve shifting right, leading to lower price and higher quantity."
+    },
+    {
+      "id": "D33",
+      "level": 2,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "An increase in population in Country X boosted demand for sugar.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of sugar. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A demand curve shifting right on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows higher price and higher quantity.",
+      "keywords": [
+        "demand",
+        "demand",
+        "higher",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "An increase in population in Country X boosted demand for sugar. This causes the demand curve shifting right, leading to higher price and higher quantity."
+    },
+    {
+      "id": "D34",
+      "level": 2,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "Technological improvements lowered production costs of oil in Country X.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of oil. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A supply curve shifting right on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows lower price and higher quantity.",
+      "keywords": [
+        "supply",
+        "supply",
+        "lower",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "Technological improvements lowered production costs of oil in Country X. This causes the supply curve shifting right, leading to lower price and higher quantity."
+    },
+    {
+      "id": "D35",
+      "level": 2,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "Country X introduced a subsidy for poultry producers, increasing supply.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of poultry. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A supply curve shifting right on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows lower price and higher quantity.",
+      "keywords": [
+        "supply",
+        "supply",
+        "lower",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "Country X introduced a subsidy for poultry producers, increasing supply. This causes the supply curve shifting right, leading to lower price and higher quantity."
+    },
+    {
+      "id": "D36",
+      "level": 2,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "Consumer tastes in Country X shifted in favour of fish, raising demand.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of fish. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A demand curve shifting right on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows higher price and higher quantity.",
+      "keywords": [
+        "demand",
+        "demand",
+        "higher",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "Consumer tastes in Country X shifted in favour of fish, raising demand. This causes the demand curve shifting right, leading to higher price and higher quantity."
+    },
+    {
+      "id": "D37",
+      "level": 2,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "Technological improvements lowered production costs of oil in Country X.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of oil. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A supply curve shifting right on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows lower price and higher quantity.",
+      "keywords": [
+        "supply",
+        "supply",
+        "lower",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "Technological improvements lowered production costs of oil in Country X. This causes the supply curve shifting right, leading to lower price and higher quantity."
+    },
+    {
+      "id": "D38",
+      "level": 2,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "Country X experienced a poor harvest that reduced the supply of coffee.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of coffee. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A supply curve shifting left on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows higher price and lower quantity.",
+      "keywords": [
+        "supply",
+        "supply",
+        "higher",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "Country X experienced a poor harvest that reduced the supply of coffee. This causes the supply curve shifting left, leading to higher price and lower quantity."
+    },
+    {
+      "id": "D39",
+      "level": 2,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "An increase in population in Country X boosted demand for gasoline.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of gasoline. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A demand curve shifting right on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows higher price and higher quantity.",
+      "keywords": [
+        "demand",
+        "demand",
+        "higher",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "An increase in population in Country X boosted demand for gasoline. This causes the demand curve shifting right, leading to higher price and higher quantity."
+    },
+    {
+      "id": "D40",
+      "level": 2,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "Country X introduced a subsidy for bananas producers, increasing supply.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of bananas. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A supply curve shifting right on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows lower price and higher quantity.",
+      "keywords": [
+        "supply",
+        "supply",
+        "lower",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "Country X introduced a subsidy for bananas producers, increasing supply. This causes the supply curve shifting right, leading to lower price and higher quantity."
+    },
+    {
+      "id": "D41",
+      "level": 2,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "A tax was imposed on electricity in Country X, reducing supply.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of electricity. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A supply curve shifting left on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows higher price and lower quantity.",
+      "keywords": [
+        "supply",
+        "supply",
+        "higher",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "A tax was imposed on electricity in Country X, reducing supply. This causes the supply curve shifting left, leading to higher price and lower quantity."
+    },
+    {
+      "id": "D42",
+      "level": 2,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "Consumer tastes in Country X shifted in favour of cotton, raising demand.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of cotton. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A demand curve shifting right on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows higher price and higher quantity.",
+      "keywords": [
+        "demand",
+        "demand",
+        "higher",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "Consumer tastes in Country X shifted in favour of cotton, raising demand. This causes the demand curve shifting right, leading to higher price and higher quantity."
+    },
+    {
+      "id": "D43",
+      "level": 2,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "An increase in population in Country X boosted demand for water.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of water. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A demand curve shifting right on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows higher price and higher quantity.",
+      "keywords": [
+        "demand",
+        "demand",
+        "higher",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "An increase in population in Country X boosted demand for water. This causes the demand curve shifting right, leading to higher price and higher quantity."
+    },
+    {
+      "id": "D44",
+      "level": 2,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "Technological improvements lowered production costs of soybeans in Country X.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of soybeans. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A supply curve shifting right on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows lower price and higher quantity.",
+      "keywords": [
+        "supply",
+        "supply",
+        "lower",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "Technological improvements lowered production costs of soybeans in Country X. This causes the supply curve shifting right, leading to lower price and higher quantity."
+    },
+    {
+      "id": "D45",
+      "level": 2,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "Country X introduced a subsidy for wheat producers, increasing supply.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of wheat. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A supply curve shifting right on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows lower price and higher quantity.",
+      "keywords": [
+        "supply",
+        "supply",
+        "lower",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "Country X introduced a subsidy for wheat producers, increasing supply. This causes the supply curve shifting right, leading to lower price and higher quantity."
+    },
+    {
+      "id": "D46",
+      "level": 2,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "An increase in population in Country X boosted demand for wine.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of wine. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A demand curve shifting right on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows higher price and higher quantity.",
+      "keywords": [
+        "demand",
+        "demand",
+        "higher",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "An increase in population in Country X boosted demand for wine. This causes the demand curve shifting right, leading to higher price and higher quantity."
+    },
+    {
+      "id": "D47",
+      "level": 2,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "Country X experienced a poor harvest that reduced the supply of apples.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of apples. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A supply curve shifting left on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows higher price and lower quantity.",
+      "keywords": [
+        "supply",
+        "supply",
+        "higher",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "Country X experienced a poor harvest that reduced the supply of apples. This causes the supply curve shifting left, leading to higher price and lower quantity."
+    },
+    {
+      "id": "D48",
+      "level": 2,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "An increase in population in Country X boosted demand for milk.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of milk. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A demand curve shifting right on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows higher price and higher quantity.",
+      "keywords": [
+        "demand",
+        "demand",
+        "higher",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "An increase in population in Country X boosted demand for milk. This causes the demand curve shifting right, leading to higher price and higher quantity."
+    },
+    {
+      "id": "D49",
+      "level": 2,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "Country X experienced a poor harvest that reduced the supply of coffee.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of coffee. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A supply curve shifting left on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows higher price and lower quantity.",
+      "keywords": [
+        "supply",
+        "supply",
+        "higher",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "Country X experienced a poor harvest that reduced the supply of coffee. This causes the supply curve shifting left, leading to higher price and lower quantity."
+    },
+    {
+      "id": "D50",
+      "level": 2,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "Country X introduced a subsidy for gasoline producers, increasing supply.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of gasoline. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A supply curve shifting right on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows lower price and higher quantity.",
+      "keywords": [
+        "supply",
+        "supply",
+        "lower",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "Country X introduced a subsidy for gasoline producers, increasing supply. This causes the supply curve shifting right, leading to lower price and higher quantity."
+    },
+    {
+      "id": "D51",
+      "level": 2,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "Country X introduced a subsidy for milk producers, increasing supply.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of milk. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A supply curve shifting right on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows lower price and higher quantity.",
+      "keywords": [
+        "supply",
+        "supply",
+        "lower",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "Country X introduced a subsidy for milk producers, increasing supply. This causes the supply curve shifting right, leading to lower price and higher quantity."
+    },
+    {
+      "id": "D52",
+      "level": 2,
+      "topic": "Microeconomics \u2013 Demand and Supply",
+      "context": "Country X experienced a poor harvest that reduced the supply of sugar.",
+      "prompt": "Draw a market diagram showing the effect on the equilibrium price and quantity of sugar. After drawing your diagram on paper, write an explanation interpreting the changes.",
+      "expectedDiagram": "A supply curve shifting left on a demand\u2013supply graph with price on the vertical axis and quantity on the horizontal axis. The new equilibrium shows higher price and lower quantity.",
+      "keywords": [
+        "supply",
+        "supply",
+        "higher",
+        "and",
+        "equilibrium"
+      ],
+      "solutionExplanation": "Country X experienced a poor harvest that reduced the supply of sugar. This causes the supply curve shifting left, leading to higher price and lower quantity."
+    }
+  ],
+  "calculation": [
+    {
+      "id": "C1",
+      "level": 1,
+      "topic": "Microeconomics \u2013 Total Revenue",
+      "prompt": "Country X produces 500 units of rice per day and sells each unit for $2.50. Calculate the firm\u2019s total revenue.",
+      "data": {
+        "quantity": 500,
+        "price": 2.5
+      },
+      "answer": 1250,
+      "steps": [
+        "Total Revenue = Price \u00d7 Quantity",
+        "Total Revenue = 2.5 \u00d7 500 = 1,250"
+      ]
+    },
+    {
+      "id": "C2",
+      "level": 2,
+      "topic": "Macroeconomics \u2013 Economic Growth Rate",
+      "prompt": "Country X\u2019s real GDP increased from $400\u00a0billion in year 1 to $420\u00a0billion in year 2. Calculate the real GDP growth rate as a percentage.",
+      "data": {
+        "gdp1": 400,
+        "gdp2": 420
+      },
+      "answer": 5,
+      "steps": [
+        "Growth Rate = ((GDP\u2082 \u2212 GDP\u2081) / GDP\u2081) \u00d7 100",
+        "Growth Rate = ((420 \u2212 400) / 400) \u00d7 100 = (20/400) \u00d7 100 = 5%"
+      ]
+    },
+    {
+      "id": "C3",
+      "level": 1,
+      "topic": "Microeconomics \u2013 Price Elasticity of Demand",
+      "prompt": "The quantity demanded for a good in Country X changed from 127 units at $6.32 to 139 units at $7.24. Calculate the price elasticity of demand using the midpoint formula.",
+      "data": {
+        "q1": 127,
+        "q2": 139,
+        "p1": 6.32,
+        "p2": 7.24
+      },
+      "answer": 0.67,
+      "steps": [
+        "PED = (\u0394Q / avg Q) \u00f7 (\u0394P / avg P)",
+        "PED = ((139 - 127) / ((127+139)/2)) \u00f7 ((7.24 - 6.32) / ((6.32+7.24)/2)) = 0.67"
+      ]
+    },
+    {
+      "id": "C4",
+      "level": 1,
+      "topic": "Macroeconomics \u2013 Inflation Rate",
+      "prompt": "Country X\u2019s consumer price index (CPI) increased from 92 to 100. Calculate the inflation rate as a percentage.",
+      "data": {
+        "cpi1": 92,
+        "cpi2": 100
+      },
+      "answer": 8.7,
+      "steps": [
+        "Inflation rate = ((CPI\u2082 \u2212 CPI\u2081) / CPI\u2081) \u00d7 100",
+        "Inflation rate = ((100 \u2212 92) / 92) \u00d7 100 = 8.7%"
+      ]
+    },
+    {
+      "id": "C5",
+      "level": 1,
+      "topic": "Macroeconomics \u2013 Unemployment Rate",
+      "prompt": "Country X has a labour force of 1838 people, of which 178 are unemployed. Calculate the unemployment rate as a percentage.",
+      "data": {
+        "labourForce": 1838,
+        "unemployed": 178
+      },
+      "answer": 9.68,
+      "steps": [
+        "Unemployment rate = (Number of unemployed / Labour force) \u00d7 100",
+        "Unemployment rate = (178 / 1838) \u00d7 100 = 9.68%"
+      ]
+    },
+    {
+      "id": "C6",
+      "level": 1,
+      "topic": "Macroeconomics \u2013 GDP Deflator",
+      "prompt": "Country X\u2019s nominal GDP is $402\u00a0billion and real GDP is $316\u00a0billion. Calculate the GDP deflator.",
+      "data": {
+        "nominalGDP": 402,
+        "realGDP": 316
+      },
+      "answer": 127.22,
+      "steps": [
+        "GDP deflator = (Nominal GDP / Real GDP) \u00d7 100",
+        "GDP deflator = (402 / 316) \u00d7 100 = 127.22"
+      ]
+    },
+    {
+      "id": "C7",
+      "level": 1,
+      "topic": "International \u2013 Terms of Trade",
+      "prompt": "Country X\u2019s export price index is 142 and import price index is 70. Calculate the terms of trade index.",
+      "data": {
+        "exportPriceIndex": 142,
+        "importPriceIndex": 70
+      },
+      "answer": 202.86,
+      "steps": [
+        "Terms of Trade (TOT) = (Export price index / Import price index) \u00d7 100",
+        "TOT = (142 / 70) \u00d7 100 = 202.86"
+      ]
+    },
+    {
+      "id": "C8",
+      "level": 1,
+      "topic": "Macroeconomics \u2013 Keynesian Multiplier",
+      "prompt": "In Country X, the marginal propensity to consume (MPC) is 0.72. Calculate the Keynesian multiplier.",
+      "data": {
+        "mpc": 0.72
+      },
+      "answer": 3.57,
+      "steps": [
+        "Multiplier = 1 / (1 \u2212 MPC)",
+        "Multiplier = 1 / (1 \u2212 0.72) = 3.57"
+      ]
+    },
+    {
+      "id": "C9",
+      "level": 1,
+      "topic": "Development \u2013 Gini Coefficient",
+      "prompt": "Country X has a Lorenz curve area A = 0.28, and area B = 0.73. Calculate the Gini coefficient.",
+      "data": {
+        "areaA": 0.28,
+        "areaB": 0.73
+      },
+      "answer": 0.28,
+      "steps": [
+        "Gini coefficient = A / (A + B)",
+        "Gini coefficient = 0.28 / (0.28 + 0.73) = 0.28"
+      ]
+    },
+    {
+      "id": "C10",
+      "level": 1,
+      "topic": "Macroeconomics \u2013 GDP Growth Rate",
+      "prompt": "Country X\u2019s real GDP increased from $108\u00a0billion in year 1 to $117.7\u00a0billion in year 2. Calculate the real GDP growth rate as a percentage.",
+      "data": {
+        "gdp1": 108,
+        "gdp2": 117.7
+      },
+      "answer": 9.0,
+      "steps": [
+        "Growth Rate = ((GDP\u2082 \u2212 GDP\u2081) / GDP\u2081) \u00d7 100",
+        "Growth Rate = ((117.7 \u2212 108) / 108) \u00d7 100 = 9.0%"
+      ]
+    },
+    {
+      "id": "C11",
+      "level": 1,
+      "topic": "Microeconomics \u2013 Price Elasticity of Demand",
+      "prompt": "The quantity demanded for a good in Country X changed from 250 units at $8.84 to 229 units at $8.92. Calculate the price elasticity of demand using the midpoint formula.",
+      "data": {
+        "q1": 250,
+        "q2": 229,
+        "p1": 8.84,
+        "p2": 8.92
+      },
+      "answer": -9.32,
+      "steps": [
+        "PED = (\u0394Q / avg Q) \u00f7 (\u0394P / avg P)",
+        "PED = ((229 - 250) / ((250+229)/2)) \u00f7 ((8.92 - 8.84) / ((8.84+8.92)/2)) = -9.32"
+      ]
+    },
+    {
+      "id": "C12",
+      "level": 1,
+      "topic": "Macroeconomics \u2013 Inflation Rate",
+      "prompt": "Country X\u2019s consumer price index (CPI) increased from 92 to 102. Calculate the inflation rate as a percentage.",
+      "data": {
+        "cpi1": 92,
+        "cpi2": 102
+      },
+      "answer": 10.87,
+      "steps": [
+        "Inflation rate = ((CPI\u2082 \u2212 CPI\u2081) / CPI\u2081) \u00d7 100",
+        "Inflation rate = ((102 \u2212 92) / 92) \u00d7 100 = 10.87%"
+      ]
+    },
+    {
+      "id": "C13",
+      "level": 1,
+      "topic": "Macroeconomics \u2013 Unemployment Rate",
+      "prompt": "Country X has a labour force of 1845 people, of which 66 are unemployed. Calculate the unemployment rate as a percentage.",
+      "data": {
+        "labourForce": 1845,
+        "unemployed": 66
+      },
+      "answer": 3.58,
+      "steps": [
+        "Unemployment rate = (Number of unemployed / Labour force) \u00d7 100",
+        "Unemployment rate = (66 / 1845) \u00d7 100 = 3.58%"
+      ]
+    },
+    {
+      "id": "C14",
+      "level": 1,
+      "topic": "Macroeconomics \u2013 GDP Deflator",
+      "prompt": "Country X\u2019s nominal GDP is $366\u00a0billion and real GDP is $357\u00a0billion. Calculate the GDP deflator.",
+      "data": {
+        "nominalGDP": 366,
+        "realGDP": 357
+      },
+      "answer": 102.52,
+      "steps": [
+        "GDP deflator = (Nominal GDP / Real GDP) \u00d7 100",
+        "GDP deflator = (366 / 357) \u00d7 100 = 102.52"
+      ]
+    },
+    {
+      "id": "C15",
+      "level": 1,
+      "topic": "International \u2013 Terms of Trade",
+      "prompt": "Country X\u2019s export price index is 145 and import price index is 139. Calculate the terms of trade index.",
+      "data": {
+        "exportPriceIndex": 145,
+        "importPriceIndex": 139
+      },
+      "answer": 104.32,
+      "steps": [
+        "Terms of Trade (TOT) = (Export price index / Import price index) \u00d7 100",
+        "TOT = (145 / 139) \u00d7 100 = 104.32"
+      ]
+    },
+    {
+      "id": "C16",
+      "level": 1,
+      "topic": "Macroeconomics \u2013 Keynesian Multiplier",
+      "prompt": "In Country X, the marginal propensity to consume (MPC) is 0.59. Calculate the Keynesian multiplier.",
+      "data": {
+        "mpc": 0.59
+      },
+      "answer": 2.44,
+      "steps": [
+        "Multiplier = 1 / (1 \u2212 MPC)",
+        "Multiplier = 1 / (1 \u2212 0.59) = 2.44"
+      ]
+    },
+    {
+      "id": "C17",
+      "level": 1,
+      "topic": "Development \u2013 Gini Coefficient",
+      "prompt": "Country X has a Lorenz curve area A = 0.24, and area B = 0.87. Calculate the Gini coefficient.",
+      "data": {
+        "areaA": 0.24,
+        "areaB": 0.87
+      },
+      "answer": 0.22,
+      "steps": [
+        "Gini coefficient = A / (A + B)",
+        "Gini coefficient = 0.24 / (0.24 + 0.87) = 0.22"
+      ]
+    },
+    {
+      "id": "C18",
+      "level": 1,
+      "topic": "Macroeconomics \u2013 GDP Growth Rate",
+      "prompt": "Country X\u2019s real GDP increased from $370\u00a0billion in year 1 to $392.2\u00a0billion in year 2. Calculate the real GDP growth rate as a percentage.",
+      "data": {
+        "gdp1": 370,
+        "gdp2": 392.2
+      },
+      "answer": 6.0,
+      "steps": [
+        "Growth Rate = ((GDP\u2082 \u2212 GDP\u2081) / GDP\u2081) \u00d7 100",
+        "Growth Rate = ((392.2 \u2212 370) / 370) \u00d7 100 = 6.0%"
+      ]
+    },
+    {
+      "id": "C19",
+      "level": 1,
+      "topic": "Microeconomics \u2013 Price Elasticity of Demand",
+      "prompt": "The quantity demanded for a good in Country X changed from 189 units at $9.70 to 188 units at $9.35. Calculate the price elasticity of demand using the midpoint formula.",
+      "data": {
+        "q1": 189,
+        "q2": 188,
+        "p1": 9.7,
+        "p2": 9.35
+      },
+      "answer": 0.15,
+      "steps": [
+        "PED = (\u0394Q / avg Q) \u00f7 (\u0394P / avg P)",
+        "PED = ((188 - 189) / ((189+188)/2)) \u00f7 ((9.35 - 9.70) / ((9.70+9.35)/2)) = 0.15"
+      ]
+    },
+    {
+      "id": "C20",
+      "level": 1,
+      "topic": "Macroeconomics \u2013 Inflation Rate",
+      "prompt": "Country X\u2019s consumer price index (CPI) increased from 103 to 112. Calculate the inflation rate as a percentage.",
+      "data": {
+        "cpi1": 103,
+        "cpi2": 112
+      },
+      "answer": 8.74,
+      "steps": [
+        "Inflation rate = ((CPI\u2082 \u2212 CPI\u2081) / CPI\u2081) \u00d7 100",
+        "Inflation rate = ((112 \u2212 103) / 103) \u00d7 100 = 8.74%"
+      ]
+    },
+    {
+      "id": "C21",
+      "level": 1,
+      "topic": "Macroeconomics \u2013 Unemployment Rate",
+      "prompt": "Country X has a labour force of 1021 people, of which 90 are unemployed. Calculate the unemployment rate as a percentage.",
+      "data": {
+        "labourForce": 1021,
+        "unemployed": 90
+      },
+      "answer": 8.81,
+      "steps": [
+        "Unemployment rate = (Number of unemployed / Labour force) \u00d7 100",
+        "Unemployment rate = (90 / 1021) \u00d7 100 = 8.81%"
+      ]
+    },
+    {
+      "id": "C22",
+      "level": 1,
+      "topic": "Macroeconomics \u2013 GDP Deflator",
+      "prompt": "Country X\u2019s nominal GDP is $510\u00a0billion and real GDP is $480\u00a0billion. Calculate the GDP deflator.",
+      "data": {
+        "nominalGDP": 510,
+        "realGDP": 480
+      },
+      "answer": 106.25,
+      "steps": [
+        "GDP deflator = (Nominal GDP / Real GDP) \u00d7 100",
+        "GDP deflator = (510 / 480) \u00d7 100 = 106.25"
+      ]
+    },
+    {
+      "id": "C23",
+      "level": 1,
+      "topic": "International \u2013 Terms of Trade",
+      "prompt": "Country X\u2019s export price index is 84 and import price index is 106. Calculate the terms of trade index.",
+      "data": {
+        "exportPriceIndex": 84,
+        "importPriceIndex": 106
+      },
+      "answer": 79.25,
+      "steps": [
+        "Terms of Trade (TOT) = (Export price index / Import price index) \u00d7 100",
+        "TOT = (84 / 106) \u00d7 100 = 79.25"
+      ]
+    },
+    {
+      "id": "C24",
+      "level": 1,
+      "topic": "Macroeconomics \u2013 Keynesian Multiplier",
+      "prompt": "In Country X, the marginal propensity to consume (MPC) is 0.42. Calculate the Keynesian multiplier.",
+      "data": {
+        "mpc": 0.42
+      },
+      "answer": 1.72,
+      "steps": [
+        "Multiplier = 1 / (1 \u2212 MPC)",
+        "Multiplier = 1 / (1 \u2212 0.42) = 1.72"
+      ]
+    },
+    {
+      "id": "C25",
+      "level": 1,
+      "topic": "Development \u2013 Gini Coefficient",
+      "prompt": "Country X has a Lorenz curve area A = 0.11, and area B = 0.42. Calculate the Gini coefficient.",
+      "data": {
+        "areaA": 0.11,
+        "areaB": 0.42
+      },
+      "answer": 0.21,
+      "steps": [
+        "Gini coefficient = A / (A + B)",
+        "Gini coefficient = 0.11 / (0.11 + 0.42) = 0.21"
+      ]
+    },
+    {
+      "id": "C26",
+      "level": 1,
+      "topic": "Macroeconomics \u2013 GDP Growth Rate",
+      "prompt": "Country X\u2019s real GDP increased from $427\u00a0billion in year 1 to $452.6\u00a0billion in year 2. Calculate the real GDP growth rate as a percentage.",
+      "data": {
+        "gdp1": 427,
+        "gdp2": 452.6
+      },
+      "answer": 6.0,
+      "steps": [
+        "Growth Rate = ((GDP\u2082 \u2212 GDP\u2081) / GDP\u2081) \u00d7 100",
+        "Growth Rate = ((452.6 \u2212 427) / 427) \u00d7 100 = 6.0%"
+      ]
+    },
+    {
+      "id": "C27",
+      "level": 1,
+      "topic": "Microeconomics \u2013 Price Elasticity of Demand",
+      "prompt": "The quantity demanded for a good in Country X changed from 103 units at $6.91 to 93 units at $6.02. Calculate the price elasticity of demand using the midpoint formula.",
+      "data": {
+        "q1": 103,
+        "q2": 93,
+        "p1": 6.91,
+        "p2": 6.02
+      },
+      "answer": 0.75,
+      "steps": [
+        "PED = (\u0394Q / avg Q) \u00f7 (\u0394P / avg P)",
+        "PED = ((93 - 103) / ((103+93)/2)) \u00f7 ((6.02 - 6.91) / ((6.91+6.02)/2)) = 0.75"
+      ]
+    },
+    {
+      "id": "C28",
+      "level": 2,
+      "topic": "Macroeconomics \u2013 Inflation Rate",
+      "prompt": "Country X\u2019s consumer price index (CPI) increased from 95 to 99. Calculate the inflation rate as a percentage.",
+      "data": {
+        "cpi1": 95,
+        "cpi2": 99
+      },
+      "answer": 4.21,
+      "steps": [
+        "Inflation rate = ((CPI\u2082 \u2212 CPI\u2081) / CPI\u2081) \u00d7 100",
+        "Inflation rate = ((99 \u2212 95) / 95) \u00d7 100 = 4.21%"
+      ]
+    },
+    {
+      "id": "C29",
+      "level": 2,
+      "topic": "Macroeconomics \u2013 Unemployment Rate",
+      "prompt": "Country X has a labour force of 1040 people, of which 114 are unemployed. Calculate the unemployment rate as a percentage.",
+      "data": {
+        "labourForce": 1040,
+        "unemployed": 114
+      },
+      "answer": 10.96,
+      "steps": [
+        "Unemployment rate = (Number of unemployed / Labour force) \u00d7 100",
+        "Unemployment rate = (114 / 1040) \u00d7 100 = 10.96%"
+      ]
+    },
+    {
+      "id": "C30",
+      "level": 2,
+      "topic": "Macroeconomics \u2013 GDP Deflator",
+      "prompt": "Country X\u2019s nominal GDP is $439\u00a0billion and real GDP is $274\u00a0billion. Calculate the GDP deflator.",
+      "data": {
+        "nominalGDP": 439,
+        "realGDP": 274
+      },
+      "answer": 160.22,
+      "steps": [
+        "GDP deflator = (Nominal GDP / Real GDP) \u00d7 100",
+        "GDP deflator = (439 / 274) \u00d7 100 = 160.22"
+      ]
+    },
+    {
+      "id": "C31",
+      "level": 2,
+      "topic": "International \u2013 Terms of Trade",
+      "prompt": "Country X\u2019s export price index is 116 and import price index is 89. Calculate the terms of trade index.",
+      "data": {
+        "exportPriceIndex": 116,
+        "importPriceIndex": 89
+      },
+      "answer": 130.34,
+      "steps": [
+        "Terms of Trade (TOT) = (Export price index / Import price index) \u00d7 100",
+        "TOT = (116 / 89) \u00d7 100 = 130.34"
+      ]
+    },
+    {
+      "id": "C32",
+      "level": 2,
+      "topic": "Macroeconomics \u2013 Keynesian Multiplier",
+      "prompt": "In Country X, the marginal propensity to consume (MPC) is 0.65. Calculate the Keynesian multiplier.",
+      "data": {
+        "mpc": 0.65
+      },
+      "answer": 2.86,
+      "steps": [
+        "Multiplier = 1 / (1 \u2212 MPC)",
+        "Multiplier = 1 / (1 \u2212 0.65) = 2.86"
+      ]
+    },
+    {
+      "id": "C33",
+      "level": 2,
+      "topic": "Development \u2013 Gini Coefficient",
+      "prompt": "Country X has a Lorenz curve area A = 0.23, and area B = 0.65. Calculate the Gini coefficient.",
+      "data": {
+        "areaA": 0.23,
+        "areaB": 0.65
+      },
+      "answer": 0.26,
+      "steps": [
+        "Gini coefficient = A / (A + B)",
+        "Gini coefficient = 0.23 / (0.23 + 0.65) = 0.26"
+      ]
+    },
+    {
+      "id": "C34",
+      "level": 2,
+      "topic": "Macroeconomics \u2013 GDP Growth Rate",
+      "prompt": "Country X\u2019s real GDP increased from $229\u00a0billion in year 1 to $251.9\u00a0billion in year 2. Calculate the real GDP growth rate as a percentage.",
+      "data": {
+        "gdp1": 229,
+        "gdp2": 251.9
+      },
+      "answer": 10.0,
+      "steps": [
+        "Growth Rate = ((GDP\u2082 \u2212 GDP\u2081) / GDP\u2081) \u00d7 100",
+        "Growth Rate = ((251.9 \u2212 229) / 229) \u00d7 100 = 10.0%"
+      ]
+    },
+    {
+      "id": "C35",
+      "level": 2,
+      "topic": "Microeconomics \u2013 Price Elasticity of Demand",
+      "prompt": "The quantity demanded for a good in Country X changed from 169 units at $9.11 to 190 units at $8.19. Calculate the price elasticity of demand using the midpoint formula.",
+      "data": {
+        "q1": 169,
+        "q2": 190,
+        "p1": 9.11,
+        "p2": 8.19
+      },
+      "answer": -1.1,
+      "steps": [
+        "PED = (\u0394Q / avg Q) \u00f7 (\u0394P / avg P)",
+        "PED = ((190 - 169) / ((169+190)/2)) \u00f7 ((8.19 - 9.11) / ((9.11+8.19)/2)) = -1.1"
+      ]
+    },
+    {
+      "id": "C36",
+      "level": 2,
+      "topic": "Macroeconomics \u2013 Inflation Rate",
+      "prompt": "Country X\u2019s consumer price index (CPI) increased from 98 to 95. Calculate the inflation rate as a percentage.",
+      "data": {
+        "cpi1": 98,
+        "cpi2": 95
+      },
+      "answer": -3.06,
+      "steps": [
+        "Inflation rate = ((CPI\u2082 \u2212 CPI\u2081) / CPI\u2081) \u00d7 100",
+        "Inflation rate = ((95 \u2212 98) / 98) \u00d7 100 = -3.06%"
+      ]
+    },
+    {
+      "id": "C37",
+      "level": 2,
+      "topic": "Macroeconomics \u2013 Unemployment Rate",
+      "prompt": "Country X has a labour force of 1187 people, of which 146 are unemployed. Calculate the unemployment rate as a percentage.",
+      "data": {
+        "labourForce": 1187,
+        "unemployed": 146
+      },
+      "answer": 12.3,
+      "steps": [
+        "Unemployment rate = (Number of unemployed / Labour force) \u00d7 100",
+        "Unemployment rate = (146 / 1187) \u00d7 100 = 12.3%"
+      ]
+    },
+    {
+      "id": "C38",
+      "level": 2,
+      "topic": "Macroeconomics \u2013 GDP Deflator",
+      "prompt": "Country X\u2019s nominal GDP is $311\u00a0billion and real GDP is $364\u00a0billion. Calculate the GDP deflator.",
+      "data": {
+        "nominalGDP": 311,
+        "realGDP": 364
+      },
+      "answer": 85.44,
+      "steps": [
+        "GDP deflator = (Nominal GDP / Real GDP) \u00d7 100",
+        "GDP deflator = (311 / 364) \u00d7 100 = 85.44"
+      ]
+    },
+    {
+      "id": "C39",
+      "level": 2,
+      "topic": "International \u2013 Terms of Trade",
+      "prompt": "Country X\u2019s export price index is 146 and import price index is 150. Calculate the terms of trade index.",
+      "data": {
+        "exportPriceIndex": 146,
+        "importPriceIndex": 150
+      },
+      "answer": 97.33,
+      "steps": [
+        "Terms of Trade (TOT) = (Export price index / Import price index) \u00d7 100",
+        "TOT = (146 / 150) \u00d7 100 = 97.33"
+      ]
+    },
+    {
+      "id": "C40",
+      "level": 2,
+      "topic": "Macroeconomics \u2013 Keynesian Multiplier",
+      "prompt": "In Country X, the marginal propensity to consume (MPC) is 0.56. Calculate the Keynesian multiplier.",
+      "data": {
+        "mpc": 0.56
+      },
+      "answer": 2.27,
+      "steps": [
+        "Multiplier = 1 / (1 \u2212 MPC)",
+        "Multiplier = 1 / (1 \u2212 0.56) = 2.27"
+      ]
+    },
+    {
+      "id": "C41",
+      "level": 2,
+      "topic": "Development \u2013 Gini Coefficient",
+      "prompt": "Country X has a Lorenz curve area A = 0.25, and area B = 0.85. Calculate the Gini coefficient.",
+      "data": {
+        "areaA": 0.25,
+        "areaB": 0.85
+      },
+      "answer": 0.23,
+      "steps": [
+        "Gini coefficient = A / (A + B)",
+        "Gini coefficient = 0.25 / (0.25 + 0.85) = 0.23"
+      ]
+    },
+    {
+      "id": "C42",
+      "level": 2,
+      "topic": "Macroeconomics \u2013 GDP Growth Rate",
+      "prompt": "Country X\u2019s real GDP increased from $223\u00a0billion in year 1 to $245.3\u00a0billion in year 2. Calculate the real GDP growth rate as a percentage.",
+      "data": {
+        "gdp1": 223,
+        "gdp2": 245.3
+      },
+      "answer": 10.0,
+      "steps": [
+        "Growth Rate = ((GDP\u2082 \u2212 GDP\u2081) / GDP\u2081) \u00d7 100",
+        "Growth Rate = ((245.3 \u2212 223) / 223) \u00d7 100 = 10.0%"
+      ]
+    },
+    {
+      "id": "C43",
+      "level": 2,
+      "topic": "Microeconomics \u2013 Price Elasticity of Demand",
+      "prompt": "The quantity demanded for a good in Country X changed from 169 units at $3.27 to 179 units at $4.03. Calculate the price elasticity of demand using the midpoint formula.",
+      "data": {
+        "q1": 169,
+        "q2": 179,
+        "p1": 3.27,
+        "p2": 4.03
+      },
+      "answer": 0.28,
+      "steps": [
+        "PED = (\u0394Q / avg Q) \u00f7 (\u0394P / avg P)",
+        "PED = ((179 - 169) / ((169+179)/2)) \u00f7 ((4.03 - 3.27) / ((3.27+4.03)/2)) = 0.28"
+      ]
+    },
+    {
+      "id": "C44",
+      "level": 2,
+      "topic": "Macroeconomics \u2013 Inflation Rate",
+      "prompt": "Country X\u2019s consumer price index (CPI) increased from 102 to 97. Calculate the inflation rate as a percentage.",
+      "data": {
+        "cpi1": 102,
+        "cpi2": 97
+      },
+      "answer": -4.9,
+      "steps": [
+        "Inflation rate = ((CPI\u2082 \u2212 CPI\u2081) / CPI\u2081) \u00d7 100",
+        "Inflation rate = ((97 \u2212 102) / 102) \u00d7 100 = -4.9%"
+      ]
+    },
+    {
+      "id": "C45",
+      "level": 2,
+      "topic": "Macroeconomics \u2013 Unemployment Rate",
+      "prompt": "Country X has a labour force of 1370 people, of which 68 are unemployed. Calculate the unemployment rate as a percentage.",
+      "data": {
+        "labourForce": 1370,
+        "unemployed": 68
+      },
+      "answer": 4.96,
+      "steps": [
+        "Unemployment rate = (Number of unemployed / Labour force) \u00d7 100",
+        "Unemployment rate = (68 / 1370) \u00d7 100 = 4.96%"
+      ]
+    },
+    {
+      "id": "C46",
+      "level": 2,
+      "topic": "Macroeconomics \u2013 GDP Deflator",
+      "prompt": "Country X\u2019s nominal GDP is $572\u00a0billion and real GDP is $466\u00a0billion. Calculate the GDP deflator.",
+      "data": {
+        "nominalGDP": 572,
+        "realGDP": 466
+      },
+      "answer": 122.75,
+      "steps": [
+        "GDP deflator = (Nominal GDP / Real GDP) \u00d7 100",
+        "GDP deflator = (572 / 466) \u00d7 100 = 122.75"
+      ]
+    },
+    {
+      "id": "C47",
+      "level": 2,
+      "topic": "International \u2013 Terms of Trade",
+      "prompt": "Country X\u2019s export price index is 110 and import price index is 105. Calculate the terms of trade index.",
+      "data": {
+        "exportPriceIndex": 110,
+        "importPriceIndex": 105
+      },
+      "answer": 104.76,
+      "steps": [
+        "Terms of Trade (TOT) = (Export price index / Import price index) \u00d7 100",
+        "TOT = (110 / 105) \u00d7 100 = 104.76"
+      ]
+    },
+    {
+      "id": "C48",
+      "level": 2,
+      "topic": "Macroeconomics \u2013 Keynesian Multiplier",
+      "prompt": "In Country X, the marginal propensity to consume (MPC) is 0.79. Calculate the Keynesian multiplier.",
+      "data": {
+        "mpc": 0.79
+      },
+      "answer": 4.76,
+      "steps": [
+        "Multiplier = 1 / (1 \u2212 MPC)",
+        "Multiplier = 1 / (1 \u2212 0.79) = 4.76"
+      ]
+    },
+    {
+      "id": "C49",
+      "level": 2,
+      "topic": "Development \u2013 Gini Coefficient",
+      "prompt": "Country X has a Lorenz curve area A = 0.15, and area B = 0.73. Calculate the Gini coefficient.",
+      "data": {
+        "areaA": 0.15,
+        "areaB": 0.73
+      },
+      "answer": 0.17,
+      "steps": [
+        "Gini coefficient = A / (A + B)",
+        "Gini coefficient = 0.15 / (0.15 + 0.73) = 0.17"
+      ]
+    },
+    {
+      "id": "C50",
+      "level": 2,
+      "topic": "Macroeconomics \u2013 GDP Growth Rate",
+      "prompt": "Country X\u2019s real GDP increased from $109\u00a0billion in year 1 to $113.4\u00a0billion in year 2. Calculate the real GDP growth rate as a percentage.",
+      "data": {
+        "gdp1": 109,
+        "gdp2": 113.4
+      },
+      "answer": 4.0,
+      "steps": [
+        "Growth Rate = ((GDP\u2082 \u2212 GDP\u2081) / GDP\u2081) \u00d7 100",
+        "Growth Rate = ((113.4 \u2212 109) / 109) \u00d7 100 = 4.0%"
+      ]
+    },
+    {
+      "id": "C51",
+      "level": 2,
+      "topic": "Microeconomics \u2013 Price Elasticity of Demand",
+      "prompt": "The quantity demanded for a good in Country X changed from 154 units at $5.09 to 157 units at $5.87. Calculate the price elasticity of demand using the midpoint formula.",
+      "data": {
+        "q1": 154,
+        "q2": 157,
+        "p1": 5.09,
+        "p2": 5.87
+      },
+      "answer": 0.14,
+      "steps": [
+        "PED = (\u0394Q / avg Q) \u00f7 (\u0394P / avg P)",
+        "PED = ((157 - 154) / ((154+157)/2)) \u00f7 ((5.87 - 5.09) / ((5.09+5.87)/2)) = 0.14"
+      ]
+    },
+    {
+      "id": "C52",
+      "level": 2,
+      "topic": "Macroeconomics \u2013 Inflation Rate",
+      "prompt": "Country X\u2019s consumer price index (CPI) increased from 94 to 104. Calculate the inflation rate as a percentage.",
+      "data": {
+        "cpi1": 94,
+        "cpi2": 104
+      },
+      "answer": 10.64,
+      "steps": [
+        "Inflation rate = ((CPI\u2082 \u2212 CPI\u2081) / CPI\u2081) \u00d7 100",
+        "Inflation rate = ((104 \u2212 94) / 94) \u00d7 100 = 10.64%"
+      ]
+    }
+  ],
+  "essay": [
+    {
+      "id": "E1",
+      "level": 1,
+      "commandTerm": "Explain",
+      "topic": "International \u2013 Trade Protection",
+      "prompt": "Explain, using a tariff diagram, the effects of imposing an import tariff on foreign steel in Country X.",
+      "keywords": [
+        "tariff",
+        "price",
+        "domestic production",
+        "imports",
+        "government revenue",
+        "deadweight loss"
+      ],
+      "solutionOutline": [
+        "Define tariff as a tax on imports.",
+        "Draw a supply and demand diagram for steel showing world price.",
+        "Illustrate the tariff raising the domestic price, reducing imports and increasing domestic production.",
+        "Explain the creation of government revenue and the deadweight loss due to the tariff."
+      ]
+    },
+    {
+      "id": "E2",
+      "level": 2,
+      "commandTerm": "Evaluate",
+      "topic": "Macroeconomics \u2013 Fiscal Policy",
+      "prompt": "Evaluate the effectiveness of using fiscal policy to reduce unemployment in Country X. You should consider both demand\u2011side and supply\u2011side effects.",
+      "keywords": [
+        "fiscal policy",
+        "government spending",
+        "taxes",
+        "unemployment",
+        "multiplier",
+        "inflation",
+        "crowding out"
+      ],
+      "solutionOutline": [
+        "Define fiscal policy and its objectives.",
+        "Discuss how expansionary fiscal policy can increase aggregate demand, creating jobs.",
+        "Consider potential supply\u2011side improvements from infrastructure spending.",
+        "Evaluate limitations such as time lags, potential inflation, and crowding out of private investment.",
+        "Conclude by weighing benefits against drawbacks and discussing alternative policies."
+      ]
+    },
+    {
+      "id": "E3",
+      "level": 1,
+      "commandTerm": "Analyse",
+      "topic": "Macroeconomics \u2013 Unemployment",
+      "prompt": "Analyse the causes and consequences of structural unemployment in Country X.",
+      "keywords": [
+        "unemployment",
+        "structural",
+        "skills",
+        "geographical",
+        "policy"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to Macroeconomics \u2013 Unemployment.",
+        "Use a diagram if appropriate (e.g., Unemployment diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E4",
+      "level": 1,
+      "commandTerm": "Apply",
+      "topic": "Macroeconomics \u2013 Unemployment",
+      "prompt": "Apply analyse the causes and consequences of structural unemployment in Country X.",
+      "keywords": [
+        "unemployment",
+        "structural",
+        "skills",
+        "geographical",
+        "policy"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to Macroeconomics \u2013 Unemployment.",
+        "Use a diagram if appropriate (e.g., Unemployment diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E5",
+      "level": 1,
+      "commandTerm": "Calculate",
+      "topic": "Microeconomics \u2013 Elasticities",
+      "prompt": "Calculate discuss the significance of income elasticity of demand for luxury goods in Country X.",
+      "keywords": [
+        "elasticity",
+        "income",
+        "luxury",
+        "normal good",
+        "inferior good"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to Microeconomics \u2013 Elasticities.",
+        "Use a diagram if appropriate (e.g., Elasticities diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E6",
+      "level": 1,
+      "commandTerm": "Compare",
+      "topic": "International \u2013 Exchange Rates",
+      "prompt": "Compare analyse the impact of an appreciation of the Country X currency on its current account balance.",
+      "keywords": [
+        "appreciation",
+        "exchange rate",
+        "exports",
+        "imports",
+        "balance"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to International \u2013 Exchange Rates.",
+        "Use a diagram if appropriate (e.g., Exchange Rates diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E7",
+      "level": 1,
+      "commandTerm": "Compare and contrast",
+      "topic": "Macroeconomics \u2013 Inflation",
+      "prompt": "Compare and contrast discuss the possible causes of deflation and its economic consequences in Country X.",
+      "keywords": [
+        "deflation",
+        "demand",
+        "prices",
+        "expectations",
+        "policy"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to Macroeconomics \u2013 Inflation.",
+        "Use a diagram if appropriate (e.g., Inflation diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E8",
+      "level": 1,
+      "commandTerm": "Define",
+      "topic": "Macroeconomics \u2013 Fiscal Policy",
+      "prompt": "Define to what extent is deficit spending an effective tool to close a recessionary gap in Country X?",
+      "keywords": [
+        "deficit",
+        "spending",
+        "multiplier",
+        "crowding out",
+        "inflation"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to Macroeconomics \u2013 Fiscal Policy.",
+        "Use a diagram if appropriate (e.g., Fiscal Policy diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E9",
+      "level": 1,
+      "commandTerm": "Describe",
+      "topic": "Microeconomics \u2013 Market Structures",
+      "prompt": "Describe explain how a monopoly sets price and output compared to perfect competition in Country X.",
+      "keywords": [
+        "monopoly",
+        "price",
+        "output",
+        "profit maximisation",
+        "competition"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to Microeconomics \u2013 Market Structures.",
+        "Use a diagram if appropriate (e.g., Market Structures diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E10",
+      "level": 1,
+      "commandTerm": "Determine",
+      "topic": "Macroeconomics \u2013 Fiscal Policy",
+      "prompt": "Determine to what extent is deficit spending an effective tool to close a recessionary gap in Country X?",
+      "keywords": [
+        "deficit",
+        "spending",
+        "multiplier",
+        "crowding out",
+        "inflation"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to Macroeconomics \u2013 Fiscal Policy.",
+        "Use a diagram if appropriate (e.g., Fiscal Policy diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E11",
+      "level": 1,
+      "commandTerm": "Discuss",
+      "topic": "International \u2013 Trade",
+      "prompt": "Discuss describe the effects of a tariff on imported cars in Country X using a diagram.",
+      "keywords": [
+        "tariff",
+        "price",
+        "domestic",
+        "imports",
+        "revenue"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to International \u2013 Trade.",
+        "Use a diagram if appropriate (e.g., Trade diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E12",
+      "level": 1,
+      "commandTerm": "Distinguish",
+      "topic": "Microeconomics \u2013 Market Failure",
+      "prompt": "Distinguish evaluate the use of taxes to reduce negative externalities in Country X.",
+      "keywords": [
+        "tax",
+        "externality",
+        "deadweight",
+        "efficiency",
+        "revenue"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to Microeconomics \u2013 Market Failure.",
+        "Use a diagram if appropriate (e.g., Market Failure diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E13",
+      "level": 1,
+      "commandTerm": "Draw",
+      "topic": "Microeconomics \u2013 Market Structures",
+      "prompt": "Draw explain how a monopoly sets price and output compared to perfect competition in Country X.",
+      "keywords": [
+        "monopoly",
+        "price",
+        "output",
+        "profit maximisation",
+        "competition"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to Microeconomics \u2013 Market Structures.",
+        "Use a diagram if appropriate (e.g., Market Structures diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E14",
+      "level": 1,
+      "commandTerm": "Evaluate",
+      "topic": "International \u2013 Trade",
+      "prompt": "Evaluate describe the effects of a tariff on imported cars in Country X using a diagram.",
+      "keywords": [
+        "tariff",
+        "price",
+        "domestic",
+        "imports",
+        "revenue"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to International \u2013 Trade.",
+        "Use a diagram if appropriate (e.g., Trade diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E15",
+      "level": 1,
+      "commandTerm": "Examine",
+      "topic": "Macroeconomics \u2013 Economic Growth",
+      "prompt": "Examine evaluate the factors that could contribute to long\u2011term economic growth in Country X.",
+      "keywords": [
+        "growth",
+        "investment",
+        "technology",
+        "productivity",
+        "human capital"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to Macroeconomics \u2013 Economic Growth.",
+        "Use a diagram if appropriate (e.g., Economic Growth diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E16",
+      "level": 1,
+      "commandTerm": "Explain",
+      "topic": "Microeconomics \u2013 Market Failure",
+      "prompt": "Explain evaluate the use of taxes to reduce negative externalities in Country X.",
+      "keywords": [
+        "tax",
+        "externality",
+        "deadweight",
+        "efficiency",
+        "revenue"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to Microeconomics \u2013 Market Failure.",
+        "Use a diagram if appropriate (e.g., Market Failure diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E17",
+      "level": 1,
+      "commandTerm": "Identify",
+      "topic": "Microeconomics \u2013 Market Failure",
+      "prompt": "Identify evaluate the use of taxes to reduce negative externalities in Country X.",
+      "keywords": [
+        "tax",
+        "externality",
+        "deadweight",
+        "efficiency",
+        "revenue"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to Microeconomics \u2013 Market Failure.",
+        "Use a diagram if appropriate (e.g., Market Failure diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E18",
+      "level": 1,
+      "commandTerm": "Justify",
+      "topic": "International \u2013 Balance of Payments",
+      "prompt": "Justify discuss the importance of maintaining a sustainable current account balance in Country X.",
+      "keywords": [
+        "balance",
+        "current account",
+        "deficit",
+        "surplus",
+        "exchange rate"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to International \u2013 Balance of Payments.",
+        "Use a diagram if appropriate (e.g., Balance of Payments diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E19",
+      "level": 1,
+      "commandTerm": "Label",
+      "topic": "International \u2013 Exchange Rates",
+      "prompt": "Label analyse the impact of an appreciation of the Country X currency on its current account balance.",
+      "keywords": [
+        "appreciation",
+        "exchange rate",
+        "exports",
+        "imports",
+        "balance"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to International \u2013 Exchange Rates.",
+        "Use a diagram if appropriate (e.g., Exchange Rates diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E20",
+      "level": 1,
+      "commandTerm": "Outline",
+      "topic": "Microeconomics \u2013 Market Failure",
+      "prompt": "Outline evaluate the use of taxes to reduce negative externalities in Country X.",
+      "keywords": [
+        "tax",
+        "externality",
+        "deadweight",
+        "efficiency",
+        "revenue"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to Microeconomics \u2013 Market Failure.",
+        "Use a diagram if appropriate (e.g., Market Failure diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E21",
+      "level": 1,
+      "commandTerm": "State",
+      "topic": "International \u2013 Balance of Payments",
+      "prompt": "State discuss the importance of maintaining a sustainable current account balance in Country X.",
+      "keywords": [
+        "balance",
+        "current account",
+        "deficit",
+        "surplus",
+        "exchange rate"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to International \u2013 Balance of Payments.",
+        "Use a diagram if appropriate (e.g., Balance of Payments diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E22",
+      "level": 1,
+      "commandTerm": "Suggest",
+      "topic": "Microeconomics \u2013 Elasticities",
+      "prompt": "Suggest discuss the significance of income elasticity of demand for luxury goods in Country X.",
+      "keywords": [
+        "elasticity",
+        "income",
+        "luxury",
+        "normal good",
+        "inferior good"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to Microeconomics \u2013 Elasticities.",
+        "Use a diagram if appropriate (e.g., Elasticities diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E23",
+      "level": 1,
+      "commandTerm": "To what extent",
+      "topic": "Microeconomics \u2013 Market Failure",
+      "prompt": "To what extent evaluate the use of taxes to reduce negative externalities in Country X.",
+      "keywords": [
+        "tax",
+        "externality",
+        "deadweight",
+        "efficiency",
+        "revenue"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to Microeconomics \u2013 Market Failure.",
+        "Use a diagram if appropriate (e.g., Market Failure diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E24",
+      "level": 1,
+      "commandTerm": "Analyse",
+      "topic": "International \u2013 Trade",
+      "prompt": "Analyse describe the effects of a tariff on imported cars in Country X using a diagram.",
+      "keywords": [
+        "tariff",
+        "price",
+        "domestic",
+        "imports",
+        "revenue"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to International \u2013 Trade.",
+        "Use a diagram if appropriate (e.g., Trade diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E25",
+      "level": 1,
+      "commandTerm": "Apply",
+      "topic": "Microeconomics \u2013 Market Structures",
+      "prompt": "Apply explain how a monopoly sets price and output compared to perfect competition in Country X.",
+      "keywords": [
+        "monopoly",
+        "price",
+        "output",
+        "profit maximisation",
+        "competition"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to Microeconomics \u2013 Market Structures.",
+        "Use a diagram if appropriate (e.g., Market Structures diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E26",
+      "level": 1,
+      "commandTerm": "Calculate",
+      "topic": "Microeconomics \u2013 Market Structures",
+      "prompt": "Calculate explain how a monopoly sets price and output compared to perfect competition in Country X.",
+      "keywords": [
+        "monopoly",
+        "price",
+        "output",
+        "profit maximisation",
+        "competition"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to Microeconomics \u2013 Market Structures.",
+        "Use a diagram if appropriate (e.g., Market Structures diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E27",
+      "level": 1,
+      "commandTerm": "Compare",
+      "topic": "International \u2013 Trade",
+      "prompt": "Compare describe the effects of a tariff on imported cars in Country X using a diagram.",
+      "keywords": [
+        "tariff",
+        "price",
+        "domestic",
+        "imports",
+        "revenue"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to International \u2013 Trade.",
+        "Use a diagram if appropriate (e.g., Trade diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E28",
+      "level": 2,
+      "commandTerm": "Compare and contrast",
+      "topic": "Macroeconomics \u2013 Inflation",
+      "prompt": "Compare and contrast discuss the possible causes of deflation and its economic consequences in Country X.",
+      "keywords": [
+        "deflation",
+        "demand",
+        "prices",
+        "expectations",
+        "policy"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to Macroeconomics \u2013 Inflation.",
+        "Use a diagram if appropriate (e.g., Inflation diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E29",
+      "level": 2,
+      "commandTerm": "Define",
+      "topic": "International \u2013 Trade",
+      "prompt": "Define describe the effects of a tariff on imported cars in Country X using a diagram.",
+      "keywords": [
+        "tariff",
+        "price",
+        "domestic",
+        "imports",
+        "revenue"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to International \u2013 Trade.",
+        "Use a diagram if appropriate (e.g., Trade diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E30",
+      "level": 2,
+      "commandTerm": "Describe",
+      "topic": "International \u2013 Balance of Payments",
+      "prompt": "Describe discuss the importance of maintaining a sustainable current account balance in Country X.",
+      "keywords": [
+        "balance",
+        "current account",
+        "deficit",
+        "surplus",
+        "exchange rate"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to International \u2013 Balance of Payments.",
+        "Use a diagram if appropriate (e.g., Balance of Payments diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E31",
+      "level": 2,
+      "commandTerm": "Determine",
+      "topic": "Macroeconomics \u2013 Unemployment",
+      "prompt": "Determine analyse the causes and consequences of structural unemployment in Country X.",
+      "keywords": [
+        "unemployment",
+        "structural",
+        "skills",
+        "geographical",
+        "policy"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to Macroeconomics \u2013 Unemployment.",
+        "Use a diagram if appropriate (e.g., Unemployment diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E32",
+      "level": 2,
+      "commandTerm": "Discuss",
+      "topic": "International \u2013 Exchange Rates",
+      "prompt": "Discuss analyse the impact of an appreciation of the Country X currency on its current account balance.",
+      "keywords": [
+        "appreciation",
+        "exchange rate",
+        "exports",
+        "imports",
+        "balance"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to International \u2013 Exchange Rates.",
+        "Use a diagram if appropriate (e.g., Exchange Rates diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E33",
+      "level": 2,
+      "commandTerm": "Distinguish",
+      "topic": "Macroeconomics \u2013 Economic Growth",
+      "prompt": "Distinguish evaluate the factors that could contribute to long\u2011term economic growth in Country X.",
+      "keywords": [
+        "growth",
+        "investment",
+        "technology",
+        "productivity",
+        "human capital"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to Macroeconomics \u2013 Economic Growth.",
+        "Use a diagram if appropriate (e.g., Economic Growth diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E34",
+      "level": 2,
+      "commandTerm": "Draw",
+      "topic": "Microeconomics \u2013 Elasticities",
+      "prompt": "Draw discuss the significance of income elasticity of demand for luxury goods in Country X.",
+      "keywords": [
+        "elasticity",
+        "income",
+        "luxury",
+        "normal good",
+        "inferior good"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to Microeconomics \u2013 Elasticities.",
+        "Use a diagram if appropriate (e.g., Elasticities diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E35",
+      "level": 2,
+      "commandTerm": "Evaluate",
+      "topic": "International \u2013 Exchange Rates",
+      "prompt": "Evaluate analyse the impact of an appreciation of the Country X currency on its current account balance.",
+      "keywords": [
+        "appreciation",
+        "exchange rate",
+        "exports",
+        "imports",
+        "balance"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to International \u2013 Exchange Rates.",
+        "Use a diagram if appropriate (e.g., Exchange Rates diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E36",
+      "level": 2,
+      "commandTerm": "Examine",
+      "topic": "International \u2013 Exchange Rates",
+      "prompt": "Examine analyse the impact of an appreciation of the Country X currency on its current account balance.",
+      "keywords": [
+        "appreciation",
+        "exchange rate",
+        "exports",
+        "imports",
+        "balance"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to International \u2013 Exchange Rates.",
+        "Use a diagram if appropriate (e.g., Exchange Rates diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E37",
+      "level": 2,
+      "commandTerm": "Explain",
+      "topic": "Macroeconomics \u2013 Economic Growth",
+      "prompt": "Explain evaluate the factors that could contribute to long\u2011term economic growth in Country X.",
+      "keywords": [
+        "growth",
+        "investment",
+        "technology",
+        "productivity",
+        "human capital"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to Macroeconomics \u2013 Economic Growth.",
+        "Use a diagram if appropriate (e.g., Economic Growth diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E38",
+      "level": 2,
+      "commandTerm": "Identify",
+      "topic": "Microeconomics \u2013 Market Failure",
+      "prompt": "Identify evaluate the use of taxes to reduce negative externalities in Country X.",
+      "keywords": [
+        "tax",
+        "externality",
+        "deadweight",
+        "efficiency",
+        "revenue"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to Microeconomics \u2013 Market Failure.",
+        "Use a diagram if appropriate (e.g., Market Failure diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E39",
+      "level": 2,
+      "commandTerm": "Justify",
+      "topic": "Microeconomics \u2013 Market Structures",
+      "prompt": "Justify explain how a monopoly sets price and output compared to perfect competition in Country X.",
+      "keywords": [
+        "monopoly",
+        "price",
+        "output",
+        "profit maximisation",
+        "competition"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to Microeconomics \u2013 Market Structures.",
+        "Use a diagram if appropriate (e.g., Market Structures diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E40",
+      "level": 2,
+      "commandTerm": "Label",
+      "topic": "International \u2013 Trade",
+      "prompt": "Label describe the effects of a tariff on imported cars in Country X using a diagram.",
+      "keywords": [
+        "tariff",
+        "price",
+        "domestic",
+        "imports",
+        "revenue"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to International \u2013 Trade.",
+        "Use a diagram if appropriate (e.g., Trade diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E41",
+      "level": 2,
+      "commandTerm": "Outline",
+      "topic": "International \u2013 Balance of Payments",
+      "prompt": "Outline discuss the importance of maintaining a sustainable current account balance in Country X.",
+      "keywords": [
+        "balance",
+        "current account",
+        "deficit",
+        "surplus",
+        "exchange rate"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to International \u2013 Balance of Payments.",
+        "Use a diagram if appropriate (e.g., Balance of Payments diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E42",
+      "level": 2,
+      "commandTerm": "State",
+      "topic": "Microeconomics \u2013 Market Structures",
+      "prompt": "State explain how a monopoly sets price and output compared to perfect competition in Country X.",
+      "keywords": [
+        "monopoly",
+        "price",
+        "output",
+        "profit maximisation",
+        "competition"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to Microeconomics \u2013 Market Structures.",
+        "Use a diagram if appropriate (e.g., Market Structures diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E43",
+      "level": 2,
+      "commandTerm": "Suggest",
+      "topic": "Microeconomics \u2013 Market Structures",
+      "prompt": "Suggest explain how a monopoly sets price and output compared to perfect competition in Country X.",
+      "keywords": [
+        "monopoly",
+        "price",
+        "output",
+        "profit maximisation",
+        "competition"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to Microeconomics \u2013 Market Structures.",
+        "Use a diagram if appropriate (e.g., Market Structures diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E44",
+      "level": 2,
+      "commandTerm": "To what extent",
+      "topic": "Microeconomics \u2013 Elasticities",
+      "prompt": "To what extent discuss the significance of income elasticity of demand for luxury goods in Country X.",
+      "keywords": [
+        "elasticity",
+        "income",
+        "luxury",
+        "normal good",
+        "inferior good"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to Microeconomics \u2013 Elasticities.",
+        "Use a diagram if appropriate (e.g., Elasticities diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E45",
+      "level": 2,
+      "commandTerm": "Analyse",
+      "topic": "Microeconomics \u2013 Market Failure",
+      "prompt": "Analyse evaluate the use of taxes to reduce negative externalities in Country X.",
+      "keywords": [
+        "tax",
+        "externality",
+        "deadweight",
+        "efficiency",
+        "revenue"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to Microeconomics \u2013 Market Failure.",
+        "Use a diagram if appropriate (e.g., Market Failure diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E46",
+      "level": 2,
+      "commandTerm": "Apply",
+      "topic": "Microeconomics \u2013 Market Structures",
+      "prompt": "Apply explain how a monopoly sets price and output compared to perfect competition in Country X.",
+      "keywords": [
+        "monopoly",
+        "price",
+        "output",
+        "profit maximisation",
+        "competition"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to Microeconomics \u2013 Market Structures.",
+        "Use a diagram if appropriate (e.g., Market Structures diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E47",
+      "level": 2,
+      "commandTerm": "Calculate",
+      "topic": "International \u2013 Exchange Rates",
+      "prompt": "Calculate analyse the impact of an appreciation of the Country X currency on its current account balance.",
+      "keywords": [
+        "appreciation",
+        "exchange rate",
+        "exports",
+        "imports",
+        "balance"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to International \u2013 Exchange Rates.",
+        "Use a diagram if appropriate (e.g., Exchange Rates diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E48",
+      "level": 2,
+      "commandTerm": "Compare",
+      "topic": "Macroeconomics \u2013 Inflation",
+      "prompt": "Compare discuss the possible causes of deflation and its economic consequences in Country X.",
+      "keywords": [
+        "deflation",
+        "demand",
+        "prices",
+        "expectations",
+        "policy"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to Macroeconomics \u2013 Inflation.",
+        "Use a diagram if appropriate (e.g., Inflation diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E49",
+      "level": 2,
+      "commandTerm": "Compare and contrast",
+      "topic": "Macroeconomics \u2013 Fiscal Policy",
+      "prompt": "Compare and contrast to what extent is deficit spending an effective tool to close a recessionary gap in Country X?",
+      "keywords": [
+        "deficit",
+        "spending",
+        "multiplier",
+        "crowding out",
+        "inflation"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to Macroeconomics \u2013 Fiscal Policy.",
+        "Use a diagram if appropriate (e.g., Fiscal Policy diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E50",
+      "level": 2,
+      "commandTerm": "Define",
+      "topic": "Macroeconomics \u2013 Fiscal Policy",
+      "prompt": "Define to what extent is deficit spending an effective tool to close a recessionary gap in Country X?",
+      "keywords": [
+        "deficit",
+        "spending",
+        "multiplier",
+        "crowding out",
+        "inflation"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to Macroeconomics \u2013 Fiscal Policy.",
+        "Use a diagram if appropriate (e.g., Fiscal Policy diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E51",
+      "level": 2,
+      "commandTerm": "Describe",
+      "topic": "Macroeconomics \u2013 Inflation",
+      "prompt": "Describe discuss the possible causes of deflation and its economic consequences in Country X.",
+      "keywords": [
+        "deflation",
+        "demand",
+        "prices",
+        "expectations",
+        "policy"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to Macroeconomics \u2013 Inflation.",
+        "Use a diagram if appropriate (e.g., Inflation diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    },
+    {
+      "id": "E52",
+      "level": 2,
+      "commandTerm": "Determine",
+      "topic": "International \u2013 Exchange Rates",
+      "prompt": "Determine analyse the impact of an appreciation of the Country X currency on its current account balance.",
+      "keywords": [
+        "appreciation",
+        "exchange rate",
+        "exports",
+        "imports",
+        "balance"
+      ],
+      "solutionOutline": [
+        "Define or describe relevant concepts related to International \u2013 Exchange Rates.",
+        "Use a diagram if appropriate (e.g., Exchange Rates diagram).",
+        "Provide real\u2011world examples where applicable.",
+        "Analyse short\u2011run and long\u2011run effects.",
+        "Evaluate advantages, disadvantages and alternative policies."
+      ]
+    }
+  ],
+  "case": [
+    {
+      "id": "CS1",
+      "level": 1,
+      "topic": "Microeconomics \u2013 Minimum Wage",
+      "context": "Country X is considering raising its minimum wage. The labour market for low\u2011skill workers currently has an equilibrium wage of $7 per hour and a minimum wage of $6.",
+      "backgroundText": "The government proposes raising the minimum wage to $8 per hour. The labour demand schedule at wages between $6 and $10 is shown in the table below. The labour supply schedule is given as well.",
+      "table": [
+        {
+          "wage": 6,
+          "quantityDemanded": 200,
+          "quantitySupplied": 220
+        },
+        {
+          "wage": 7,
+          "quantityDemanded": 190,
+          "quantitySupplied": 215
+        },
+        {
+          "wage": 8,
+          "quantityDemanded": 180,
+          "quantitySupplied": 210
+        },
+        {
+          "wage": 9,
+          "quantityDemanded": 170,
+          "quantitySupplied": 205
+        },
+        {
+          "wage": 10,
+          "quantityDemanded": 160,
+          "quantitySupplied": 200
+        }
+      ],
+      "subQuestions": [
+        {
+          "prompt": "Use the data to determine the excess supply of labour that will result from the proposed minimum wage.",
+          "answer": "Excess supply of labour at $8 is the difference between quantity supplied (210) and quantity demanded (180): 30 workers."
+        },
+        {
+          "prompt": "Discuss two possible unintended consequences of raising the minimum wage in Country X.",
+          "answer": "Possible unintended consequences include increased unemployment among low\u2011skill workers and higher costs for firms leading to price increases or layoffs."
+        }
+      ],
+      "markingCriteria": {
+        "accuracy": "Uses the data correctly to determine labour market outcomes.",
+        "application": "Applies labour market theory to the case of minimum wage.",
+        "analysis": "Analyses potential consequences of the policy.",
+        "evaluation": "Evaluates strengths and weaknesses of the policy."
+      }
+    },
+    {
+      "id": "CS2",
+      "level": 1,
+      "topic": "Integrated Case",
+      "context": "Country X introduced a carbon tax.",
+      "backgroundText": "The government is considering policies to mitigate the impact on households and firms.",
+      "table": [
+        {
+          "wage": 15,
+          "quantityDemanded": 99,
+          "quantitySupplied": 171
+        },
+        {
+          "wage": 6,
+          "quantityDemanded": 199,
+          "quantitySupplied": 113
+        },
+        {
+          "wage": 11,
+          "quantityDemanded": 186,
+          "quantitySupplied": 263
+        }
+      ],
+      "subQuestions": [
+        {
+          "prompt": "Identify one short\u2011term effect of this event on Country X\u2019s economy.",
+          "answer": "One possible effect is a change in inflation or unemployment."
+        },
+        {
+          "prompt": "Suggest one policy the government could implement in response.",
+          "answer": "Potential policies include fiscal stimulus, monetary adjustments, or targeted subsidies."
+        }
+      ],
+      "markingCriteria": {
+        "accuracy": "Correctly uses data to identify effects.",
+        "application": "Applies economic theory to the scenario.",
+        "analysis": "Explains mechanisms and consequences.",
+        "evaluation": "Critically assesses policy responses."
+      }
+    },
+    {
+      "id": "CS3",
+      "level": 1,
+      "topic": "Integrated Case",
+      "context": "Country X signed a free trade agreement.",
+      "backgroundText": "Data on GDP growth, inflation, and unemployment are shown below.",
+      "table": [
+        {
+          "wage": 12,
+          "quantityDemanded": 69,
+          "quantitySupplied": 121
+        },
+        {
+          "wage": 8,
+          "quantityDemanded": 104,
+          "quantitySupplied": 181
+        },
+        {
+          "wage": 14,
+          "quantityDemanded": 294,
+          "quantitySupplied": 233
+        }
+      ],
+      "subQuestions": [
+        {
+          "prompt": "Identify one short\u2011term effect of this event on Country X\u2019s economy.",
+          "answer": "One possible effect is a change in inflation or unemployment."
+        },
+        {
+          "prompt": "Suggest one policy the government could implement in response.",
+          "answer": "Potential policies include fiscal stimulus, monetary adjustments, or targeted subsidies."
+        }
+      ],
+      "markingCriteria": {
+        "accuracy": "Correctly uses data to identify effects.",
+        "application": "Applies economic theory to the scenario.",
+        "analysis": "Explains mechanisms and consequences.",
+        "evaluation": "Critically assesses policy responses."
+      }
+    },
+    {
+      "id": "CS4",
+      "level": 1,
+      "topic": "Integrated Case",
+      "context": "Country X is facing a sudden rise in oil prices.",
+      "backgroundText": "The government is considering policies to mitigate the impact on households and firms.",
+      "table": [
+        {
+          "wage": 5,
+          "quantityDemanded": 243,
+          "quantitySupplied": 137
+        },
+        {
+          "wage": 5,
+          "quantityDemanded": 232,
+          "quantitySupplied": 205
+        },
+        {
+          "wage": 10,
+          "quantityDemanded": 193,
+          "quantitySupplied": 297
+        }
+      ],
+      "subQuestions": [
+        {
+          "prompt": "Identify one short\u2011term effect of this event on Country X\u2019s economy.",
+          "answer": "One possible effect is a change in inflation or unemployment."
+        },
+        {
+          "prompt": "Suggest one policy the government could implement in response.",
+          "answer": "Potential policies include fiscal stimulus, monetary adjustments, or targeted subsidies."
+        }
+      ],
+      "markingCriteria": {
+        "accuracy": "Correctly uses data to identify effects.",
+        "application": "Applies economic theory to the scenario.",
+        "analysis": "Explains mechanisms and consequences.",
+        "evaluation": "Critically assesses policy responses."
+      }
+    },
+    {
+      "id": "CS5",
+      "level": 1,
+      "topic": "Integrated Case",
+      "context": "Country X is facing a sudden rise in oil prices.",
+      "backgroundText": "The government is considering policies to mitigate the impact on households and firms.",
+      "table": [
+        {
+          "wage": 8,
+          "quantityDemanded": 124,
+          "quantitySupplied": 245
+        },
+        {
+          "wage": 8,
+          "quantityDemanded": 52,
+          "quantitySupplied": 88
+        },
+        {
+          "wage": 14,
+          "quantityDemanded": 150,
+          "quantitySupplied": 172
+        }
+      ],
+      "subQuestions": [
+        {
+          "prompt": "Identify one short\u2011term effect of this event on Country X\u2019s economy.",
+          "answer": "One possible effect is a change in inflation or unemployment."
+        },
+        {
+          "prompt": "Suggest one policy the government could implement in response.",
+          "answer": "Potential policies include fiscal stimulus, monetary adjustments, or targeted subsidies."
+        }
+      ],
+      "markingCriteria": {
+        "accuracy": "Correctly uses data to identify effects.",
+        "application": "Applies economic theory to the scenario.",
+        "analysis": "Explains mechanisms and consequences.",
+        "evaluation": "Critically assesses policy responses."
+      }
+    },
+    {
+      "id": "CS6",
+      "level": 1,
+      "topic": "Integrated Case",
+      "context": "Country X experienced a housing market boom.",
+      "backgroundText": "Consumer confidence and business investment indicators are included in the table.",
+      "table": [
+        {
+          "wage": 12,
+          "quantityDemanded": 238,
+          "quantitySupplied": 96
+        },
+        {
+          "wage": 14,
+          "quantityDemanded": 99,
+          "quantitySupplied": 115
+        },
+        {
+          "wage": 15,
+          "quantityDemanded": 161,
+          "quantitySupplied": 233
+        }
+      ],
+      "subQuestions": [
+        {
+          "prompt": "Identify one short\u2011term effect of this event on Country X\u2019s economy.",
+          "answer": "One possible effect is a change in inflation or unemployment."
+        },
+        {
+          "prompt": "Suggest one policy the government could implement in response.",
+          "answer": "Potential policies include fiscal stimulus, monetary adjustments, or targeted subsidies."
+        }
+      ],
+      "markingCriteria": {
+        "accuracy": "Correctly uses data to identify effects.",
+        "application": "Applies economic theory to the scenario.",
+        "analysis": "Explains mechanisms and consequences.",
+        "evaluation": "Critically assesses policy responses."
+      }
+    },
+    {
+      "id": "CS7",
+      "level": 1,
+      "topic": "Integrated Case",
+      "context": "Country X\u2019s currency depreciated sharply.",
+      "backgroundText": "Data on GDP growth, inflation, and unemployment are shown below.",
+      "table": [
+        {
+          "wage": 11,
+          "quantityDemanded": 114,
+          "quantitySupplied": 81
+        },
+        {
+          "wage": 10,
+          "quantityDemanded": 139,
+          "quantitySupplied": 226
+        },
+        {
+          "wage": 9,
+          "quantityDemanded": 298,
+          "quantitySupplied": 132
+        }
+      ],
+      "subQuestions": [
+        {
+          "prompt": "Identify one short\u2011term effect of this event on Country X\u2019s economy.",
+          "answer": "One possible effect is a change in inflation or unemployment."
+        },
+        {
+          "prompt": "Suggest one policy the government could implement in response.",
+          "answer": "Potential policies include fiscal stimulus, monetary adjustments, or targeted subsidies."
+        }
+      ],
+      "markingCriteria": {
+        "accuracy": "Correctly uses data to identify effects.",
+        "application": "Applies economic theory to the scenario.",
+        "analysis": "Explains mechanisms and consequences.",
+        "evaluation": "Critically assesses policy responses."
+      }
+    },
+    {
+      "id": "CS8",
+      "level": 1,
+      "topic": "Integrated Case",
+      "context": "Country X introduced a carbon tax.",
+      "backgroundText": "Data on GDP growth, inflation, and unemployment are shown below.",
+      "table": [
+        {
+          "wage": 10,
+          "quantityDemanded": 242,
+          "quantitySupplied": 165
+        },
+        {
+          "wage": 6,
+          "quantityDemanded": 262,
+          "quantitySupplied": 254
+        },
+        {
+          "wage": 15,
+          "quantityDemanded": 139,
+          "quantitySupplied": 98
+        }
+      ],
+      "subQuestions": [
+        {
+          "prompt": "Identify one short\u2011term effect of this event on Country X\u2019s economy.",
+          "answer": "One possible effect is a change in inflation or unemployment."
+        },
+        {
+          "prompt": "Suggest one policy the government could implement in response.",
+          "answer": "Potential policies include fiscal stimulus, monetary adjustments, or targeted subsidies."
+        }
+      ],
+      "markingCriteria": {
+        "accuracy": "Correctly uses data to identify effects.",
+        "application": "Applies economic theory to the scenario.",
+        "analysis": "Explains mechanisms and consequences.",
+        "evaluation": "Critically assesses policy responses."
+      }
+    },
+    {
+      "id": "CS9",
+      "level": 1,
+      "topic": "Integrated Case",
+      "context": "Country X signed a free trade agreement.",
+      "backgroundText": "Data on GDP growth, inflation, and unemployment are shown below.",
+      "table": [
+        {
+          "wage": 9,
+          "quantityDemanded": 267,
+          "quantitySupplied": 202
+        },
+        {
+          "wage": 10,
+          "quantityDemanded": 275,
+          "quantitySupplied": 294
+        },
+        {
+          "wage": 7,
+          "quantityDemanded": 263,
+          "quantitySupplied": 74
+        }
+      ],
+      "subQuestions": [
+        {
+          "prompt": "Identify one short\u2011term effect of this event on Country X\u2019s economy.",
+          "answer": "One possible effect is a change in inflation or unemployment."
+        },
+        {
+          "prompt": "Suggest one policy the government could implement in response.",
+          "answer": "Potential policies include fiscal stimulus, monetary adjustments, or targeted subsidies."
+        }
+      ],
+      "markingCriteria": {
+        "accuracy": "Correctly uses data to identify effects.",
+        "application": "Applies economic theory to the scenario.",
+        "analysis": "Explains mechanisms and consequences.",
+        "evaluation": "Critically assesses policy responses."
+      }
+    },
+    {
+      "id": "CS10",
+      "level": 1,
+      "topic": "Integrated Case",
+      "context": "Country X\u2019s central bank unexpectedly raised interest rates.",
+      "backgroundText": "The government is considering policies to mitigate the impact on households and firms.",
+      "table": [
+        {
+          "wage": 7,
+          "quantityDemanded": 214,
+          "quantitySupplied": 239
+        },
+        {
+          "wage": 8,
+          "quantityDemanded": 57,
+          "quantitySupplied": 67
+        },
+        {
+          "wage": 8,
+          "quantityDemanded": 84,
+          "quantitySupplied": 138
+        }
+      ],
+      "subQuestions": [
+        {
+          "prompt": "Identify one short\u2011term effect of this event on Country X\u2019s economy.",
+          "answer": "One possible effect is a change in inflation or unemployment."
+        },
+        {
+          "prompt": "Suggest one policy the government could implement in response.",
+          "answer": "Potential policies include fiscal stimulus, monetary adjustments, or targeted subsidies."
+        }
+      ],
+      "markingCriteria": {
+        "accuracy": "Correctly uses data to identify effects.",
+        "application": "Applies economic theory to the scenario.",
+        "analysis": "Explains mechanisms and consequences.",
+        "evaluation": "Critically assesses policy responses."
+      }
+    },
+    {
+      "id": "CS11",
+      "level": 1,
+      "topic": "Integrated Case",
+      "context": "Country X is facing a sudden rise in oil prices.",
+      "backgroundText": "The following table shows exports and imports before and after the event.",
+      "table": [
+        {
+          "wage": 10,
+          "quantityDemanded": 272,
+          "quantitySupplied": 248
+        },
+        {
+          "wage": 13,
+          "quantityDemanded": 240,
+          "quantitySupplied": 129
+        },
+        {
+          "wage": 6,
+          "quantityDemanded": 51,
+          "quantitySupplied": 180
+        }
+      ],
+      "subQuestions": [
+        {
+          "prompt": "Identify one short\u2011term effect of this event on Country X\u2019s economy.",
+          "answer": "One possible effect is a change in inflation or unemployment."
+        },
+        {
+          "prompt": "Suggest one policy the government could implement in response.",
+          "answer": "Potential policies include fiscal stimulus, monetary adjustments, or targeted subsidies."
+        }
+      ],
+      "markingCriteria": {
+        "accuracy": "Correctly uses data to identify effects.",
+        "application": "Applies economic theory to the scenario.",
+        "analysis": "Explains mechanisms and consequences.",
+        "evaluation": "Critically assesses policy responses."
+      }
+    },
+    {
+      "id": "CS12",
+      "level": 1,
+      "topic": "Integrated Case",
+      "context": "Country X\u2019s currency depreciated sharply.",
+      "backgroundText": "Consumer confidence and business investment indicators are included in the table.",
+      "table": [
+        {
+          "wage": 14,
+          "quantityDemanded": 66,
+          "quantitySupplied": 272
+        },
+        {
+          "wage": 9,
+          "quantityDemanded": 154,
+          "quantitySupplied": 248
+        },
+        {
+          "wage": 11,
+          "quantityDemanded": 254,
+          "quantitySupplied": 256
+        }
+      ],
+      "subQuestions": [
+        {
+          "prompt": "Identify one short\u2011term effect of this event on Country X\u2019s economy.",
+          "answer": "One possible effect is a change in inflation or unemployment."
+        },
+        {
+          "prompt": "Suggest one policy the government could implement in response.",
+          "answer": "Potential policies include fiscal stimulus, monetary adjustments, or targeted subsidies."
+        }
+      ],
+      "markingCriteria": {
+        "accuracy": "Correctly uses data to identify effects.",
+        "application": "Applies economic theory to the scenario.",
+        "analysis": "Explains mechanisms and consequences.",
+        "evaluation": "Critically assesses policy responses."
+      }
+    },
+    {
+      "id": "CS13",
+      "level": 1,
+      "topic": "Integrated Case",
+      "context": "Country X\u2019s currency depreciated sharply.",
+      "backgroundText": "The table lists CO2 emissions and tax revenues under different policy scenarios.",
+      "table": [
+        {
+          "wage": 8,
+          "quantityDemanded": 167,
+          "quantitySupplied": 164
+        },
+        {
+          "wage": 12,
+          "quantityDemanded": 97,
+          "quantitySupplied": 278
+        },
+        {
+          "wage": 14,
+          "quantityDemanded": 182,
+          "quantitySupplied": 172
+        }
+      ],
+      "subQuestions": [
+        {
+          "prompt": "Identify one short\u2011term effect of this event on Country X\u2019s economy.",
+          "answer": "One possible effect is a change in inflation or unemployment."
+        },
+        {
+          "prompt": "Suggest one policy the government could implement in response.",
+          "answer": "Potential policies include fiscal stimulus, monetary adjustments, or targeted subsidies."
+        }
+      ],
+      "markingCriteria": {
+        "accuracy": "Correctly uses data to identify effects.",
+        "application": "Applies economic theory to the scenario.",
+        "analysis": "Explains mechanisms and consequences.",
+        "evaluation": "Critically assesses policy responses."
+      }
+    },
+    {
+      "id": "CS14",
+      "level": 1,
+      "topic": "Integrated Case",
+      "context": "Country X\u2019s central bank unexpectedly raised interest rates.",
+      "backgroundText": "Labour market statistics and wage data are provided.",
+      "table": [
+        {
+          "wage": 10,
+          "quantityDemanded": 144,
+          "quantitySupplied": 50
+        },
+        {
+          "wage": 5,
+          "quantityDemanded": 83,
+          "quantitySupplied": 127
+        },
+        {
+          "wage": 8,
+          "quantityDemanded": 207,
+          "quantitySupplied": 73
+        }
+      ],
+      "subQuestions": [
+        {
+          "prompt": "Identify one short\u2011term effect of this event on Country X\u2019s economy.",
+          "answer": "One possible effect is a change in inflation or unemployment."
+        },
+        {
+          "prompt": "Suggest one policy the government could implement in response.",
+          "answer": "Potential policies include fiscal stimulus, monetary adjustments, or targeted subsidies."
+        }
+      ],
+      "markingCriteria": {
+        "accuracy": "Correctly uses data to identify effects.",
+        "application": "Applies economic theory to the scenario.",
+        "analysis": "Explains mechanisms and consequences.",
+        "evaluation": "Critically assesses policy responses."
+      }
+    },
+    {
+      "id": "CS15",
+      "level": 1,
+      "topic": "Integrated Case",
+      "context": "Country X signed a free trade agreement.",
+      "backgroundText": "The government is considering policies to mitigate the impact on households and firms.",
+      "table": [
+        {
+          "wage": 5,
+          "quantityDemanded": 300,
+          "quantitySupplied": 201
+        },
+        {
+          "wage": 7,
+          "quantityDemanded": 111,
+          "quantitySupplied": 129
+        },
+        {
+          "wage": 14,
+          "quantityDemanded": 273,
+          "quantitySupplied": 239
+        }
+      ],
+      "subQuestions": [
+        {
+          "prompt": "Identify one short\u2011term effect of this event on Country X\u2019s economy.",
+          "answer": "One possible effect is a change in inflation or unemployment."
+        },
+        {
+          "prompt": "Suggest one policy the government could implement in response.",
+          "answer": "Potential policies include fiscal stimulus, monetary adjustments, or targeted subsidies."
+        }
+      ],
+      "markingCriteria": {
+        "accuracy": "Correctly uses data to identify effects.",
+        "application": "Applies economic theory to the scenario.",
+        "analysis": "Explains mechanisms and consequences.",
+        "evaluation": "Critically assesses policy responses."
+      }
+    },
+    {
+      "id": "CS16",
+      "level": 1,
+      "topic": "Integrated Case",
+      "context": "Country X\u2019s currency depreciated sharply.",
+      "backgroundText": "The government is considering policies to mitigate the impact on households and firms.",
+      "table": [
+        {
+          "wage": 7,
+          "quantityDemanded": 110,
+          "quantitySupplied": 293
+        },
+        {
+          "wage": 10,
+          "quantityDemanded": 216,
+          "quantitySupplied": 158
+        },
+        {
+          "wage": 9,
+          "quantityDemanded": 50,
+          "quantitySupplied": 136
+        }
+      ],
+      "subQuestions": [
+        {
+          "prompt": "Identify one short\u2011term effect of this event on Country X\u2019s economy.",
+          "answer": "One possible effect is a change in inflation or unemployment."
+        },
+        {
+          "prompt": "Suggest one policy the government could implement in response.",
+          "answer": "Potential policies include fiscal stimulus, monetary adjustments, or targeted subsidies."
+        }
+      ],
+      "markingCriteria": {
+        "accuracy": "Correctly uses data to identify effects.",
+        "application": "Applies economic theory to the scenario.",
+        "analysis": "Explains mechanisms and consequences.",
+        "evaluation": "Critically assesses policy responses."
+      }
+    },
+    {
+      "id": "CS17",
+      "level": 2,
+      "topic": "Integrated Case",
+      "context": "Country X\u2019s central bank unexpectedly raised interest rates.",
+      "backgroundText": "The following table shows exports and imports before and after the event.",
+      "table": [
+        {
+          "wage": 9,
+          "quantityDemanded": 169,
+          "quantitySupplied": 181
+        },
+        {
+          "wage": 5,
+          "quantityDemanded": 185,
+          "quantitySupplied": 149
+        },
+        {
+          "wage": 13,
+          "quantityDemanded": 137,
+          "quantitySupplied": 141
+        }
+      ],
+      "subQuestions": [
+        {
+          "prompt": "Identify one short\u2011term effect of this event on Country X\u2019s economy.",
+          "answer": "One possible effect is a change in inflation or unemployment."
+        },
+        {
+          "prompt": "Suggest one policy the government could implement in response.",
+          "answer": "Potential policies include fiscal stimulus, monetary adjustments, or targeted subsidies."
+        }
+      ],
+      "markingCriteria": {
+        "accuracy": "Correctly uses data to identify effects.",
+        "application": "Applies economic theory to the scenario.",
+        "analysis": "Explains mechanisms and consequences.",
+        "evaluation": "Critically assesses policy responses."
+      }
+    },
+    {
+      "id": "CS18",
+      "level": 2,
+      "topic": "Integrated Case",
+      "context": "Country X introduced a carbon tax.",
+      "backgroundText": "The government is considering policies to mitigate the impact on households and firms.",
+      "table": [
+        {
+          "wage": 6,
+          "quantityDemanded": 230,
+          "quantitySupplied": 269
+        },
+        {
+          "wage": 15,
+          "quantityDemanded": 81,
+          "quantitySupplied": 166
+        },
+        {
+          "wage": 14,
+          "quantityDemanded": 119,
+          "quantitySupplied": 275
+        }
+      ],
+      "subQuestions": [
+        {
+          "prompt": "Identify one short\u2011term effect of this event on Country X\u2019s economy.",
+          "answer": "One possible effect is a change in inflation or unemployment."
+        },
+        {
+          "prompt": "Suggest one policy the government could implement in response.",
+          "answer": "Potential policies include fiscal stimulus, monetary adjustments, or targeted subsidies."
+        }
+      ],
+      "markingCriteria": {
+        "accuracy": "Correctly uses data to identify effects.",
+        "application": "Applies economic theory to the scenario.",
+        "analysis": "Explains mechanisms and consequences.",
+        "evaluation": "Critically assesses policy responses."
+      }
+    },
+    {
+      "id": "CS19",
+      "level": 2,
+      "topic": "Integrated Case",
+      "context": "Country X\u2019s currency depreciated sharply.",
+      "backgroundText": "The government is considering policies to mitigate the impact on households and firms.",
+      "table": [
+        {
+          "wage": 14,
+          "quantityDemanded": 205,
+          "quantitySupplied": 154
+        },
+        {
+          "wage": 7,
+          "quantityDemanded": 163,
+          "quantitySupplied": 94
+        },
+        {
+          "wage": 6,
+          "quantityDemanded": 240,
+          "quantitySupplied": 217
+        }
+      ],
+      "subQuestions": [
+        {
+          "prompt": "Identify one short\u2011term effect of this event on Country X\u2019s economy.",
+          "answer": "One possible effect is a change in inflation or unemployment."
+        },
+        {
+          "prompt": "Suggest one policy the government could implement in response.",
+          "answer": "Potential policies include fiscal stimulus, monetary adjustments, or targeted subsidies."
+        }
+      ],
+      "markingCriteria": {
+        "accuracy": "Correctly uses data to identify effects.",
+        "application": "Applies economic theory to the scenario.",
+        "analysis": "Explains mechanisms and consequences.",
+        "evaluation": "Critically assesses policy responses."
+      }
+    },
+    {
+      "id": "CS20",
+      "level": 2,
+      "topic": "Integrated Case",
+      "context": "Country X is facing a sudden rise in oil prices.",
+      "backgroundText": "The government is considering policies to mitigate the impact on households and firms.",
+      "table": [
+        {
+          "wage": 9,
+          "quantityDemanded": 151,
+          "quantitySupplied": 65
+        },
+        {
+          "wage": 5,
+          "quantityDemanded": 226,
+          "quantitySupplied": 244
+        },
+        {
+          "wage": 12,
+          "quantityDemanded": 200,
+          "quantitySupplied": 119
+        }
+      ],
+      "subQuestions": [
+        {
+          "prompt": "Identify one short\u2011term effect of this event on Country X\u2019s economy.",
+          "answer": "One possible effect is a change in inflation or unemployment."
+        },
+        {
+          "prompt": "Suggest one policy the government could implement in response.",
+          "answer": "Potential policies include fiscal stimulus, monetary adjustments, or targeted subsidies."
+        }
+      ],
+      "markingCriteria": {
+        "accuracy": "Correctly uses data to identify effects.",
+        "application": "Applies economic theory to the scenario.",
+        "analysis": "Explains mechanisms and consequences.",
+        "evaluation": "Critically assesses policy responses."
+      }
+    },
+    {
+      "id": "CS21",
+      "level": 2,
+      "topic": "Integrated Case",
+      "context": "Country X introduced a carbon tax.",
+      "backgroundText": "Data on GDP growth, inflation, and unemployment are shown below.",
+      "table": [
+        {
+          "wage": 15,
+          "quantityDemanded": 220,
+          "quantitySupplied": 112
+        },
+        {
+          "wage": 7,
+          "quantityDemanded": 144,
+          "quantitySupplied": 289
+        },
+        {
+          "wage": 7,
+          "quantityDemanded": 64,
+          "quantitySupplied": 269
+        }
+      ],
+      "subQuestions": [
+        {
+          "prompt": "Identify one short\u2011term effect of this event on Country X\u2019s economy.",
+          "answer": "One possible effect is a change in inflation or unemployment."
+        },
+        {
+          "prompt": "Suggest one policy the government could implement in response.",
+          "answer": "Potential policies include fiscal stimulus, monetary adjustments, or targeted subsidies."
+        }
+      ],
+      "markingCriteria": {
+        "accuracy": "Correctly uses data to identify effects.",
+        "application": "Applies economic theory to the scenario.",
+        "analysis": "Explains mechanisms and consequences.",
+        "evaluation": "Critically assesses policy responses."
+      }
+    },
+    {
+      "id": "CS22",
+      "level": 2,
+      "topic": "Integrated Case",
+      "context": "Country X signed a free trade agreement.",
+      "backgroundText": "Labour market statistics and wage data are provided.",
+      "table": [
+        {
+          "wage": 10,
+          "quantityDemanded": 191,
+          "quantitySupplied": 166
+        },
+        {
+          "wage": 15,
+          "quantityDemanded": 213,
+          "quantitySupplied": 102
+        },
+        {
+          "wage": 12,
+          "quantityDemanded": 253,
+          "quantitySupplied": 272
+        }
+      ],
+      "subQuestions": [
+        {
+          "prompt": "Identify one short\u2011term effect of this event on Country X\u2019s economy.",
+          "answer": "One possible effect is a change in inflation or unemployment."
+        },
+        {
+          "prompt": "Suggest one policy the government could implement in response.",
+          "answer": "Potential policies include fiscal stimulus, monetary adjustments, or targeted subsidies."
+        }
+      ],
+      "markingCriteria": {
+        "accuracy": "Correctly uses data to identify effects.",
+        "application": "Applies economic theory to the scenario.",
+        "analysis": "Explains mechanisms and consequences.",
+        "evaluation": "Critically assesses policy responses."
+      }
+    },
+    {
+      "id": "CS23",
+      "level": 2,
+      "topic": "Integrated Case",
+      "context": "Country X introduced a carbon tax.",
+      "backgroundText": "The table lists CO2 emissions and tax revenues under different policy scenarios.",
+      "table": [
+        {
+          "wage": 7,
+          "quantityDemanded": 231,
+          "quantitySupplied": 111
+        },
+        {
+          "wage": 7,
+          "quantityDemanded": 120,
+          "quantitySupplied": 292
+        },
+        {
+          "wage": 8,
+          "quantityDemanded": 112,
+          "quantitySupplied": 264
+        }
+      ],
+      "subQuestions": [
+        {
+          "prompt": "Identify one short\u2011term effect of this event on Country X\u2019s economy.",
+          "answer": "One possible effect is a change in inflation or unemployment."
+        },
+        {
+          "prompt": "Suggest one policy the government could implement in response.",
+          "answer": "Potential policies include fiscal stimulus, monetary adjustments, or targeted subsidies."
+        }
+      ],
+      "markingCriteria": {
+        "accuracy": "Correctly uses data to identify effects.",
+        "application": "Applies economic theory to the scenario.",
+        "analysis": "Explains mechanisms and consequences.",
+        "evaluation": "Critically assesses policy responses."
+      }
+    },
+    {
+      "id": "CS24",
+      "level": 2,
+      "topic": "Integrated Case",
+      "context": "Country X is facing a sudden rise in oil prices.",
+      "backgroundText": "Consumer confidence and business investment indicators are included in the table.",
+      "table": [
+        {
+          "wage": 9,
+          "quantityDemanded": 154,
+          "quantitySupplied": 268
+        },
+        {
+          "wage": 14,
+          "quantityDemanded": 205,
+          "quantitySupplied": 62
+        },
+        {
+          "wage": 7,
+          "quantityDemanded": 280,
+          "quantitySupplied": 187
+        }
+      ],
+      "subQuestions": [
+        {
+          "prompt": "Identify one short\u2011term effect of this event on Country X\u2019s economy.",
+          "answer": "One possible effect is a change in inflation or unemployment."
+        },
+        {
+          "prompt": "Suggest one policy the government could implement in response.",
+          "answer": "Potential policies include fiscal stimulus, monetary adjustments, or targeted subsidies."
+        }
+      ],
+      "markingCriteria": {
+        "accuracy": "Correctly uses data to identify effects.",
+        "application": "Applies economic theory to the scenario.",
+        "analysis": "Explains mechanisms and consequences.",
+        "evaluation": "Critically assesses policy responses."
+      }
+    },
+    {
+      "id": "CS25",
+      "level": 2,
+      "topic": "Integrated Case",
+      "context": "Country X experienced a housing market boom.",
+      "backgroundText": "Consumer confidence and business investment indicators are included in the table.",
+      "table": [
+        {
+          "wage": 13,
+          "quantityDemanded": 121,
+          "quantitySupplied": 193
+        },
+        {
+          "wage": 11,
+          "quantityDemanded": 285,
+          "quantitySupplied": 218
+        },
+        {
+          "wage": 12,
+          "quantityDemanded": 70,
+          "quantitySupplied": 56
+        }
+      ],
+      "subQuestions": [
+        {
+          "prompt": "Identify one short\u2011term effect of this event on Country X\u2019s economy.",
+          "answer": "One possible effect is a change in inflation or unemployment."
+        },
+        {
+          "prompt": "Suggest one policy the government could implement in response.",
+          "answer": "Potential policies include fiscal stimulus, monetary adjustments, or targeted subsidies."
+        }
+      ],
+      "markingCriteria": {
+        "accuracy": "Correctly uses data to identify effects.",
+        "application": "Applies economic theory to the scenario.",
+        "analysis": "Explains mechanisms and consequences.",
+        "evaluation": "Critically assesses policy responses."
+      }
+    },
+    {
+      "id": "CS26",
+      "level": 2,
+      "topic": "Integrated Case",
+      "context": "Country X signed a free trade agreement.",
+      "backgroundText": "The following table shows exports and imports before and after the event.",
+      "table": [
+        {
+          "wage": 5,
+          "quantityDemanded": 108,
+          "quantitySupplied": 244
+        },
+        {
+          "wage": 12,
+          "quantityDemanded": 94,
+          "quantitySupplied": 287
+        },
+        {
+          "wage": 7,
+          "quantityDemanded": 258,
+          "quantitySupplied": 76
+        }
+      ],
+      "subQuestions": [
+        {
+          "prompt": "Identify one short\u2011term effect of this event on Country X\u2019s economy.",
+          "answer": "One possible effect is a change in inflation or unemployment."
+        },
+        {
+          "prompt": "Suggest one policy the government could implement in response.",
+          "answer": "Potential policies include fiscal stimulus, monetary adjustments, or targeted subsidies."
+        }
+      ],
+      "markingCriteria": {
+        "accuracy": "Correctly uses data to identify effects.",
+        "application": "Applies economic theory to the scenario.",
+        "analysis": "Explains mechanisms and consequences.",
+        "evaluation": "Critically assesses policy responses."
+      }
+    },
+    {
+      "id": "CS27",
+      "level": 2,
+      "topic": "Integrated Case",
+      "context": "Country X\u2019s currency depreciated sharply.",
+      "backgroundText": "Labour market statistics and wage data are provided.",
+      "table": [
+        {
+          "wage": 13,
+          "quantityDemanded": 140,
+          "quantitySupplied": 112
+        },
+        {
+          "wage": 11,
+          "quantityDemanded": 120,
+          "quantitySupplied": 287
+        },
+        {
+          "wage": 12,
+          "quantityDemanded": 252,
+          "quantitySupplied": 267
+        }
+      ],
+      "subQuestions": [
+        {
+          "prompt": "Identify one short\u2011term effect of this event on Country X\u2019s economy.",
+          "answer": "One possible effect is a change in inflation or unemployment."
+        },
+        {
+          "prompt": "Suggest one policy the government could implement in response.",
+          "answer": "Potential policies include fiscal stimulus, monetary adjustments, or targeted subsidies."
+        }
+      ],
+      "markingCriteria": {
+        "accuracy": "Correctly uses data to identify effects.",
+        "application": "Applies economic theory to the scenario.",
+        "analysis": "Explains mechanisms and consequences.",
+        "evaluation": "Critically assesses policy responses."
+      }
+    },
+    {
+      "id": "CS28",
+      "level": 2,
+      "topic": "Integrated Case",
+      "context": "Country X introduced a carbon tax.",
+      "backgroundText": "The table lists CO2 emissions and tax revenues under different policy scenarios.",
+      "table": [
+        {
+          "wage": 10,
+          "quantityDemanded": 241,
+          "quantitySupplied": 135
+        },
+        {
+          "wage": 12,
+          "quantityDemanded": 268,
+          "quantitySupplied": 262
+        },
+        {
+          "wage": 12,
+          "quantityDemanded": 284,
+          "quantitySupplied": 78
+        }
+      ],
+      "subQuestions": [
+        {
+          "prompt": "Identify one short\u2011term effect of this event on Country X\u2019s economy.",
+          "answer": "One possible effect is a change in inflation or unemployment."
+        },
+        {
+          "prompt": "Suggest one policy the government could implement in response.",
+          "answer": "Potential policies include fiscal stimulus, monetary adjustments, or targeted subsidies."
+        }
+      ],
+      "markingCriteria": {
+        "accuracy": "Correctly uses data to identify effects.",
+        "application": "Applies economic theory to the scenario.",
+        "analysis": "Explains mechanisms and consequences.",
+        "evaluation": "Critically assesses policy responses."
+      }
+    },
+    {
+      "id": "CS29",
+      "level": 2,
+      "topic": "Integrated Case",
+      "context": "Country X is facing a sudden rise in oil prices.",
+      "backgroundText": "The table lists CO2 emissions and tax revenues under different policy scenarios.",
+      "table": [
+        {
+          "wage": 5,
+          "quantityDemanded": 144,
+          "quantitySupplied": 245
+        },
+        {
+          "wage": 11,
+          "quantityDemanded": 235,
+          "quantitySupplied": 107
+        },
+        {
+          "wage": 6,
+          "quantityDemanded": 241,
+          "quantitySupplied": 137
+        }
+      ],
+      "subQuestions": [
+        {
+          "prompt": "Identify one short\u2011term effect of this event on Country X\u2019s economy.",
+          "answer": "One possible effect is a change in inflation or unemployment."
+        },
+        {
+          "prompt": "Suggest one policy the government could implement in response.",
+          "answer": "Potential policies include fiscal stimulus, monetary adjustments, or targeted subsidies."
+        }
+      ],
+      "markingCriteria": {
+        "accuracy": "Correctly uses data to identify effects.",
+        "application": "Applies economic theory to the scenario.",
+        "analysis": "Explains mechanisms and consequences.",
+        "evaluation": "Critically assesses policy responses."
+      }
+    },
+    {
+      "id": "CS30",
+      "level": 2,
+      "topic": "Integrated Case",
+      "context": "Country X signed a free trade agreement.",
+      "backgroundText": "Labour market statistics and wage data are provided.",
+      "table": [
+        {
+          "wage": 14,
+          "quantityDemanded": 193,
+          "quantitySupplied": 192
+        },
+        {
+          "wage": 10,
+          "quantityDemanded": 132,
+          "quantitySupplied": 64
+        },
+        {
+          "wage": 14,
+          "quantityDemanded": 243,
+          "quantitySupplied": 109
+        }
+      ],
+      "subQuestions": [
+        {
+          "prompt": "Identify one short\u2011term effect of this event on Country X\u2019s economy.",
+          "answer": "One possible effect is a change in inflation or unemployment."
+        },
+        {
+          "prompt": "Suggest one policy the government could implement in response.",
+          "answer": "Potential policies include fiscal stimulus, monetary adjustments, or targeted subsidies."
+        }
+      ],
+      "markingCriteria": {
+        "accuracy": "Correctly uses data to identify effects.",
+        "application": "Applies economic theory to the scenario.",
+        "analysis": "Explains mechanisms and consequences.",
+        "evaluation": "Critically assesses policy responses."
+      }
+    },
+    {
+      "id": "CS31",
+      "level": 2,
+      "topic": "Integrated Case",
+      "context": "Country X signed a free trade agreement.",
+      "backgroundText": "Labour market statistics and wage data are provided.",
+      "table": [
+        {
+          "wage": 5,
+          "quantityDemanded": 211,
+          "quantitySupplied": 270
+        },
+        {
+          "wage": 11,
+          "quantityDemanded": 156,
+          "quantitySupplied": 72
+        },
+        {
+          "wage": 13,
+          "quantityDemanded": 138,
+          "quantitySupplied": 157
+        }
+      ],
+      "subQuestions": [
+        {
+          "prompt": "Identify one short\u2011term effect of this event on Country X\u2019s economy.",
+          "answer": "One possible effect is a change in inflation or unemployment."
+        },
+        {
+          "prompt": "Suggest one policy the government could implement in response.",
+          "answer": "Potential policies include fiscal stimulus, monetary adjustments, or targeted subsidies."
+        }
+      ],
+      "markingCriteria": {
+        "accuracy": "Correctly uses data to identify effects.",
+        "application": "Applies economic theory to the scenario.",
+        "analysis": "Explains mechanisms and consequences.",
+        "evaluation": "Critically assesses policy responses."
+      }
+    }
+  ],
+  "flash": [
+    {
+      "id": "F1",
+      "topic": "Microeconomics",
+      "question": "Define price elasticity of demand (PED).",
+      "answer": "PED is the measure of the responsiveness of quantity demanded of a good to a change in its price."
+    },
+    {
+      "id": "F2",
+      "topic": "Macroeconomics",
+      "question": "State one component of aggregate demand in Country X.",
+      "answer": "Components of aggregate demand include consumption (C), investment (I), government spending (G) and net exports (X \u2212 M)."
+    },
+    {
+      "id": "F3",
+      "topic": "Microeconomics",
+      "question": "What is consumer surplus?",
+      "answer": "The difference between what consumers are willing to pay and what they actually pay."
+    },
+    {
+      "id": "F4",
+      "topic": "Microeconomics",
+      "question": "Define marginal cost.",
+      "answer": "The additional cost of producing one more unit of output."
+    },
+    {
+      "id": "F5",
+      "topic": "Microeconomics",
+      "question": "State the law of diminishing marginal utility.",
+      "answer": "As consumption increases, the additional satisfaction gained from consuming one more unit decreases."
+    },
+    {
+      "id": "F6",
+      "topic": "Microeconomics",
+      "question": "What is a positive externality?",
+      "answer": "A benefit enjoyed by a third party not directly involved in a transaction."
+    },
+    {
+      "id": "F7",
+      "topic": "Microeconomics",
+      "question": "Define allocative efficiency.",
+      "answer": "Resources are allocated such that net social benefit is maximised."
+    },
+    {
+      "id": "F8",
+      "topic": "Macroeconomics",
+      "question": "State the components of the circular flow of income.",
+      "answer": "Households, firms, government, financial sector, and foreign sector."
+    },
+    {
+      "id": "F9",
+      "topic": "Macroeconomics",
+      "question": "What is stagflation?",
+      "answer": "An economic situation with stagnant growth and high inflation."
+    },
+    {
+      "id": "F10",
+      "topic": "Macroeconomics",
+      "question": "Define crowding out.",
+      "answer": "When government spending reduces private sector investment due to higher interest rates."
+    },
+    {
+      "id": "F11",
+      "topic": "Macroeconomics",
+      "question": "What is a budget deficit?",
+      "answer": "When a government\u2019s expenditures exceed its revenues within a given period."
+    },
+    {
+      "id": "F12",
+      "topic": "Macroeconomics",
+      "question": "State one supply\u2011side policy.",
+      "answer": "Education and training to improve labour productivity."
+    },
+    {
+      "id": "F13",
+      "topic": "International",
+      "question": "What is comparative advantage?",
+      "answer": "The ability of a country to produce a good at a lower opportunity cost than another country."
+    },
+    {
+      "id": "F14",
+      "topic": "International",
+      "question": "Define exchange rate.",
+      "answer": "The value of one currency in terms of another."
+    },
+    {
+      "id": "F15",
+      "topic": "International",
+      "question": "What is an import quota?",
+      "answer": "A limit on the quantity of a good that may be imported."
+    },
+    {
+      "id": "F16",
+      "topic": "International",
+      "question": "What does the current account record?",
+      "answer": "All transactions of goods, services, income and current transfers between residents and non\u2011residents."
+    },
+    {
+      "id": "F17",
+      "topic": "Development",
+      "question": "What is microfinance?",
+      "answer": "Provision of small loans and financial services to people in poverty who lack access to traditional banking."
+    },
+    {
+      "id": "F18",
+      "topic": "Development",
+      "question": "State one goal of the UN Sustainable Development Goals (SDGs).",
+      "answer": "Goals include reducing poverty, improving education and promoting gender equality."
+    },
+    {
+      "id": "F19",
+      "topic": "Development",
+      "question": "Define human capital.",
+      "answer": "The stock of skills and knowledge embodied in labour which enhance productivity."
+    },
+    {
+      "id": "F20",
+      "topic": "Development",
+      "question": "What is poverty trap?",
+      "answer": "A self\u2011perpetuating condition where low income leads to low savings and investment, keeping income low."
+    },
+    {
+      "id": "F21",
+      "topic": "Development",
+      "question": "Define infrastructure.",
+      "answer": "Physical systems such as roads, bridges, and power supplies needed for economic activity."
+    },
+    {
+      "id": "F22",
+      "topic": "Development",
+      "question": "What is inward\u2011oriented development strategy?",
+      "answer": "A development policy focusing on domestic production to replace imports."
+    }
+  ]
+}

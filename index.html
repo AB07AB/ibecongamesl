@@ -1,0 +1,36 @@
+<!--
+  IB Economics SL Revision Game
+  This browser‑based application is built using Phaser.js for game logic.
+  Additional libraries such as Chart.js are included for diagram rendering.
+  Content is stored in JSON under the data directory. The main JavaScript
+  entry point is main.js.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IB Economics SL Revision Game</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Phaser framework -->
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
+  <!-- Chart.js for rendering diagrams -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+  <!-- p5.js can be used in specific scenes (included if needed) -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.min.js"></script>
+</head>
+<body>
+  <div id="game-container"></div>
+  <!-- Load question data before the game script. This script sets a
+       global QUESTION_DATA variable used by the BootScene. -->
+  <script src="data/questions.js"></script>
+  <!-- Load lesson data for Lesson Mode. This script defines
+       window.LESSON_DATA used by the LessonScene. -->
+  <script src="data/lesson_data.js"></script>
+  <!-- The main game script. Avoid using ES6 module loading on the file:// scheme which can
+       trigger cross‑origin restrictions in some browsers. We use a classic script tag
+       instead so the game runs when opened locally without an HTTP server. -->
+  <script src="main.js"></script>
+</body>
+</html>
