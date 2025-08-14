@@ -65,6 +65,10 @@ class BootScene extends Phaser.Scene {
     if (window.PAPER1_ESSAY_QUESTIONS) {
       QUESTIONS.essay = window.PAPER1_ESSAY_QUESTIONS;
     }
+    // Attach real world examples if provided
+    if (window.REAL_WORLD_EXAMPLES) {
+      QUESTIONS.examples = window.REAL_WORLD_EXAMPLES;
+    }
     // Proceed to menu
     this.scene.start('MenuScene');
   }
@@ -88,6 +92,7 @@ class MenuScene extends Phaser.Scene {
       { key: 'essay', label: 'Essay Mode' },
       { key: 'case', label: 'Case Study Mode' },
       { key: 'flash', label: 'Flashcard Mode' },
+      { key: 'examples', label: 'Real World Examples' },
       // Additional mode for experimentation
       { key: 'adaptive', label: 'Adaptive Practice' }
     ];
@@ -137,9 +142,9 @@ class MenuScene extends Phaser.Scene {
   // Display a simple overlay for level selection. Once a level is
   // selected, start the appropriate scene.
   showLevelSelection(modeKey) {
-    // Adaptive Practice skips level selection
-    if (modeKey === 'adaptive') {
-      this.scene.start('adaptive');
+    // Adaptive Practice and Real World Examples skip level selection
+    if (modeKey === 'adaptive' || modeKey === 'examples') {
+      this.scene.start(modeKey);
       return;
     }
     const scene = this;
@@ -1099,6 +1104,50 @@ class FlashcardScene extends QuestionScene {
 }
 
 
+// ExamplesScene – cycles through real world examples loaded from data/examples.js.
+class ExamplesScene extends Phaser.Scene {
+  constructor() {
+    super('examples');
+  }
+  create() {
+    const examples = QUESTIONS.examples || [];
+    if (examples.length === 0) {
+      this.add.text(50, 50, 'No examples data available', { fontSize: '20px', color: '#d32f2f' });
+      const back = this.add.text(50, 100, 'Back to Menu', { fontSize: '18px', backgroundColor: '#1976d2', color: '#ffffff', padding: 6 })
+        .setInteractive({ useHandCursor: true })
+        .on('pointerover', () => back.setBackgroundColor('#145a9e'))
+        .on('pointerout', () => back.setBackgroundColor('#1976d2'))
+        .on('pointerdown', () => this.scene.start('MenuScene'));
+      return;
+    }
+    this.examples = examples;
+    this.index = 0;
+    this.add.text(GAME_WIDTH / 2, 40, 'Real World Examples', { fontSize: '28px', color: '#1e3a8a' }).setOrigin(0.5);
+    this.display = this.add.text(50, 100, '', { fontSize: '18px', color: '#333', wordWrap: { width: GAME_WIDTH - 100 } });
+    const nextBtn = this.add.text(GAME_WIDTH / 2, GAME_HEIGHT - 60, 'Next', { fontSize: '20px', backgroundColor: '#1976d2', color: '#ffffff', padding: 10 })
+      .setOrigin(0.5)
+      .setInteractive({ useHandCursor: true })
+      .on('pointerover', () => nextBtn.setBackgroundColor('#145a9e'))
+      .on('pointerout', () => nextBtn.setBackgroundColor('#1976d2'))
+      .on('pointerdown', () => this.showNext());
+    const backBtn = this.add.text(20, 10, 'Back to Menu', { fontSize: '18px', backgroundColor: '#1976d2', color: '#ffffff', padding: { left: 8, right: 8, top: 4, bottom: 4 } })
+      .setInteractive({ useHandCursor: true })
+      .on('pointerover', () => backBtn.setBackgroundColor('#145a9e'))
+      .on('pointerout', () => backBtn.setBackgroundColor('#1976d2'))
+      .on('pointerdown', () => this.scene.start('MenuScene'));
+    this.showCurrent();
+  }
+  showCurrent() {
+    const ex = this.examples[this.index];
+    this.display.setText(`${this.index + 1}/${this.examples.length}: [${ex.category}] ${ex.example}`);
+  }
+  showNext() {
+    this.index = (this.index + 1) % this.examples.length;
+    this.showCurrent();
+  }
+}
+
+
 // SummaryScene – displays a report of the session. Includes accuracy by
 // topic, most common errors, time per question and suggested areas for
 // targeted revision. This simple implementation focuses on accuracy and
@@ -1418,7 +1467,7 @@ const config = {
   dom: {
     createContainer: true
   },
-  scene: [BootScene, MenuScene, DiagramScene, CalculationScene, EssayScene, CaseStudyScene, FlashcardScene, SummaryScene, BookmarkReviewScene, AdaptiveScene],
+  scene: [BootScene, MenuScene, DiagramScene, CalculationScene, EssayScene, CaseStudyScene, FlashcardScene, ExamplesScene, SummaryScene, BookmarkReviewScene, AdaptiveScene],
   backgroundColor: '#f0f3f8'
 };
 
