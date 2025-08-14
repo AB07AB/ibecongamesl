@@ -464,7 +464,7 @@ class DiagramScene extends QuestionScene {
     container.style.width = '100%';
     container.style.marginTop = '10px';
     container.style.maxHeight = '360px';
-    container.style.overflowY = 'auto';
+    container.style.overflowY = 'scroll';
     const textarea = document.createElement('textarea');
     textarea.className = 'ui-textarea';
     textarea.placeholder = 'Write your explanation here...';
@@ -480,7 +480,8 @@ class DiagramScene extends QuestionScene {
     solutionDiv.style.padding = '10px';
     solutionDiv.style.border = '1px solid #ccc';
     solutionDiv.style.maxHeight = '180px';
-    solutionDiv.style.overflowY = 'auto';
+    // Always show a vertical scrollbar so longer solutions remain accessible
+    solutionDiv.style.overflowY = 'scroll';
     container.appendChild(solutionDiv);
     const nextBtn = document.createElement('button');
     nextBtn.className = 'ui-button';
@@ -568,7 +569,7 @@ class CalculationScene extends QuestionScene {
     container.style.width = '100%';
     container.style.marginTop = '10px';
     container.style.maxHeight = '360px';
-    container.style.overflowY = 'auto';
+    container.style.overflowY = 'scroll';
     const input = document.createElement('input');
     input.type = 'number';
     input.className = 'ui-input';
@@ -586,7 +587,8 @@ class CalculationScene extends QuestionScene {
     solutionDiv.style.padding = '10px';
     solutionDiv.style.border = '1px solid #ccc';
     solutionDiv.style.maxHeight = '180px';
-    solutionDiv.style.overflowY = 'auto';
+    // Always show a vertical scrollbar so longer solutions remain visible
+    solutionDiv.style.overflowY = 'scroll';
     container.appendChild(solutionDiv);
     // Next button
     const nextBtn = document.createElement('button');
@@ -1110,8 +1112,9 @@ class ExamplesScene extends Phaser.Scene {
     super('examples');
   }
   create() {
-    const examples = QUESTIONS.examples || [];
-    if (examples.length === 0) {
+    const examples = QUESTIONS.examples || {};
+    const categories = Object.keys(examples);
+    if (categories.length === 0) {
       this.add.text(50, 50, 'No examples data available', { fontSize: '20px', color: '#d32f2f' });
       const back = this.add.text(50, 100, 'Back to Menu', { fontSize: '18px', backgroundColor: '#1976d2', color: '#ffffff', padding: 6 })
         .setInteractive({ useHandCursor: true })
@@ -1121,15 +1124,23 @@ class ExamplesScene extends Phaser.Scene {
       return;
     }
     this.examples = examples;
-    this.index = 0;
+    this.categories = categories;
+    this.catIndex = 0;
+    this.exIndex = 0;
     this.add.text(GAME_WIDTH / 2, 40, 'Real World Examples', { fontSize: '28px', color: '#1e3a8a' }).setOrigin(0.5);
     this.display = this.add.text(50, 100, '', { fontSize: '18px', color: '#333', wordWrap: { width: GAME_WIDTH - 100 } });
-    const nextBtn = this.add.text(GAME_WIDTH / 2, GAME_HEIGHT - 60, 'Next', { fontSize: '20px', backgroundColor: '#1976d2', color: '#ffffff', padding: 10 })
+    const nextBtn = this.add.text(GAME_WIDTH / 2, GAME_HEIGHT - 60, 'Next Example', { fontSize: '20px', backgroundColor: '#1976d2', color: '#ffffff', padding: 10 })
       .setOrigin(0.5)
       .setInteractive({ useHandCursor: true })
       .on('pointerover', () => nextBtn.setBackgroundColor('#145a9e'))
       .on('pointerout', () => nextBtn.setBackgroundColor('#1976d2'))
-      .on('pointerdown', () => this.showNext());
+      .on('pointerdown', () => this.showNextExample());
+    const catBtn = this.add.text(GAME_WIDTH / 2, GAME_HEIGHT - 100, 'Next Category', { fontSize: '20px', backgroundColor: '#ffa000', color: '#ffffff', padding: 10 })
+      .setOrigin(0.5)
+      .setInteractive({ useHandCursor: true })
+      .on('pointerover', () => catBtn.setBackgroundColor('#cc7a00'))
+      .on('pointerout', () => catBtn.setBackgroundColor('#ffa000'))
+      .on('pointerdown', () => this.showNextCategory());
     const backBtn = this.add.text(20, 10, 'Back to Menu', { fontSize: '18px', backgroundColor: '#1976d2', color: '#ffffff', padding: { left: 8, right: 8, top: 4, bottom: 4 } })
       .setInteractive({ useHandCursor: true })
       .on('pointerover', () => backBtn.setBackgroundColor('#145a9e'))
@@ -1138,11 +1149,20 @@ class ExamplesScene extends Phaser.Scene {
     this.showCurrent();
   }
   showCurrent() {
-    const ex = this.examples[this.index];
-    this.display.setText(`${this.index + 1}/${this.examples.length}: [${ex.category}] ${ex.example}`);
+    const cat = this.categories[this.catIndex];
+    const list = this.examples[cat];
+    const ex = list[this.exIndex];
+    this.display.setText(`${cat} (${this.exIndex + 1}/${list.length})\n${ex.example}\nContext: ${ex.context}`);
   }
-  showNext() {
-    this.index = (this.index + 1) % this.examples.length;
+  showNextExample() {
+    const cat = this.categories[this.catIndex];
+    const list = this.examples[cat];
+    this.exIndex = (this.exIndex + 1) % list.length;
+    this.showCurrent();
+  }
+  showNextCategory() {
+    this.catIndex = (this.catIndex + 1) % this.categories.length;
+    this.exIndex = 0;
     this.showCurrent();
   }
 }
