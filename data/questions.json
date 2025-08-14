@@ -49,32 +49,57 @@
   ],
   "essay": [
     {
-      "id": "E1",
+      "id": "IBP1_Q1",
       "level": 1,
       "commandTerm": "Explain",
-      "topic": "International – Trade Protection",
-      "prompt": "Explain, using a tariff diagram, the effects of imposing an import tariff on foreign steel in Country X.",
-      "keywords": ["tariff", "price", "domestic production", "imports", "government revenue", "deadweight loss"],
+      "topic": "Microeconomics – Indirect taxes",
+      "prompt": "Using a demand and supply diagram, explain how a specific tax on cigarettes affects the market for cigarettes.",
+      "keywords": ["indirect tax", "cigarettes", "higher price", "lower quantity"],
       "solutionOutline": [
-        "Define tariff as a tax on imports.",
-        "Draw a supply and demand diagram for steel showing world price.",
-        "Illustrate the tariff raising the domestic price, reducing imports and increasing domestic production.",
-        "Explain the creation of government revenue and the deadweight loss due to the tariff."
+        "Define indirect tax and distinguish between specific and ad valorem.",
+        "Draw a supply and demand diagram showing the tax wedge.",
+        "Explain price rises, quantity falls, tax revenue and welfare loss."
       ]
     },
     {
-      "id": "E2",
+      "id": "IBP1_Q2",
       "level": 2,
       "commandTerm": "Evaluate",
-      "topic": "Macroeconomics – Fiscal Policy",
-      "prompt": "Evaluate the effectiveness of using fiscal policy to reduce unemployment in Country X. You should consider both demand‑side and supply‑side effects.",
-      "keywords": ["fiscal policy", "government spending", "taxes", "unemployment", "multiplier", "inflation", "crowding out"],
+      "topic": "Microeconomics – Price controls",
+      "prompt": "Evaluate the consequences of a price ceiling on rental housing for consumers, producers and the government.",
+      "keywords": ["price ceiling", "rent control", "shortage", "black market", "welfare"],
       "solutionOutline": [
-        "Define fiscal policy and its objectives.",
-        "Discuss how expansionary fiscal policy can increase aggregate demand, creating jobs.",
-        "Consider potential supply‑side improvements from infrastructure spending.",
-        "Evaluate limitations such as time lags, potential inflation, and crowding out of private investment.",
-        "Conclude by weighing benefits against drawbacks and discussing alternative policies."
+        "Define price ceiling and illustrate the resulting shortage with a diagram.",
+        "Discuss effects on tenants and landlords.",
+        "Consider government responses such as subsidies or rationing.",
+        "Weigh potential benefits against efficiency losses and unintended outcomes."
+      ]
+    },
+    {
+      "id": "IBP1_Q3",
+      "level": 2,
+      "commandTerm": "Explain",
+      "topic": "Macroeconomics – Monetary policy",
+      "prompt": "Using an AD/AS diagram, explain how raising interest rates can reduce demand-pull inflation.",
+      "keywords": ["monetary policy", "interest rates", "aggregate demand", "inflation"],
+      "solutionOutline": [
+        "Define demand-pull inflation and interest rate policy.",
+        "Show aggregate demand shifting left as rates rise.",
+        "Explain the impact on output and the price level."
+      ]
+    },
+    {
+      "id": "IBP1_Q4",
+      "level": 2,
+      "commandTerm": "Discuss",
+      "topic": "Macroeconomics – Fiscal policy",
+      "prompt": "Discuss the effectiveness of expansionary fiscal policy in closing a deflationary gap.",
+      "keywords": ["fiscal policy", "government spending", "deflationary gap", "multiplier"],
+      "solutionOutline": [
+        "Define a deflationary gap and expansionary fiscal policy.",
+        "Explain how increased government spending shifts aggregate demand right.",
+        "Examine multiplier effects and possible crowding out.",
+        "Discuss short-run versus long-run effectiveness."
       ]
     }
   ],

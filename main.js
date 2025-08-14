@@ -61,6 +61,10 @@ class BootScene extends Phaser.Scene {
       return;
     }
     QUESTIONS = window.QUESTION_DATA;
+    // Override essay questions with IB Paper 1 set if available
+    if (window.PAPER1_ESSAY_QUESTIONS) {
+      QUESTIONS.essay = window.PAPER1_ESSAY_QUESTIONS;
+    }
     // Proceed to menu
     this.scene.start('MenuScene');
   }
