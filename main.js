@@ -823,8 +823,7 @@ class EssayScene extends QuestionScene {
     this.textObjects.push(promptText);
     // Container for interactive elements
     const container = document.createElement('div');
-    container.style.width = '100%';
-    container.style.marginTop = '10px';
+    container.className = 'essay-container';
 
     // Step 1 – Draw the question card
     const step1 = document.createElement('p');
@@ -851,8 +850,10 @@ class EssayScene extends QuestionScene {
     const chains = [];
     bullets.forEach((_, i) => {
       const wrap = document.createElement('div');
+      wrap.className = 'chain-group';
       const title = document.createElement('p');
       title.textContent = `Bullet ${i + 1}`;
+      title.style.flex = '1 1 100%';
       wrap.appendChild(title);
       const labels = ['Theory', 'Analysis', 'Example', 'Evaluation'];
       const chain = {};
@@ -875,6 +876,18 @@ class EssayScene extends QuestionScene {
     skeleton.className = 'ui-textarea';
     skeleton.placeholder = 'Outline intro, bullets and judgment...';
     container.appendChild(skeleton);
+    const wordCount = document.createElement('p');
+    wordCount.className = 'word-count';
+    wordCount.textContent = 'Word count: 0';
+    container.appendChild(wordCount);
+    const updateSkeleton = () => {
+      skeleton.style.height = 'auto';
+      skeleton.style.height = skeleton.scrollHeight + 'px';
+      const words = skeleton.value.trim().split(/\s+/).filter(Boolean);
+      wordCount.textContent = `Word count: ${words.length}`;
+    };
+    skeleton.addEventListener('input', updateSkeleton);
+    updateSkeleton();
 
     // Step 5 – Reverse Marker prompts
     const step5 = document.createElement('div');
@@ -891,7 +904,22 @@ class EssayScene extends QuestionScene {
     const nextBtn = document.createElement('button');
     nextBtn.className = 'ui-button';
     nextBtn.textContent = this.currentIndex === this.questions.length - 1 ? 'Finish Session' : 'Next Question';
-    container.appendChild(nextBtn);
+    const clearBtn = document.createElement('button');
+    clearBtn.className = 'ui-button';
+    clearBtn.textContent = 'Clear All';
+    clearBtn.addEventListener('click', () => {
+      bullets.forEach(b => b.value = '');
+      chains.forEach(c => {
+        Object.values(c).forEach(input => input.value = '');
+      });
+      skeleton.value = '';
+      updateSkeleton();
+    });
+    const buttonRow = document.createElement('div');
+    buttonRow.className = 'button-row';
+    buttonRow.appendChild(clearBtn);
+    buttonRow.appendChild(nextBtn);
+    container.appendChild(buttonRow);
     nextBtn.addEventListener('click', () => {
       const response = {
         bullets: bullets.map(b => b.value.trim()),
@@ -916,7 +944,9 @@ class EssayScene extends QuestionScene {
         feedback.style.color = '#d32f2f';
       }
     });
-    this.domContainer = this.add.dom(GAME_WIDTH / 2, GAME_HEIGHT - 250, container);
+    const formY = promptText.y + promptText.height + 20;
+    this.domContainer = this.add.dom(GAME_WIDTH / 2, formY, container);
+    this.domContainer.setOrigin(0.5, 0);
   }
   evaluateAnswer(response) {
     // Ensure all bullet headlines, chain links, and skeleton are filled in
