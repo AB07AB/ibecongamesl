@@ -64,3 +64,43 @@ html, body {
   color: #000000;
   background-color: #ffffff;
 }
+
+/* Layout fixes for Essay Mode */
+.essay-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.essay-container .ui-input,
+.essay-container .ui-textarea {
+  width: 100%;
+  margin: 0;
+}
+
+.chain-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chain-group .ui-input {
+  flex: 1 1 calc(50% - 8px);
+  margin: 0;
+}
+
+.word-count {
+  font-size: 14px;
+  text-align: right;
+  color: #333;
+  margin: 0 4px;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+}
