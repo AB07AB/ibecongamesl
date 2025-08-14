@@ -106,3 +106,30 @@ html, body {
   display: flex;
   justify-content: space-between;
 }
+
+/* Layout for the Diagram Builder scene */
+#builder-wrapper {
+  display: flex;
+  width: 860px;
+  height: 560px;
+}
+.builder-toolbox,
+.builder-info {
+  width: 20%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: #e7eef5;
+  overflow-y: auto;
+}
+.builder-canvas {
+  flex: 1;
+  border: 1px solid #ccc;
+  background: #ffffff;
+}
+
+/* Simple container for Adaptive Learning scene */
+.adaptive-container {
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+}

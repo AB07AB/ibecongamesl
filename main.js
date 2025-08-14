@@ -88,6 +88,9 @@ class MenuScene extends Phaser.Scene {
       { key: 'essay', label: 'Essay Mode' },
       { key: 'case', label: 'Case Study Mode' },
       { key: 'flash', label: 'Flashcard Mode' },
+      // Additional modes for experimentation and adaptive practice
+      { key: 'builder', label: 'Diagram Builder' },
+      { key: 'adaptive', label: 'Adaptive Practice' },
       // New lesson mode introduces a guided lesson based on external notes
       { key: 'lesson', label: 'Lesson Mode' }
     ];
@@ -153,6 +156,15 @@ class MenuScene extends Phaser.Scene {
       };
       // Start the LessonScene immediately
       this.scene.start('lesson');
+      return;
+    }
+    // Diagram Builder and Adaptive Practice skip level selection
+    if (modeKey === 'builder') {
+      this.scene.start('builder');
+      return;
+    }
+    if (modeKey === 'adaptive') {
+      this.scene.start('adaptive');
       return;
     }
     const scene = this;
@@ -1977,6 +1989,80 @@ class BookmarkReviewScene extends Phaser.Scene {
   }
 }
 
+// DiagramBuilderScene – provides a simple layout with a toolbox, canvas, and info panel
+// for constructing economic diagrams. This is a basic scaffold for future interactive
+// features.
+class DiagramBuilderScene extends Phaser.Scene {
+  constructor() {
+    super('builder');
+  }
+  create() {
+    const wrapper = document.createElement('div');
+    wrapper.id = 'builder-wrapper';
+    wrapper.style.width = '860px';
+    wrapper.style.height = '560px';
+
+    const toolbox = document.createElement('div');
+    toolbox.className = 'builder-toolbox';
+    toolbox.innerHTML = '<h3>Tools</h3><ul><li>Supply</li><li>Demand</li><li>Tax</li></ul>';
+    wrapper.appendChild(toolbox);
+
+    const canvasDiv = document.createElement('div');
+    canvasDiv.className = 'builder-canvas';
+    const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    svg.setAttribute('width', '100%');
+    svg.setAttribute('height', '100%');
+    canvasDiv.appendChild(svg);
+    wrapper.appendChild(canvasDiv);
+
+    const info = document.createElement('div');
+    info.className = 'builder-info';
+    info.innerHTML = '<h3>Details</h3><p>P*: <span id="p-star">-</span></p><p>Q*: <span id="q-star">-</span></p>';
+    const backBtn = document.createElement('button');
+    backBtn.className = 'ui-button';
+    backBtn.textContent = 'Back';
+    backBtn.addEventListener('click', () => {
+      this.scene.start('MenuScene');
+    });
+    info.appendChild(backBtn);
+    wrapper.appendChild(info);
+
+    this.domElement = this.add.dom(GAME_WIDTH / 2, GAME_HEIGHT / 2, wrapper);
+    this.events.once('shutdown', () => {
+      if (this.domElement) this.domElement.destroy();
+    });
+  }
+}
+
+// AdaptiveScene – placeholder interface for the adaptive learning engine. Displays
+// explanatory text and offers a way back to the menu.
+class AdaptiveScene extends Phaser.Scene {
+  constructor() {
+    super('adaptive');
+  }
+  create() {
+    const container = document.createElement('div');
+    container.className = 'adaptive-container';
+    const title = document.createElement('h2');
+    title.textContent = 'Adaptive Learning Engine';
+    container.appendChild(title);
+    const desc = document.createElement('p');
+    desc.textContent = 'Practice items will adjust to your mastery over time.';
+    container.appendChild(desc);
+    const back = document.createElement('button');
+    back.className = 'ui-button';
+    back.textContent = 'Back';
+    back.addEventListener('click', () => {
+      this.scene.start('MenuScene');
+    });
+    container.appendChild(back);
+    this.domElement = this.add.dom(GAME_WIDTH / 2, GAME_HEIGHT / 2, container);
+    this.events.once('shutdown', () => {
+      if (this.domElement) this.domElement.destroy();
+    });
+  }
+}
+
 // Configuration for the Phaser game. We enable the DOM plugin to
 // integrate HTML elements seamlessly. The parent div is 'game-container'.
 const config = {
@@ -1987,7 +2073,7 @@ const config = {
   dom: {
     createContainer: true
   },
-  scene: [BootScene, MenuScene, DiagramScene, CalculationScene, EssayScene, CaseStudyScene, FlashcardScene, LessonScene, LessonSummaryScene, LessonReviewScene, SummaryScene, BookmarkReviewScene],
+  scene: [BootScene, MenuScene, DiagramScene, CalculationScene, EssayScene, CaseStudyScene, FlashcardScene, LessonScene, LessonSummaryScene, LessonReviewScene, SummaryScene, BookmarkReviewScene, DiagramBuilderScene, AdaptiveScene],
   backgroundColor: '#f0f3f8'
 };
 
