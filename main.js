@@ -593,9 +593,19 @@ class CalculationScene extends QuestionScene {
         if (result.correct) {
           feedback.textContent = 'Correct!';
           feedback.style.color = '#008000';
-          setTimeout(() => {
-            this.handleSubmit(value);
-          }, 800);
+          solutionDiv.style.display = 'block';
+          solutionDiv.innerHTML = '';
+          if (Array.isArray(question.solutionSteps)) {
+            const ul = document.createElement('ul');
+            question.solutionSteps.forEach(step => {
+              const li = document.createElement('li');
+              li.textContent = step.step + ' = ' + step.value;
+              ul.appendChild(li);
+            });
+            solutionDiv.appendChild(ul);
+          }
+          nextBtn.textContent = 'Continue';
+          awaitingContinue = true;
         } else {
           feedback.textContent = 'Incorrect. Correct answer: ' + question.answer;
           feedback.style.color = '#d32f2f';
