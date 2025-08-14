@@ -88,11 +88,8 @@ class MenuScene extends Phaser.Scene {
       { key: 'essay', label: 'Essay Mode' },
       { key: 'case', label: 'Case Study Mode' },
       { key: 'flash', label: 'Flashcard Mode' },
-      // Additional modes for experimentation and adaptive practice
-      { key: 'builder', label: 'Diagram Builder' },
-      { key: 'adaptive', label: 'Adaptive Practice' },
-      // New lesson mode introduces a guided lesson based on external notes
-      { key: 'lesson', label: 'Lesson Mode' }
+      // Additional mode for experimentation
+      { key: 'adaptive', label: 'Adaptive Practice' }
     ];
 
     const startY = 150;
@@ -140,29 +137,7 @@ class MenuScene extends Phaser.Scene {
   // Display a simple overlay for level selection. Once a level is
   // selected, start the appropriate scene.
   showLevelSelection(modeKey) {
-    // For Lesson Mode, we bypass level selection and start the lesson directly.
-    if (modeKey === 'lesson') {
-      // Reset session for lesson mode (not used but keep structure consistent)
-      Session = {
-        mode: 'lesson',
-        level: 1,
-        startTime: Date.now(),
-        endTime: 0,
-        questions: [],
-        answers: [],
-        correct: [],
-        times: [],
-        keywordsFound: []
-      };
-      // Start the LessonScene immediately
-      this.scene.start('lesson');
-      return;
-    }
-    // Diagram Builder and Adaptive Practice skip level selection
-    if (modeKey === 'builder') {
-      this.scene.start('builder');
-      return;
-    }
+    // Adaptive Practice skips level selection
     if (modeKey === 'adaptive') {
       this.scene.start('adaptive');
       return;
@@ -479,236 +454,63 @@ class DiagramScene extends QuestionScene {
       wordWrap: { width: GAME_WIDTH - 100 }
     });
     this.textObjects.push(promptText);
-    // Create a DOM container for input, feedback, interactive builder and solution.
-    // We increase the maxHeight to allow space for the interactive builder while keeping
-    // the "Next" button visible.  The container is scrollable so that users can
-    // scroll through the solution and builder content without losing navigation controls.
+    // Container for input, feedback and solution
     const container = document.createElement('div');
     container.style.width = '100%';
     container.style.marginTop = '10px';
     container.style.maxHeight = '360px';
     container.style.overflowY = 'auto';
-    // Input area for explanation
     const textarea = document.createElement('textarea');
     textarea.className = 'ui-textarea';
     textarea.placeholder = 'Write your explanation here...';
     container.appendChild(textarea);
-    // Feedback paragraph – shows correct/incorrect after answer submission
     const feedback = document.createElement('p');
     feedback.style.display = 'none';
     feedback.style.fontWeight = 'bold';
     feedback.style.marginTop = '5px';
     container.appendChild(feedback);
-    // Button to reveal solution. When clicked, show expected diagram and explanation.
-    const revealBtn = document.createElement('button');
-    revealBtn.className = 'ui-button';
-    revealBtn.textContent = 'Show Solution';
-    container.appendChild(revealBtn);
-    // Solution output area – hidden until reveal. Limit its height to keep next button visible.
     const solutionDiv = document.createElement('div');
+    solutionDiv.style.display = 'none';
     solutionDiv.style.marginTop = '10px';
     solutionDiv.style.padding = '10px';
     solutionDiv.style.border = '1px solid #ccc';
-    solutionDiv.style.display = 'none';
     solutionDiv.style.maxHeight = '180px';
     solutionDiv.style.overflowY = 'auto';
     container.appendChild(solutionDiv);
-
-    // Interactive diagram builder (optional).  Provide a toolbox of elements and a drop
-    // area where users can drag and drop components to assemble a diagram.  Upon
-    // evaluation, we compare the placed elements against a set of expected elements
-    // inferred from the expectedDiagram text.  Feedback is shown indicating missing
-    // or extraneous parts.  This builder does not affect scoring of the written
-    // explanation but offers a hands‑on way to practice constructing diagrams.
-    const builderHeading = document.createElement('h4');
-    builderHeading.textContent = 'Interactive Diagram Builder (optional)';
-    builderHeading.style.marginTop = '15px';
-    builderHeading.style.fontSize = '16px';
-    container.appendChild(builderHeading);
-
-    const builderWrapper = document.createElement('div');
-    builderWrapper.style.display = 'flex';
-    builderWrapper.style.alignItems = 'flex-start';
-    builderWrapper.style.gap = '10px';
-    builderWrapper.style.marginTop = '5px';
-    // Toolbox containing draggable items
-    const toolbox = document.createElement('div');
-    toolbox.style.border = '1px solid #ccc';
-    toolbox.style.padding = '5px';
-    toolbox.style.backgroundColor = '#f7f7f7';
-    toolbox.style.width = '30%';
-    const toolboxTitle = document.createElement('p');
-    toolboxTitle.textContent = 'Toolbox:';
-    toolboxTitle.style.fontWeight = 'bold';
-    toolbox.appendChild(toolboxTitle);
-    const toolItems = ['Axis', 'Demand Curve', 'Supply Curve', 'Shift Demand Right', 'Shift Supply Right'];
-    toolItems.forEach(item => {
-      const elem = document.createElement('div');
-      elem.textContent = item;
-      elem.style.border = '1px solid #888';
-      elem.style.padding = '4px';
-      elem.style.marginBottom = '4px';
-      elem.style.backgroundColor = '#ffffff';
-      elem.style.cursor = 'grab';
-      elem.setAttribute('draggable', 'true');
-      elem.addEventListener('dragstart', (ev) => {
-        ev.dataTransfer.setData('text/plain', item);
-      });
-      toolbox.appendChild(elem);
-    });
-    builderWrapper.appendChild(toolbox);
-    // Drop area where users place diagram components
-    const dropArea = document.createElement('div');
-    dropArea.style.border = '1px dashed #888';
-    dropArea.style.minHeight = '150px';
-    dropArea.style.flexGrow = '1';
-    dropArea.style.position = 'relative';
-    dropArea.style.padding = '4px';
-    dropArea.addEventListener('dragover', (ev) => {
-      ev.preventDefault();
-    });
-    // Track which elements are placed for evaluation
-    const placedElements = [];
-    dropArea.addEventListener('drop', (ev) => {
-      ev.preventDefault();
-      const type = ev.dataTransfer.getData('text/plain');
-      if (!type) return;
-      // Create a small label representing the dropped element
-      const label = document.createElement('div');
-      label.textContent = type;
-      label.style.position = 'absolute';
-      // Offset placement relative to drop area coordinates
-      const rect = dropArea.getBoundingClientRect();
-      const x = ev.clientX - rect.left;
-      const y = ev.clientY - rect.top;
-      label.style.left = (x - 30) + 'px';
-      label.style.top = (y - 10) + 'px';
-      label.style.padding = '2px 4px';
-      label.style.border = '1px solid #ccc';
-      label.style.backgroundColor = '#e0f7fa';
-      label.style.fontSize = '12px';
-      label.style.cursor = 'move';
-      dropArea.appendChild(label);
-      placedElements.push(type);
-    });
-    builderWrapper.appendChild(dropArea);
-    // Evaluation area beneath the drop area
-    const evalControls = document.createElement('div');
-    evalControls.style.display = 'flex';
-    evalControls.style.flexDirection = 'column';
-    evalControls.style.marginTop = '10px';
-    const evalBtn = document.createElement('button');
-    evalBtn.className = 'ui-button';
-    evalBtn.textContent = 'Check Diagram';
-    evalControls.appendChild(evalBtn);
-    const evalFeedback = document.createElement('p');
-    evalFeedback.style.display = 'none';
-    evalFeedback.style.fontWeight = 'bold';
-    evalFeedback.style.marginTop = '5px';
-    evalControls.appendChild(evalFeedback);
-    evalBtn.addEventListener('click', () => {
-      // Derive expected elements from the expectedDiagram text
-      const expected = [];
-      const ed = (question.expectedDiagram || '').toLowerCase();
-      // Basic heuristics to infer required components
-      if (ed.includes('demand')) expected.push('Demand Curve');
-      if (ed.includes('supply')) expected.push('Supply Curve');
-      if (ed.includes('ad')) expected.push('Demand Curve');
-      if (ed.includes('as')) expected.push('Supply Curve');
-      if (ed.includes('ppc') || ed.includes('production possibility')) expected.push('PPC');
-      if (ed.includes('lorenz')) expected.push('Lorenz Curve');
-      // Always include axis for most diagrams
-      expected.unshift('Axis');
-      // Remove duplicates
-      const uniqueExpected = [...new Set(expected)];
-      // Check placed elements
-      const uniquePlaced = [...new Set(placedElements)];
-      const missing = uniqueExpected.filter(e => !uniquePlaced.includes(e));
-      evalFeedback.style.display = 'block';
-      if (missing.length === 0) {
-        evalFeedback.textContent = 'Great job! You have included all key components.';
-        evalFeedback.style.color = '#008000';
-      } else {
-        evalFeedback.textContent = 'Missing components: ' + missing.join(', ');
-        evalFeedback.style.color = '#d32f2f';
-      }
-    });
-    builderWrapper.appendChild(evalControls);
-    container.appendChild(builderWrapper);
-    // Next button (placed outside solution area to stay visible)
     const nextBtn = document.createElement('button');
     nextBtn.className = 'ui-button';
     nextBtn.textContent = this.currentIndex === this.questions.length - 1 ? 'Finish Session' : 'Next Question';
     container.appendChild(nextBtn);
-    // Event handlers
-    revealBtn.addEventListener('click', () => {
-      // Show expected diagram and explanation
-      solutionDiv.style.display = 'block';
-      // Clear any existing content
-      solutionDiv.innerHTML = '';
-      // Insert explanation text
-      const p = document.createElement('p');
-      p.textContent = 'Expected Diagram: ' + question.expectedDiagram;
-      solutionDiv.appendChild(p);
-      const exp = document.createElement('p');
-      exp.textContent = 'Explanation: ' + question.solutionExplanation;
-      solutionDiv.appendChild(exp);
-      // Draw a simple placeholder diagram using Chart.js
-      const canvas = document.createElement('canvas');
-      canvas.width = 360;
-      canvas.height = 250;
-      solutionDiv.appendChild(canvas);
-      const ctx = canvas.getContext('2d');
-      const data = {
-        labels: ['Q1', 'Q2', 'Q3', 'Q4'],
-        datasets: [
-          {
-            label: 'Initial Curve',
-            data: [3, 2.5, 2, 1.8],
-            borderColor: 'rgba(100, 181, 246, 1)',
-            backgroundColor: 'rgba(100, 181, 246, 0.2)',
-            fill: false
-          },
-          {
-            label: 'Shifted Curve',
-            data: [4.5, 3.5, 3, 2.8],
-            borderColor: 'rgba(220, 20, 60, 1)',
-            backgroundColor: 'rgba(220, 20, 60, 0.2)',
-            fill: false
-          }
-        ]
-      };
-      new Chart(ctx, {
-        type: 'line',
-        data: data,
-        options: {
-          plugins: { legend: { display: true } },
-          scales: {
-            x: { title: { display: true, text: 'Quantity' } },
-            y: { title: { display: true, text: 'Price' } }
-          }
-        }
-      });
-    });
+    let awaitingContinue = false;
     nextBtn.addEventListener('click', () => {
       const answer = textarea.value.trim();
-      // Evaluate the answer before submitting
-      const result = this.evaluateAnswer(question, answer);
-      // Show feedback
-      feedback.style.display = 'block';
-      if (result.correct) {
-        feedback.textContent = 'Correct!';
-        feedback.style.color = '#008000';
+      if (!awaitingContinue) {
+        const result = this.evaluateAnswer(question, answer);
+        feedback.style.display = 'block';
+        if (result.correct) {
+          feedback.textContent = 'Correct!';
+          feedback.style.color = '#008000';
+          setTimeout(() => {
+            this.handleSubmit(answer);
+          }, 800);
+        } else {
+          const missing = question.keywords.filter(kw => !(result.keywordsFound || []).includes(kw));
+          feedback.textContent = 'Incorrect. Missing keywords: ' + missing.join(', ');
+          feedback.style.color = '#d32f2f';
+          solutionDiv.style.display = 'block';
+          solutionDiv.innerHTML = '';
+          const p = document.createElement('p');
+          p.textContent = 'Expected Diagram: ' + question.expectedDiagram;
+          solutionDiv.appendChild(p);
+          const exp = document.createElement('p');
+          exp.textContent = 'Explanation: ' + question.solutionExplanation;
+          solutionDiv.appendChild(exp);
+          nextBtn.textContent = 'Continue';
+          awaitingContinue = true;
+        }
       } else {
-        // Show which keywords were missing for diagrams
-        const missing = question.keywords.filter(kw => !(result.keywordsFound || []).includes(kw));
-        feedback.textContent = 'Incorrect. Missing keywords: ' + missing.join(', ');
-        feedback.style.color = '#d32f2f';
-      }
-      // Delay slightly before moving to next question so the user can read feedback
-      setTimeout(() => {
         this.handleSubmit(answer);
-      }, 800);
+      }
     });
     // Use Phaser DOMElement to integrate the container into the scene
     this.domContainer = this.add.dom(GAME_WIDTH / 2, GAME_HEIGHT - 200, container);
@@ -770,26 +572,50 @@ class CalculationScene extends QuestionScene {
     feedback.style.display = 'none';
     feedback.style.fontWeight = 'bold';
     container.appendChild(feedback);
+    // Solution steps
+    const solutionDiv = document.createElement('div');
+    solutionDiv.style.display = 'none';
+    solutionDiv.style.marginTop = '10px';
+    solutionDiv.style.padding = '10px';
+    solutionDiv.style.border = '1px solid #ccc';
+    container.appendChild(solutionDiv);
     // Next button
     const nextBtn = document.createElement('button');
     nextBtn.className = 'ui-button';
     nextBtn.textContent = this.currentIndex === this.questions.length - 1 ? 'Finish Session' : 'Next Question';
     container.appendChild(nextBtn);
+    let awaitingContinue = false;
     nextBtn.addEventListener('click', () => {
       const value = input.value.trim();
-      // Evaluate answer
-      const result = this.evaluateAnswer(question, value);
-      feedback.style.display = 'block';
-      if (result.correct) {
-        feedback.textContent = 'Correct!';
-        feedback.style.color = '#008000';
+      if (!awaitingContinue) {
+        const result = this.evaluateAnswer(question, value);
+        feedback.style.display = 'block';
+        if (result.correct) {
+          feedback.textContent = 'Correct!';
+          feedback.style.color = '#008000';
+          setTimeout(() => {
+            this.handleSubmit(value);
+          }, 800);
+        } else {
+          feedback.textContent = 'Incorrect. Correct answer: ' + question.answer;
+          feedback.style.color = '#d32f2f';
+          solutionDiv.style.display = 'block';
+          solutionDiv.innerHTML = '';
+          if (Array.isArray(question.solutionSteps)) {
+            const ul = document.createElement('ul');
+            question.solutionSteps.forEach(step => {
+              const li = document.createElement('li');
+              li.textContent = step.step + ' = ' + step.value;
+              ul.appendChild(li);
+            });
+            solutionDiv.appendChild(ul);
+          }
+          nextBtn.textContent = 'Continue';
+          awaitingContinue = true;
+        }
       } else {
-        feedback.textContent = 'Incorrect. Correct answer: ' + question.answer;
-        feedback.style.color = '#d32f2f';
-      }
-      setTimeout(() => {
         this.handleSubmit(value);
-      }, 800);
+      }
     });
     this.domContainer = this.add.dom(GAME_WIDTH / 2, GAME_HEIGHT - 160, container);
   }
@@ -1103,37 +929,58 @@ class CaseStudyScene extends QuestionScene {
     nextBtn.className = 'ui-button';
     nextBtn.textContent = this.subIndex === this.question.subQuestions.length - 1 ? 'Submit Case Study' : 'Next Part';
     this.subContainer.appendChild(nextBtn);
+    let awaitingContinue = false;
     nextBtn.addEventListener('click', () => {
       const answer = textarea.value.trim();
-      // Save answer for this subquestion. Store as part of current question answer list
-      if (!Session.answers[this.currentIndex]) {
-        Session.answers[this.currentIndex] = [];
-      }
-      Session.answers[this.currentIndex][this.subIndex] = answer;
-      // Evaluate answer based on keyword overlap
-      const keywords = subQ.answer.toLowerCase().split(/\W+/);
-      const userWords = answer.toLowerCase().split(/\W+/);
-      const matches = keywords.filter(k => userWords.includes(k));
-      if (!Session.keywordsFound[this.currentIndex]) {
-        Session.keywordsFound[this.currentIndex] = [];
-      }
-      Session.keywordsFound[this.currentIndex][this.subIndex] = matches;
-      // Provide immediate feedback: at least one match means correct
-      feedback.style.display = 'block';
-      if (matches.length > 0) {
-        feedback.textContent = 'Correct!';
-        feedback.style.color = '#008000';
+      if (!awaitingContinue) {
+        // Save answer for this subquestion. Store as part of current question answer list
+        if (!Session.answers[this.currentIndex]) {
+          Session.answers[this.currentIndex] = [];
+        }
+        Session.answers[this.currentIndex][this.subIndex] = answer;
+        // Evaluate answer based on keyword overlap
+        const keywords = subQ.answer.toLowerCase().split(/\W+/);
+        const userWords = answer.toLowerCase().split(/\W+/);
+        const matches = keywords.filter(k => userWords.includes(k));
+        if (!Session.keywordsFound[this.currentIndex]) {
+          Session.keywordsFound[this.currentIndex] = [];
+        }
+        Session.keywordsFound[this.currentIndex][this.subIndex] = matches;
+        // Provide immediate feedback: at least one match means correct
+        feedback.style.display = 'block';
+        if (matches.length > 0) {
+          feedback.textContent = 'Correct!';
+          feedback.style.color = '#008000';
+          setTimeout(() => {
+            this.subIndex++;
+            if (this.subIndex < this.question.subQuestions.length) {
+              this.createSubQuestionUI();
+            } else {
+              const now = Date.now();
+              const elapsed = now - (Session.lastTimestamp || Session.startTime);
+              Session.times.push(elapsed);
+              Session.lastTimestamp = now;
+              this.currentIndex++;
+              if (this.currentIndex < this.questions.length) {
+                this.cleanup();
+                this.createQuestionUI(this.questions[this.currentIndex]);
+              } else {
+                Session.endTime = Date.now();
+                this.scene.start('SummaryScene');
+              }
+            }
+          }, 800);
+        } else {
+          feedback.textContent = 'Incorrect. A sample correct answer: ' + subQ.answer;
+          feedback.style.color = '#d32f2f';
+          nextBtn.textContent = 'Continue';
+          awaitingContinue = true;
+        }
       } else {
-        feedback.textContent = 'Incorrect. A sample correct answer: ' + subQ.answer;
-        feedback.style.color = '#d32f2f';
-      }
-      // After a short delay, proceed to next subquestion or next case
-      setTimeout(() => {
         this.subIndex++;
         if (this.subIndex < this.question.subQuestions.length) {
           this.createSubQuestionUI();
         } else {
-          // All sub‑questions answered; record time and go to next question or summary
           const now = Date.now();
           const elapsed = now - (Session.lastTimestamp || Session.startTime);
           Session.times.push(elapsed);
@@ -1147,7 +994,7 @@ class CaseStudyScene extends QuestionScene {
             this.scene.start('SummaryScene');
           }
         }
-      }, 800);
+      }
     });
     // We no longer use Phaser DOM for subquestions; they are part of the wrapper's HTML.
     // However, for compatibility we reset domContainer to null here.
@@ -1204,20 +1051,27 @@ class FlashcardScene extends QuestionScene {
     nextBtn.className = 'ui-button';
     nextBtn.textContent = this.currentIndex === this.questions.length - 1 ? 'Finish Session' : 'Next';
     container.appendChild(nextBtn);
+    let awaitingContinue = false;
     nextBtn.addEventListener('click', () => {
       const ans = input.value.trim();
-      const result = this.evaluateAnswer(question, ans);
-      feedback.style.display = 'block';
-      if (result.correct) {
-        feedback.textContent = 'Correct!';
-        feedback.style.color = '#008000';
+      if (!awaitingContinue) {
+        const result = this.evaluateAnswer(question, ans);
+        feedback.style.display = 'block';
+        if (result.correct) {
+          feedback.textContent = 'Correct!';
+          feedback.style.color = '#008000';
+          setTimeout(() => {
+            this.handleSubmit(ans);
+          }, 800);
+        } else {
+          feedback.textContent = 'Incorrect. Correct answer: ' + question.answer;
+          feedback.style.color = '#d32f2f';
+          nextBtn.textContent = 'Continue';
+          awaitingContinue = true;
+        }
       } else {
-        feedback.textContent = 'Incorrect. Correct answer: ' + question.answer;
-        feedback.style.color = '#d32f2f';
-      }
-      setTimeout(() => {
         this.handleSubmit(ans);
-      }, 800);
+      }
     });
     this.domContainer = this.add.dom(GAME_WIDTH / 2, GAME_HEIGHT - 160, container);
   }
@@ -1230,485 +1084,6 @@ class FlashcardScene extends QuestionScene {
   }
 }
 
-// LessonScene – guided lesson mode. Displays sequential sections loaded from
-// window.LESSON_DATA with navigation, a progress bar and micro‑quizzes.
-class LessonScene extends Phaser.Scene {
-  constructor() {
-    super('lesson');
-  }
-  init() {
-    // Load lessons data
-    this.lessons = Array.isArray(window.LESSON_DATA) ? window.LESSON_DATA : [];
-    // Load progress index from storage or start at 0
-    const savedIdx = parseInt(localStorage.getItem('lesson_progress') || '0');
-    this.currentIndex = isNaN(savedIdx) ? 0 : Math.min(savedIdx, this.lessons.length - 1);
-    // Load array of correct quiz answers from storage (array of booleans). This
-    // array stores results for each quiz encountered. If the length is less than
-    // the number of quizzes completed, we pad it with false entries.
-    try {
-      this.correctAnswers = JSON.parse(localStorage.getItem('lesson_correct') || '[]');
-      if (!Array.isArray(this.correctAnswers)) this.correctAnswers = [];
-    } catch (e) {
-      this.correctAnswers = [];
-    }
-  }
-  create() {
-    // Back to menu button
-    const backBtn = this.add.text(20, 10, 'Back to Menu', {
-      fontSize: '18px',
-      backgroundColor: '#1976d2',
-      color: '#ffffff',
-      padding: { left: 8, right: 8, top: 4, bottom: 4 }
-    }).setInteractive({ useHandCursor: true })
-      .on('pointerover', () => backBtn.setBackgroundColor('#145a9e'))
-      .on('pointerout', () => backBtn.setBackgroundColor('#1976d2'))
-      .on('pointerdown', () => {
-        // Save current progress before leaving
-        localStorage.setItem('lesson_progress', this.currentIndex.toString());
-        localStorage.setItem('lesson_correct', JSON.stringify(this.correctAnswers));
-        this.scene.start('MenuScene');
-      });
-    // Title
-    this.titleText = this.add.text(GAME_WIDTH / 2, 20, 'Lesson Mode', {
-      fontSize: '26px',
-      color: '#1e3a8a'
-    }).setOrigin(0.5, 0);
-    // Progress bar background
-    const barWidth = 600;
-    const barHeight = 14;
-    const barX = (GAME_WIDTH - barWidth) / 2;
-    const barY = 60;
-    this.progressBg = this.add.rectangle(barX, barY, barWidth, barHeight, 0xcccccc).setOrigin(0, 0.5);
-    this.progressFill = this.add.rectangle(barX, barY, 0, barHeight, 0x1976d2).setOrigin(0, 0.5);
-    this.progressText = this.add.text(GAME_WIDTH / 2, barY + 20, '', {
-      fontSize: '14px',
-      color: '#333'
-    }).setOrigin(0.5, 0);
-    // Container for lesson content
-    this.domContainer = null;
-    // Render the current item
-    this.renderCurrent();
-  }
-  updateProgressDisplay() {
-    const total = this.lessons.length;
-    const index = this.currentIndex;
-    const pct = total > 0 ? index / total : 0;
-    const barWidth = 600;
-    this.progressFill.width = barWidth * pct;
-    this.progressText.setText(`Section ${index + 1} / ${total}  (${Math.round(pct * 100)}%)`);
-  }
-  renderCurrent() {
-    // Clear previous DOM container if exists
-    if (this.domContainer) {
-      this.domContainer.destroy();
-      this.domContainer = null;
-    }
-    // Update progress bar and text
-    this.updateProgressDisplay();
-    const total = this.lessons.length;
-    if (this.currentIndex >= total) {
-      // Completed all sections: go to summary
-      localStorage.setItem('lesson_progress', this.currentIndex.toString());
-      localStorage.setItem('lesson_correct', JSON.stringify(this.correctAnswers));
-      this.scene.start('LessonSummaryScene');
-      return;
-    }
-    const item = this.lessons[this.currentIndex];
-    // Create wrapper container
-    const wrapper = document.createElement('div');
-    wrapper.style.width = '90%';
-    wrapper.style.margin = '0 auto';
-    wrapper.style.marginTop = '80px';
-    wrapper.style.display = 'flex';
-    wrapper.style.flexDirection = 'column';
-    wrapper.style.alignItems = 'stretch';
-    // Content area (scrollable)
-    const contentDiv = document.createElement('div');
-    contentDiv.style.flex = '1';
-    contentDiv.style.overflowY = 'auto';
-    contentDiv.style.maxHeight = '350px';
-    contentDiv.style.padding = '10px';
-    contentDiv.style.border = '1px solid #ddd';
-    contentDiv.style.background = '#fff';
-    if (item.type === 'lesson') {
-      // Lesson card: show title and content
-      const titleEl = document.createElement('h3');
-      titleEl.style.fontSize = '20px';
-      titleEl.style.color = '#1e3a8a';
-      titleEl.textContent = item.title;
-      contentDiv.appendChild(titleEl);
-      const para = document.createElement('p');
-      para.style.fontSize = '16px';
-      para.style.color = '#333';
-      para.style.whiteSpace = 'pre-wrap';
-      para.textContent = item.content;
-      contentDiv.appendChild(para);
-      // Simple note‑taking area so students can jot ideas while reading.
-      const note = document.createElement('textarea');
-      note.className = 'ui-textarea';
-      note.placeholder = 'Take your own notes here...';
-      // Load any saved note for this section
-      note.value = localStorage.getItem('lesson_note_' + this.currentIndex) || '';
-      // Persist notes on each input event
-      note.addEventListener('input', () => {
-        localStorage.setItem('lesson_note_' + this.currentIndex, note.value);
-      });
-      contentDiv.appendChild(note);
-    } else if (item.type === 'quiz') {
-      // Quiz card
-      const promptEl = document.createElement('p');
-      promptEl.style.fontSize = '18px';
-      promptEl.style.fontWeight = 'bold';
-      promptEl.textContent = item.prompt;
-      contentDiv.appendChild(promptEl);
-      const feedback = document.createElement('p');
-      feedback.style.display = 'none';
-      feedback.style.fontWeight = 'bold';
-      contentDiv.appendChild(feedback);
-      let answered = false;
-      let checkBtn;
-      if (Array.isArray(item.options)) {
-        // Multiple choice quiz with radio buttons
-        const form = document.createElement('div');
-        form.style.marginTop = '10px';
-        item.options.forEach((opt, idx) => {
-          const label = document.createElement('label');
-          label.style.display = 'block';
-          label.style.marginBottom = '4px';
-          const radio = document.createElement('input');
-          radio.type = 'radio';
-          radio.name = 'mcq_' + this.currentIndex;
-          radio.value = idx.toString();
-          label.appendChild(radio);
-          const span = document.createElement('span');
-          span.textContent = ' ' + opt;
-          label.appendChild(span);
-          form.appendChild(label);
-        });
-        contentDiv.appendChild(form);
-        checkBtn = document.createElement('button');
-        checkBtn.className = 'ui-button';
-        checkBtn.textContent = 'Check Answer';
-        checkBtn.style.marginTop = '10px';
-        contentDiv.appendChild(checkBtn);
-        checkBtn.addEventListener('click', () => {
-          if (answered) return;
-          const selected = form.querySelector('input[type="radio"]:checked');
-          if (!selected) {
-            feedback.style.display = 'block';
-            feedback.textContent = 'Please select an option.';
-            feedback.style.color = '#d32f2f';
-            return;
-          }
-          const idx = parseInt(selected.value);
-          const correct = idx === item.answerIndex;
-          answered = true;
-          feedback.style.display = 'block';
-          feedback.textContent = correct ? 'Correct!' : 'Not quite. ' + (item.explanation || '');
-          feedback.style.color = correct ? '#008000' : '#d32f2f';
-          this.correctAnswers[this.correctAnswers.length] = correct;
-          localStorage.setItem('lesson_correct', JSON.stringify(this.correctAnswers));
-        });
-      } else {
-        // Text input quiz (original behaviour)
-        const input = document.createElement('input');
-        input.type = 'text';
-        input.placeholder = 'Enter your answer...';
-        input.className = 'ui-input';
-        input.style.marginTop = '10px';
-        contentDiv.appendChild(input);
-        checkBtn = document.createElement('button');
-        checkBtn.className = 'ui-button';
-        checkBtn.textContent = 'Check Answer';
-        checkBtn.style.marginTop = '10px';
-        contentDiv.appendChild(checkBtn);
-        checkBtn.addEventListener('click', () => {
-          if (answered) return;
-          const ans = input.value.trim().toLowerCase();
-          const keywords = item.keywords || [];
-          const correct = keywords.some(k => ans.includes(k.toLowerCase()));
-          answered = true;
-          feedback.style.display = 'block';
-          if (correct) {
-            feedback.textContent = 'Correct!';
-            feedback.style.color = '#008000';
-          } else {
-            feedback.textContent = 'Not quite. ' + (item.explanation || 'Key concepts include: ' + keywords.join(', '));
-            feedback.style.color = '#d32f2f';
-          }
-          this.correctAnswers[this.correctAnswers.length] = correct;
-          localStorage.setItem('lesson_correct', JSON.stringify(this.correctAnswers));
-        });
-      }
-    }
-    wrapper.appendChild(contentDiv);
-    // Navigation area
-    const navDiv = document.createElement('div');
-    navDiv.style.display = 'flex';
-    navDiv.style.justifyContent = 'space-between';
-    navDiv.style.marginTop = '10px';
-    // Previous button
-    const prevBtn = document.createElement('button');
-    prevBtn.className = 'ui-button';
-    prevBtn.textContent = 'Back';
-    prevBtn.disabled = this.currentIndex === 0;
-    prevBtn.addEventListener('click', () => {
-      if (this.currentIndex > 0) {
-        this.currentIndex--;
-        localStorage.setItem('lesson_progress', this.currentIndex.toString());
-        this.renderCurrent();
-      }
-    });
-    navDiv.appendChild(prevBtn);
-    // Next or Finish button
-    const nextBtn = document.createElement('button');
-    nextBtn.className = 'ui-button';
-    nextBtn.textContent = this.currentIndex === total - 1 ? 'Finish' : 'Next';
-    nextBtn.addEventListener('click', () => {
-      // If this is a quiz and not answered, auto-mark as incorrect
-      const current = this.lessons[this.currentIndex];
-      if (current.type === 'quiz') {
-        const alreadyCounted = this.correctAnswers.length >= this.lessons.filter(i => i.type === 'quiz' && this.lessons.indexOf(i) < this.currentIndex).length + 1;
-        if (!alreadyCounted) {
-          // Record false if user skipped checking answer
-          this.correctAnswers[this.correctAnswers.length] = false;
-          localStorage.setItem('lesson_correct', JSON.stringify(this.correctAnswers));
-        }
-      }
-      this.currentIndex++;
-      localStorage.setItem('lesson_progress', this.currentIndex.toString());
-      this.renderCurrent();
-    });
-    navDiv.appendChild(nextBtn);
-    wrapper.appendChild(navDiv);
-    // Add wrapper to the scene
-    this.domContainer = this.add.dom(GAME_WIDTH / 2, 0, wrapper);
-    this.domContainer.setOrigin(0.5, 0);
-  }
-}
-
-// LessonSummaryScene – displays the results of the lesson, including
-// number of sections completed and quiz performance. Offers options to
-// restart or return to menu.
-class LessonSummaryScene extends Phaser.Scene {
-  constructor() {
-    super('LessonSummaryScene');
-  }
-  create() {
-    // Title
-    this.add.text(GAME_WIDTH / 2, 40, 'Lesson Summary', { fontSize: '30px', color: '#1e3a8a' }).setOrigin(0.5);
-    // Back to menu button
-    const backBtn = this.add.text(20, 10, 'Back to Menu', {
-      fontSize: '18px', backgroundColor: '#1976d2', color: '#ffffff', padding: { left: 8, right: 8, top: 4, bottom: 4 }
-    }).setInteractive({ useHandCursor: true })
-      .on('pointerover', () => backBtn.setBackgroundColor('#145a9e'))
-      .on('pointerout', () => backBtn.setBackgroundColor('#1976d2'))
-      .on('pointerdown', () => {
-        this.scene.start('MenuScene');
-      });
-    // Retrieve lesson data and quiz performance
-    const lessons = Array.isArray(window.LESSON_DATA) ? window.LESSON_DATA : [];
-    const totalSections = lessons.length;
-    const totalQuizzes = lessons.filter(item => item.type === 'quiz').length;
-    let correctAnswers = [];
-    try {
-      correctAnswers = JSON.parse(localStorage.getItem('lesson_correct') || '[]');
-      if (!Array.isArray(correctAnswers)) correctAnswers = [];
-    } catch (e) {
-      correctAnswers = [];
-    }
-    const correctCount = correctAnswers.reduce((acc, val) => acc + (val ? 1 : 0), 0);
-    // Stats text
-    let stats = `Sections completed: ${totalSections}\n`;
-    stats += `Quizzes answered: ${totalQuizzes}\n`;
-    stats += `Correct quiz answers: ${correctCount}\n`;
-    stats += `Accuracy: ${totalQuizzes > 0 ? Math.round((correctCount / totalQuizzes) * 100) : 0}%`;
-    this.add.text(60, 100, stats, { fontSize: '18px', color: '#333' });
-    // Button to restart the lesson from the beginning
-    const restartBtn = this.add.text(GAME_WIDTH / 2, 220, 'Restart Lesson', {
-      fontSize: '20px', backgroundColor: '#1976d2', color: '#ffffff', padding: { left: 12, right: 12, top: 6, bottom: 6 }
-    }).setOrigin(0.5).setInteractive({ useHandCursor: true })
-      .on('pointerover', () => restartBtn.setBackgroundColor('#145a9e'))
-      .on('pointerout', () => restartBtn.setBackgroundColor('#1976d2'))
-      .on('pointerdown', () => {
-        localStorage.setItem('lesson_progress', '0');
-        localStorage.setItem('lesson_correct', '[]');
-        this.scene.start('lesson');
-      });
-    // Button to review wrong answers – show sections where quiz was answered incorrectly
-    const reviewBtn = this.add.text(GAME_WIDTH / 2, 260, 'Review Wrong Answers', {
-      fontSize: '20px', backgroundColor: '#ffa000', color: '#ffffff', padding: { left: 12, right: 12, top: 6, bottom: 6 }
-    }).setOrigin(0.5).setInteractive({ useHandCursor: true })
-      .on('pointerover', () => reviewBtn.setBackgroundColor('#cc7a00'))
-      .on('pointerout', () => reviewBtn.setBackgroundColor('#ffa000'))
-      .on('pointerdown', () => {
-        // build list of indices of quizzes answered incorrectly
-        const wrongIndexes = [];
-        let quizCounter = 0;
-        for (let i = 0; i < lessons.length; i++) {
-          if (lessons[i].type === 'quiz') {
-            const correct = correctAnswers[quizCounter] || false;
-            if (!correct) {
-              wrongIndexes.push(i);
-            }
-            quizCounter++;
-          }
-        }
-        if (wrongIndexes.length === 0) {
-          alert('No wrong answers to review – great job!');
-          return;
-        }
-        // Save wrong indexes to localStorage and start lesson at first wrong one
-        localStorage.setItem('lesson_review_indexes', JSON.stringify(wrongIndexes));
-        // Use LessonScene to iterate through wrong answers. Set special mode? We'll reuse lesson
-        this.scene.start('lessonReview');
-      });
-  }
-}
-
-// LessonReviewScene – shows only the lessons/quizzes that were answered incorrectly.
-class LessonReviewScene extends Phaser.Scene {
-  constructor() {
-    super('lessonReview');
-  }
-  init() {
-    // Load wrong indexes from storage
-    try {
-      this.reviewIndexes = JSON.parse(localStorage.getItem('lesson_review_indexes') || '[]');
-    } catch (e) {
-      this.reviewIndexes = [];
-    }
-    this.lessons = Array.isArray(window.LESSON_DATA) ? window.LESSON_DATA : [];
-    this.correctAnswers = [];
-    this.currentReviewPos = 0;
-  }
-  create() {
-    // Title
-    this.add.text(GAME_WIDTH / 2, 20, 'Review Wrong Answers', { fontSize: '26px', color: '#1e3a8a' }).setOrigin(0.5);
-    // Back to summary button
-    const backBtn = this.add.text(20, 10, 'Back', {
-      fontSize: '18px', backgroundColor: '#1976d2', color: '#ffffff', padding: { left: 8, right: 8, top: 4, bottom: 4 }
-    }).setInteractive({ useHandCursor: true })
-      .on('pointerover', () => backBtn.setBackgroundColor('#145a9e'))
-      .on('pointerout', () => backBtn.setBackgroundColor('#1976d2'))
-      .on('pointerdown', () => {
-        this.scene.start('LessonSummaryScene');
-      });
-    // Progress bar for review
-    const barWidth = 600;
-    const barHeight = 14;
-    const barX = (GAME_WIDTH - barWidth) / 2;
-    const barY = 60;
-    this.progressBg = this.add.rectangle(barX, barY, barWidth, barHeight, 0xcccccc).setOrigin(0, 0.5);
-    this.progressFill = this.add.rectangle(barX, barY, 0, barHeight, 0x1976d2).setOrigin(0, 0.5);
-    this.progressText = this.add.text(GAME_WIDTH / 2, barY + 20, '', { fontSize: '14px', color: '#333' }).setOrigin(0.5, 0);
-    this.domContainer = null;
-    this.renderCurrent();
-  }
-  updateProgress() {
-    const total = this.reviewIndexes.length;
-    const idx = this.currentReviewPos;
-    const pct = total > 0 ? idx / total : 0;
-    const barWidth = 600;
-    this.progressFill.width = barWidth * pct;
-    this.progressText.setText(`Item ${idx + 1} / ${total} (${Math.round(pct * 100)}%)`);
-  }
-  renderCurrent() {
-    if (this.domContainer) {
-      this.domContainer.destroy();
-      this.domContainer = null;
-    }
-    this.updateProgress();
-    if (this.currentReviewPos >= this.reviewIndexes.length) {
-      // Done reviewing
-      this.scene.start('LessonSummaryScene');
-      return;
-    }
-    const lessonIndex = this.reviewIndexes[this.currentReviewPos];
-    const item = this.lessons[lessonIndex];
-    // Create wrapper for content
-    const wrapper = document.createElement('div');
-    wrapper.style.width = '90%';
-    wrapper.style.margin = '0 auto';
-    wrapper.style.marginTop = '80px';
-    wrapper.style.display = 'flex';
-    wrapper.style.flexDirection = 'column';
-    wrapper.style.alignItems = 'stretch';
-    const contentDiv = document.createElement('div');
-    contentDiv.style.flex = '1';
-    contentDiv.style.overflowY = 'auto';
-    contentDiv.style.maxHeight = '350px';
-    contentDiv.style.padding = '10px';
-    contentDiv.style.border = '1px solid #ddd';
-    contentDiv.style.background = '#fff';
-    if (item.type === 'lesson') {
-      const titleEl = document.createElement('h3');
-      titleEl.style.fontSize = '20px';
-      titleEl.style.color = '#1e3a8a';
-      titleEl.textContent = item.title;
-      contentDiv.appendChild(titleEl);
-      const para = document.createElement('p');
-      para.style.fontSize = '16px';
-      para.style.color = '#333';
-      para.style.whiteSpace = 'pre-wrap';
-      para.textContent = item.content;
-      contentDiv.appendChild(para);
-    } else if (item.type === 'quiz') {
-      const promptEl = document.createElement('p');
-      promptEl.style.fontSize = '18px';
-      promptEl.style.fontWeight = 'bold';
-      promptEl.textContent = item.prompt;
-      contentDiv.appendChild(promptEl);
-      if (Array.isArray(item.options)) {
-        const list = document.createElement('ul');
-        item.options.forEach((opt, idx) => {
-          const li = document.createElement('li');
-          li.textContent = opt;
-          if (idx === item.answerIndex) {
-            li.style.fontWeight = 'bold';
-            li.style.color = '#008000';
-          }
-          list.appendChild(li);
-        });
-        contentDiv.appendChild(list);
-      }
-      const explanation = document.createElement('p');
-      explanation.style.fontSize = '16px';
-      explanation.style.color = '#333';
-      explanation.style.marginTop = '10px';
-      explanation.textContent = 'Explanation: ' + (item.explanation || 'Key concepts include: ' + (item.keywords || []).join(', '));
-      contentDiv.appendChild(explanation);
-    }
-    wrapper.appendChild(contentDiv);
-    // Navigation buttons: previous (Back) and next
-    const navDiv = document.createElement('div');
-    navDiv.style.display = 'flex';
-    navDiv.style.justifyContent = 'space-between';
-    navDiv.style.marginTop = '10px';
-    const backBtnDom = document.createElement('button');
-    backBtnDom.className = 'ui-button';
-    backBtnDom.textContent = 'Back';
-    backBtnDom.disabled = this.currentReviewPos === 0;
-    backBtnDom.addEventListener('click', () => {
-      if (this.currentReviewPos > 0) {
-        this.currentReviewPos--;
-        this.renderCurrent();
-      }
-    });
-    navDiv.appendChild(backBtnDom);
-    const nextBtnDom = document.createElement('button');
-    nextBtnDom.className = 'ui-button';
-    nextBtnDom.textContent = this.currentReviewPos === this.reviewIndexes.length - 1 ? 'Finish' : 'Next';
-    nextBtnDom.addEventListener('click', () => {
-      this.currentReviewPos++;
-      this.renderCurrent();
-    });
-    navDiv.appendChild(nextBtnDom);
-    wrapper.appendChild(navDiv);
-    this.domContainer = this.add.dom(GAME_WIDTH / 2, 0, wrapper);
-    this.domContainer.setOrigin(0.5, 0);
-  }
-}
 
 // SummaryScene – displays a report of the session. Includes accuracy by
 // topic, most common errors, time per question and suggested areas for
@@ -1989,50 +1364,6 @@ class BookmarkReviewScene extends Phaser.Scene {
   }
 }
 
-// DiagramBuilderScene – provides a simple layout with a toolbox, canvas, and info panel
-// for constructing economic diagrams. This is a basic scaffold for future interactive
-// features.
-class DiagramBuilderScene extends Phaser.Scene {
-  constructor() {
-    super('builder');
-  }
-  create() {
-    const wrapper = document.createElement('div');
-    wrapper.id = 'builder-wrapper';
-    wrapper.style.width = '860px';
-    wrapper.style.height = '560px';
-
-    const toolbox = document.createElement('div');
-    toolbox.className = 'builder-toolbox';
-    toolbox.innerHTML = '<h3>Tools</h3><ul><li>Supply</li><li>Demand</li><li>Tax</li></ul>';
-    wrapper.appendChild(toolbox);
-
-    const canvasDiv = document.createElement('div');
-    canvasDiv.className = 'builder-canvas';
-    const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-    svg.setAttribute('width', '100%');
-    svg.setAttribute('height', '100%');
-    canvasDiv.appendChild(svg);
-    wrapper.appendChild(canvasDiv);
-
-    const info = document.createElement('div');
-    info.className = 'builder-info';
-    info.innerHTML = '<h3>Details</h3><p>P*: <span id="p-star">-</span></p><p>Q*: <span id="q-star">-</span></p>';
-    const backBtn = document.createElement('button');
-    backBtn.className = 'ui-button';
-    backBtn.textContent = 'Back';
-    backBtn.addEventListener('click', () => {
-      this.scene.start('MenuScene');
-    });
-    info.appendChild(backBtn);
-    wrapper.appendChild(info);
-
-    this.domElement = this.add.dom(GAME_WIDTH / 2, GAME_HEIGHT / 2, wrapper);
-    this.events.once('shutdown', () => {
-      if (this.domElement) this.domElement.destroy();
-    });
-  }
-}
 
 // AdaptiveScene – placeholder interface for the adaptive learning engine. Displays
 // explanatory text and offers a way back to the menu.
@@ -2073,7 +1404,7 @@ const config = {
   dom: {
     createContainer: true
   },
-  scene: [BootScene, MenuScene, DiagramScene, CalculationScene, EssayScene, CaseStudyScene, FlashcardScene, LessonScene, LessonSummaryScene, LessonReviewScene, SummaryScene, BookmarkReviewScene, DiagramBuilderScene, AdaptiveScene],
+  scene: [BootScene, MenuScene, DiagramScene, CalculationScene, EssayScene, CaseStudyScene, FlashcardScene, SummaryScene, BookmarkReviewScene, AdaptiveScene],
   backgroundColor: '#f0f3f8'
 };
 
