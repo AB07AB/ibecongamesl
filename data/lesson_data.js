@@ -30,6 +30,18 @@ window.LESSON_DATA = [
     "explanation": "Key concepts include: labour, markets, people"
   },
   {
+    "type": "quiz",
+    "prompt": "In a labour market, who supplies labour?",
+    "options": [
+      "Firms supply labour to households",
+      "Households supply labour to firms",
+      "Governments supply all labour",
+      "Banks supply labour to markets"
+    ],
+    "answerIndex": 1,
+    "explanation": "Households (workers) supply labour that firms demand."
+  },
+  {
     "type": "lesson",
     "title": "3.1 - Demand",
     "content": "Market power: A dominant firm has control over the price of the goods it sells\nThe law of demand: As the price of a product decreases, the quantity demanded of it increases, ceteris paribus(all other things equal).\nConsumers: Individuals or organizations that purchase goods and services in a market.",

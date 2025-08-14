@@ -1327,6 +1327,17 @@ class LessonScene extends Phaser.Scene {
       para.style.whiteSpace = 'pre-wrap';
       para.textContent = item.content;
       contentDiv.appendChild(para);
+      // Simple note‑taking area so students can jot ideas while reading.
+      const note = document.createElement('textarea');
+      note.className = 'ui-textarea';
+      note.placeholder = 'Take your own notes here...';
+      // Load any saved note for this section
+      note.value = localStorage.getItem('lesson_note_' + this.currentIndex) || '';
+      // Persist notes on each input event
+      note.addEventListener('input', () => {
+        localStorage.setItem('lesson_note_' + this.currentIndex, note.value);
+      });
+      contentDiv.appendChild(note);
     } else if (item.type === 'quiz') {
       // Quiz card
       const promptEl = document.createElement('p');
@@ -1334,44 +1345,85 @@ class LessonScene extends Phaser.Scene {
       promptEl.style.fontWeight = 'bold';
       promptEl.textContent = item.prompt;
       contentDiv.appendChild(promptEl);
-      // Input box
-      const input = document.createElement('input');
-      input.type = 'text';
-      input.placeholder = 'Enter your answer...';
-      input.className = 'ui-input';
-      input.style.marginTop = '10px';
-      contentDiv.appendChild(input);
-      // Feedback element
       const feedback = document.createElement('p');
       feedback.style.display = 'none';
       feedback.style.fontWeight = 'bold';
       contentDiv.appendChild(feedback);
-      // Check answer button
-      const checkBtn = document.createElement('button');
-      checkBtn.className = 'ui-button';
-      checkBtn.textContent = 'Check Answer';
-      checkBtn.style.marginTop = '10px';
-      contentDiv.appendChild(checkBtn);
-      // Track whether this quiz has been answered
       let answered = false;
-      checkBtn.addEventListener('click', () => {
-        if (answered) return;
-        const ans = input.value.trim().toLowerCase();
-        const keywords = item.keywords || [];
-        const correct = keywords.some(k => ans.includes(k.toLowerCase()));
-        answered = true;
-        feedback.style.display = 'block';
-        if (correct) {
-          feedback.textContent = 'Correct!';
-          feedback.style.color = '#008000';
-        } else {
-          feedback.textContent = 'Not quite. ' + (item.explanation || 'Key concepts include: ' + keywords.join(', '));
-          feedback.style.color = '#d32f2f';
-        }
-        // Save result
-        this.correctAnswers[this.correctAnswers.length] = correct;
-        localStorage.setItem('lesson_correct', JSON.stringify(this.correctAnswers));
-      });
+      let checkBtn;
+      if (Array.isArray(item.options)) {
+        // Multiple choice quiz with radio buttons
+        const form = document.createElement('div');
+        form.style.marginTop = '10px';
+        item.options.forEach((opt, idx) => {
+          const label = document.createElement('label');
+          label.style.display = 'block';
+          label.style.marginBottom = '4px';
+          const radio = document.createElement('input');
+          radio.type = 'radio';
+          radio.name = 'mcq_' + this.currentIndex;
+          radio.value = idx.toString();
+          label.appendChild(radio);
+          const span = document.createElement('span');
+          span.textContent = ' ' + opt;
+          label.appendChild(span);
+          form.appendChild(label);
+        });
+        contentDiv.appendChild(form);
+        checkBtn = document.createElement('button');
+        checkBtn.className = 'ui-button';
+        checkBtn.textContent = 'Check Answer';
+        checkBtn.style.marginTop = '10px';
+        contentDiv.appendChild(checkBtn);
+        checkBtn.addEventListener('click', () => {
+          if (answered) return;
+          const selected = form.querySelector('input[type="radio"]:checked');
+          if (!selected) {
+            feedback.style.display = 'block';
+            feedback.textContent = 'Please select an option.';
+            feedback.style.color = '#d32f2f';
+            return;
+          }
+          const idx = parseInt(selected.value);
+          const correct = idx === item.answerIndex;
+          answered = true;
+          feedback.style.display = 'block';
+          feedback.textContent = correct ? 'Correct!' : 'Not quite. ' + (item.explanation || '');
+          feedback.style.color = correct ? '#008000' : '#d32f2f';
+          this.correctAnswers[this.correctAnswers.length] = correct;
+          localStorage.setItem('lesson_correct', JSON.stringify(this.correctAnswers));
+        });
+      } else {
+        // Text input quiz (original behaviour)
+        const input = document.createElement('input');
+        input.type = 'text';
+        input.placeholder = 'Enter your answer...';
+        input.className = 'ui-input';
+        input.style.marginTop = '10px';
+        contentDiv.appendChild(input);
+        checkBtn = document.createElement('button');
+        checkBtn.className = 'ui-button';
+        checkBtn.textContent = 'Check Answer';
+        checkBtn.style.marginTop = '10px';
+        contentDiv.appendChild(checkBtn);
+        checkBtn.addEventListener('click', () => {
+          if (answered) return;
+          const ans = input.value.trim().toLowerCase();
+          const keywords = item.keywords || [];
+          const correct = keywords.some(k => ans.includes(k.toLowerCase()));
+          answered = true;
+          feedback.style.display = 'block';
+          if (correct) {
+            feedback.textContent = 'Correct!';
+            feedback.style.color = '#008000';
+          } else {
+            feedback.textContent = 'Not quite. ' + (item.explanation || 'Key concepts include: ' + keywords.join(', '));
+            feedback.style.color = '#d32f2f';
+          }
+          this.correctAnswers[this.correctAnswers.length] = correct;
+          localStorage.setItem('lesson_correct', JSON.stringify(this.correctAnswers));
+        });
+      }
     }
     wrapper.appendChild(contentDiv);
     // Navigation area
@@ -1591,6 +1643,19 @@ class LessonReviewScene extends Phaser.Scene {
       promptEl.style.fontWeight = 'bold';
       promptEl.textContent = item.prompt;
       contentDiv.appendChild(promptEl);
+      if (Array.isArray(item.options)) {
+        const list = document.createElement('ul');
+        item.options.forEach((opt, idx) => {
+          const li = document.createElement('li');
+          li.textContent = opt;
+          if (idx === item.answerIndex) {
+            li.style.fontWeight = 'bold';
+            li.style.color = '#008000';
+          }
+          list.appendChild(li);
+        });
+        contentDiv.appendChild(list);
+      }
       const explanation = document.createElement('p');
       explanation.style.fontSize = '16px';
       explanation.style.color = '#333';
